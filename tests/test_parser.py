@@ -1,5 +1,4 @@
 import pytest
-from pathlib import Path
 from nse_xbrl_parser import parse_xbrl_file
 
 def test_parse_xbrl_file_not_found():

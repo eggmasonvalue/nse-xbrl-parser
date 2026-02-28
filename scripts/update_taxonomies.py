@@ -7,7 +7,6 @@ import urllib.parse
 import zipfile
 import tempfile
 import shutil
-import glob
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("TaxonomyBuilder")
@@ -162,7 +161,7 @@ def main():
                     shutil.copy2(f, target_path)
                     updated_files_count += 1
                     
-        logger.info(f"Refinement Summary:")
+        logger.info("Refinement Summary:")
         logger.info(f" - Ignored {deleted_excel_count} bloat files (XLSX, PDF, etc)")
         logger.info(f" - Added {new_files_count} brand new schemas")
         logger.info(f" - Overwrote/Updated {updated_files_count} existing schemas")
