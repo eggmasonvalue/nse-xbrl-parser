@@ -1,0 +1,61 @@
+name: Update Golden Taxonomy
+
+on:
+  schedule:
+    # Run at 02:00 AM UTC every Saturday
+    - cron: '0 2 * * 6'
+  workflow_dispatch:
+    # Allow manual triggering for testing
+
+jobs:
+  update-taxonomy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: |
+          uv pip install httpx[http2] bs4
+
+      - name: Run Taxonomy Builder
+        run: |
+          uv run python scripts/build_golden_taxonomy.py
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git add src/nse_xbrl_parser/golden_taxonomy_v1/
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No new schemas found."
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "New schemas detected!"
+          fi
+
+      - name: Commit and Push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "chore(taxonomy): auto-update golden taxonomy schemas"
+          git push
+
+      # Note: PyPI Auto-Publishing should be handled by a separate release workflow
+      # that triggers when tags/releases are created, keeping this job strictly for data extraction.
