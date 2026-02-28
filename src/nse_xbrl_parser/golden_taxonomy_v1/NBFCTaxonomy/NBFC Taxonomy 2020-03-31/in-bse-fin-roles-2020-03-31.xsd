@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:in-bse-fin-roles="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/StatementOfAssetsAndLiabilitiesNBFC" id="StatementOfAssetsAndLiabilitiesNBFC">
+        <link:definition>[100100] Statement of assets and liabilities  [NBFC]</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/QuarterlyAndHalfYearlyFinancialResultFormatNBFC" id="QuarterlyAndHalfYearlyFinancialResultFormatNBFC">
+        <link:definition>[100200] Quarterly and half yearly financial result format  [NBFC]</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/OtherExpenses" id="OtherExpenses">
+        <link:definition>[200100] Other expenses</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/OtherRevenueFromOperations" id="OtherRevenueFromOperations">
+        <link:definition>[200101] Other revenue from operations</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/SegmentInformation" id="SegmentInformation">
+        <link:definition>[300100] Segment information</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/SegmentInformation2" id="SegmentInformation2">
+        <link:definition>[300101] Segment information</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/SegmentInformation3" id="SegmentInformation3">
+        <link:definition>[300102] Segment information</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/SegmentInformation4" id="SegmentInformation4">
+        <link:definition>[300103] Segment information</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/DisclosureOfGeneralInformationAboutCompany" id="DisclosureOfGeneralInformationAboutCompany">
+        <link:definition>[400100] Disclosure of general information about company</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/OtherComprehensiveItemsThatWillNotBeReclassifiedToProfitAndLoss" id="OtherComprehensiveItemsThatWillNotBeReclassifiedToProfitAndLoss">
+        <link:definition>[500100] Other comprehensive items that will not be reclassified to profit and loss</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/OtherComprehensiveItemsThatWillBeReclassifiedToProfitAndLoss" id="OtherComprehensiveItemsThatWillBeReclassifiedToProfitAndLoss">
+        <link:definition>[500200] Other comprehensive items that will be reclassified to profit and loss</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/OtherComprehensiveItems" id="OtherComprehensiveItems">
+        <link:definition>[500300] Other comprehensive items</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/AxisDefaults" id="AxisDefaults">
+        <link:definition>[600100] Axis-Defaults</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/TypedDefault" id="TypedDefault">
+        <link:definition>[600200] Typed Default</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/CashFlowStatementDirect" id="CashFlowStatementDirect">
+        <link:definition>[700100] Cash flow statement,direct</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles/CashFlowStatementIndirect" id="CashFlowStatementIndirect">
+        <link:definition>[700200] Cash flow statement, indirect</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+</xsd:schema>

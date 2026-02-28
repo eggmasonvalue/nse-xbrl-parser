@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_GeneralInformationAbstract" xlink:label="GeneralInformationAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_GeneralInformationAbstract1" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GeneralInformationAbstract" xlink:to="reference_GeneralInformationAbstract1" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_ScripCode" xlink:label="ScripCode" />
+    <reference xlink:type="resource" xlink:label="reference_ScripCode2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ScripCode" xlink:to="reference_ScripCode2" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NameOfTheCompany" xlink:label="NameOfTheCompany" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheCompany3" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheCompany" xlink:to="reference_NameOfTheCompany3" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DateOfMeeting" xlink:label="DateOfMeeting" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfMeeting4" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfMeeting" xlink:to="reference_DateOfMeeting4" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_TypeOfMeeting" xlink:label="TypeOfMeeting" />
+    <reference xlink:type="resource" xlink:label="reference_TypeOfMeeting5" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TypeOfMeeting" xlink:to="reference_TypeOfMeeting5" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_StartTimeOfTheMeeting" xlink:label="StartTimeOfTheMeeting" />
+    <reference xlink:type="resource" xlink:label="reference_StartTimeOfTheMeeting6" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StartTimeOfTheMeeting" xlink:to="reference_StartTimeOfTheMeeting6" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_EndTimeOfTheMeeting" xlink:label="EndTimeOfTheMeeting" />
+    <reference xlink:type="resource" xlink:label="reference_EndTimeOfTheMeeting7" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EndTimeOfTheMeeting" xlink:to="reference_EndTimeOfTheMeeting7" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_VotingResultsAbstract" xlink:label="VotingResultsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_VotingResultsAbstract8" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VotingResultsAbstract" xlink:to="reference_VotingResultsAbstract8" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_TotalNumberOfShareholdersOnRecordDate" xlink:label="TotalNumberOfShareholdersOnRecordDate" />
+    <reference xlink:type="resource" xlink:label="reference_TotalNumberOfShareholdersOnRecordDate9" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalNumberOfShareholdersOnRecordDate" xlink:to="reference_TotalNumberOfShareholdersOnRecordDate9" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfShareholdersPresentInTheMeetingEitherInPersonOrThroughProxyAbstract" xlink:label="NumberOfShareholdersPresentInTheMeetingEitherInPersonOrThroughProxyAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfShareholdersPresentInTheMeetingEitherInPersonOrThroughProxyAbstract10" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfShareholdersPresentInTheMeetingEitherInPersonOrThroughProxyAbstract" xlink:to="reference_NumberOfShareholdersPresentInTheMeetingEitherInPersonOrThroughProxyAbstract10" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfPromotersPresentInTheMeetingEitherInPersonOrThroughProxy" xlink:label="NumberOfPromotersPresentInTheMeetingEitherInPersonOrThroughProxy" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfPromotersPresentInTheMeetingEitherInPersonOrThroughProxy11" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfPromotersPresentInTheMeetingEitherInPersonOrThroughProxy" xlink:to="reference_NumberOfPromotersPresentInTheMeetingEitherInPersonOrThroughProxy11" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfPromotersAttendedTheMeetingThroughVideoConferencing" xlink:label="NumberOfPromotersAttendedTheMeetingThroughVideoConferencing" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfPromotersAttendedTheMeetingThroughVideoConferencing12" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfPromotersAttendedTheMeetingThroughVideoConferencing" xlink:to="reference_NumberOfPromotersAttendedTheMeetingThroughVideoConferencing12" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfPublicShareholdersAttendedTheMeetingThroughVideoConferencing" xlink:label="NumberOfPublicShareholdersAttendedTheMeetingThroughVideoConferencing" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfPublicShareholdersAttendedTheMeetingThroughVideoConferencing13" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfPublicShareholdersAttendedTheMeetingThroughVideoConferencing" xlink:to="reference_NumberOfPublicShareholdersAttendedTheMeetingThroughVideoConferencing13" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfPublicShareholdersPresentInTheMeetingEitherInPersonOrThroughProxy" xlink:label="NumberOfPublicShareholdersPresentInTheMeetingEitherInPersonOrThroughProxy" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfPublicShareholdersPresentInTheMeetingEitherInPersonOrThroughProxy14" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfPublicShareholdersPresentInTheMeetingEitherInPersonOrThroughProxy" xlink:to="reference_NumberOfPublicShareholdersPresentInTheMeetingEitherInPersonOrThroughProxy14" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfShareholdersAttendedTheMeetingThroughVideoConferencingAbstract" xlink:label="NumberOfShareholdersAttendedTheMeetingThroughVideoConferencingAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfShareholdersAttendedTheMeetingThroughVideoConferencingAbstract15" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfShareholdersAttendedTheMeetingThroughVideoConferencingAbstract" xlink:to="reference_NumberOfShareholdersAttendedTheMeetingThroughVideoConferencingAbstract15" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfResolutionPassedInTheMeeting" xlink:label="NumberOfResolutionPassedInTheMeeting" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfResolutionPassedInTheMeeting16" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfResolutionPassedInTheMeeting" xlink:to="reference_NumberOfResolutionPassedInTheMeeting16" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DetailsOfResolutionsAbstract" xlink:label="DetailsOfResolutionsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfResolutionsAbstract17" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfResolutionsAbstract" xlink:to="reference_DetailsOfResolutionsAbstract17" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DetailsOfResolutionsTable" xlink:label="DetailsOfResolutionsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfResolutionsTable18" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfResolutionsTable" xlink:to="reference_DetailsOfResolutionsTable18" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DetailsOfResolutionsAxis" xlink:label="DetailsOfResolutionsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfResolutionsAxis19" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfResolutionsAxis" xlink:to="reference_DetailsOfResolutionsAxis19" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DetailsOfResolutionsLineitmes" xlink:label="DetailsOfResolutionsLineitmes" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfResolutionsLineitmes20" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfResolutionsLineitmes" xlink:to="reference_DetailsOfResolutionsLineitmes20" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_WhetherPromoterOrPromoterGroupAreInterestedInTheAgendaOrResolution" xlink:label="WhetherPromoterOrPromoterGroupAreInterestedInTheAgendaOrResolution" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherPromoterOrPromoterGroupAreInterestedInTheAgendaOrResolution21" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherPromoterOrPromoterGroupAreInterestedInTheAgendaOrResolution" xlink:to="reference_WhetherPromoterOrPromoterGroupAreInterestedInTheAgendaOrResolution21" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DescriptionOfResolutionConsidered" xlink:label="DescriptionOfResolutionConsidered" />
+    <reference xlink:type="resource" xlink:label="reference_DescriptionOfResolutionConsidered22" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DescriptionOfResolutionConsidered" xlink:to="reference_DescriptionOfResolutionConsidered22" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_WhetherResolutionIsPassed" xlink:label="WhetherResolutionIsPassed" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherResolutionIsPassed23" xlink:role="http://www.xbrl.org/2003/role/reference">
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherResolutionIsPassed" xlink:to="reference_WhetherResolutionIsPassed23" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DetailsOfVotingAbstract" xlink:label="DetailsOfVotingAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfVotingAbstract24" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfVotingAbstract" xlink:to="reference_DetailsOfVotingAbstract24" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DetailsOfVotingTable" xlink:label="DetailsOfVotingTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfVotingTable25" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfVotingTable" xlink:to="reference_DetailsOfVotingTable25" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_ModeOfVotingAxis" xlink:label="ModeOfVotingAxis" />
+    <reference xlink:type="resource" xlink:label="reference_ModeOfVotingAxis26" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ModeOfVotingAxis" xlink:to="reference_ModeOfVotingAxis26" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PromoterAndPromoterGroupMember" xlink:label="PromoterAndPromoterGroupMember" />
+    <reference xlink:type="resource" xlink:label="reference_PromoterAndPromoterGroupMember27" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PromoterAndPromoterGroupMember" xlink:to="reference_PromoterAndPromoterGroupMember27" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PublicInstitutionMember" xlink:label="PublicInstitutionMember" />
+    <reference xlink:type="resource" xlink:label="reference_PublicInstitutionMember28" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PublicInstitutionMember" xlink:to="reference_PublicInstitutionMember28" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PublicNonInstitutionMember" xlink:label="PublicNonInstitutionMember" />
+    <reference xlink:type="resource" xlink:label="reference_PublicNonInstitutionMember29" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PublicNonInstitutionMember" xlink:to="reference_PublicNonInstitutionMember29" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_EVotingMember" xlink:label="EVotingMember" />
+    <reference xlink:type="resource" xlink:label="reference_EVotingMember30" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EVotingMember" xlink:to="reference_EVotingMember30" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PollMember" xlink:label="PollMember" />
+    <reference xlink:type="resource" xlink:label="reference_PollMember31" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PollMember" xlink:to="reference_PollMember31" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PostalBallotMember" xlink:label="PostalBallotMember" />
+    <reference xlink:type="resource" xlink:label="reference_PostalBallotMember32" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PostalBallotMember" xlink:to="reference_PostalBallotMember32" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DetailsOfVotingLineItems" xlink:label="DetailsOfVotingLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfVotingLineItems33" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfVotingLineItems" xlink:to="reference_DetailsOfVotingLineItems33" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfSharesHeld" xlink:label="NumberOfSharesHeld" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesHeld34" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesHeld" xlink:to="reference_NumberOfSharesHeld34" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfVotesPolled" xlink:label="NumberOfVotesPolled" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfVotesPolled35" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfVotesPolled" xlink:to="reference_NumberOfVotesPolled35" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PercentageOfVotesPolledOnOutstandingShares" xlink:label="PercentageOfVotesPolledOnOutstandingShares" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfVotesPolledOnOutstandingShares36" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfVotesPolledOnOutstandingShares" xlink:to="reference_PercentageOfVotesPolledOnOutstandingShares36" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfVotesInFavour" xlink:label="NumberOfVotesInFavour" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfVotesInFavour37" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfVotesInFavour" xlink:to="reference_NumberOfVotesInFavour37" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_NumberOfVotesAgainst" xlink:label="NumberOfVotesAgainst" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfVotesAgainst38" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfVotesAgainst" xlink:to="reference_NumberOfVotesAgainst38" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PercentageOfVotesInFavourOnVotesPolled" xlink:label="PercentageOfVotesInFavourOnVotesPolled" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfVotesInFavourOnVotesPolled39" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfVotesInFavourOnVotesPolled" xlink:to="reference_PercentageOfVotesInFavourOnVotesPolled39" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_PercentageOfVotesAgainstOnVotesPolled" xlink:label="PercentageOfVotesAgainstOnVotesPolled" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfVotesAgainstOnVotesPolled40" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfVotesAgainstOnVotesPolled" xlink:to="reference_PercentageOfVotesAgainstOnVotesPolled40" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_ResolutionsDomain" xlink:label="ResolutionsDomain" />
+    <reference xlink:type="resource" xlink:label="reference_ResolutionsDomain41" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ResolutionsDomain" xlink:to="reference_ResolutionsDomain41" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_ResolutionWiseDetailsAbstract" xlink:label="ResolutionWiseDetailsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_ResolutionWiseDetailsAbstract42" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ResolutionWiseDetailsAbstract" xlink:to="reference_ResolutionWiseDetailsAbstract42" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_CategoryOfShareholdersAxis" xlink:label="CategoryOfShareholdersAxis" />
+    <reference xlink:type="resource" xlink:label="reference_CategoryOfShareholdersAxis43" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CategoryOfShareholdersAxis" xlink:to="reference_CategoryOfShareholdersAxis43" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_TypeOfResolution" xlink:label="TypeOfResolution" />
+    <reference xlink:type="resource" xlink:label="reference_TypeOfResolution44" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TypeOfResolution" xlink:to="reference_TypeOfResolution44" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DateOfRecord" xlink:label="DateOfRecord" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfRecord45" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfRecord" xlink:to="reference_DateOfRecord45" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DisclosureOfNotesOnVotingResultsExplanatoryTextBlock" xlink:label="DisclosureOfNotesOnVotingResultsExplanatoryTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNotesOnVotingResultsExplanatoryTextBlock46" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNotesOnVotingResultsExplanatoryTextBlock" xlink:to="reference_DisclosureOfNotesOnVotingResultsExplanatoryTextBlock46" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_TotalVotingMember" xlink:label="TotalVotingMember" />
+    <reference xlink:type="resource" xlink:label="reference_TotalVotingMember47" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalVotingMember" xlink:to="reference_TotalVotingMember47" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_TotalShareholdingMember" xlink:label="TotalShareholdingMember" />
+    <reference xlink:type="resource" xlink:label="reference_TotalShareholdingMember48" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalShareholdingMember" xlink:to="reference_TotalShareholdingMember48" />
+    <loc xlink:type="locator" xlink:href="in-bse-voting-2016-01-12.xsd#in-bse-voting_DisclosureOfNotesOnResolutionExplantoryTextBlock" xlink:label="DisclosureOfNotesOnResolutionExplantoryTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNotesOnResolutionExplantoryTextBlock49" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Paragraph>Annexure 1</ref:Paragraph>
+      <ref:Section>Regulation 44(3)</ref:Section>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNotesOnResolutionExplantoryTextBlock" xlink:to="reference_DisclosureOfNotesOnResolutionExplantoryTextBlock49" />
+  </referenceLink>
+</linkbase>

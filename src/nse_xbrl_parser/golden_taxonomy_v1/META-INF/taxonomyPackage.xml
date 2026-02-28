@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Updated by Microvista Technologies Pvt. Ltd. -->
+<taxonomyPackage xmlns="http://xbrl.org/2018/taxonomy-package" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.xbrl.org/2018/taxonomy-package.xsd">
+	<identifier lang="en">Taxonomy-2022-06-30</identifier>
+	<name lang="en">Right Issue Listing Stage Taxonomy</name>
+	<description lang="en">Right Issue Listing Stage Taxonomy</description>
+	<version>1.0</version>
+	<publisher lang="en">Securities and Exchange Board of India</publisher>
+	<publisherURL>https://www.sebi.gov.in</publisherURL>
+	<entryPoints>
+		<entryPoint>
+			<name lang="en">in-capmkt</name>
+			<version>1.0</version>
+			<entryPointDocument href="../Right_Issue_Listing\in-capmkt-ent-2022-06-30.xsd" />
+		</entryPoint>
+	</entryPoints>
+</taxonomyPackage>
