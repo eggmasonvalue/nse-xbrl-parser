@@ -6,11 +6,12 @@ An open-source Python library to robustly parse National Stock Exchange (NSE) XB
 
 `nse-xbrl-parser` elegantly solves the infamous **"Missing Schema" / "Missing XSD"** problem. NSE XBRL filings often reference ancient taxonomy templates that have been wiped from their servers, or they `import` core schemas that are inexplicably omitted from the category-specific ZIP downloads.
 
-This library acts as a 100% offline parsing engine. It resolves all these references against an internal, heavily pruned `taxonomies` archive. In-memory URI injection ensures that your filesystem and production Docker containers remain completely clean.
+This library acts as a 100% offline parsing engine. It resolves all these references against an internal, hierarchical `taxonomies` archive. By temporarily locating the XML filing alongside the schema, it allows native relative resolution of all sub-dependencies, ensuring your production Docker containers remain completely clean and data is resolved with zero internet access.
 
 ## 🚀 Features
-- **Offline Resolution:** 44MB of historical NSE taxonomies bundled. No internet required during the `Arelle` schema validation phase.
-- **Read-Only Safe:** Parses files directly from memory without `shutil.copytree` mutations; perfectly compliant with locked-down Python package installations.
+- **Offline Resolution:** 44MB of comprehensive, hierarchical NSE taxonomies bundled. No internet required during the `Arelle` schema validation phase.
+- **Robust Resolution Engine:** Automatically handles complex `import` paths (e.g., `../core/types.xsd`) by enforcing local filesystem resolution.
+- **Read-Only Safe:** Performs temporary operations in a sandbox; perfectly compliant with locked-down Python package installations.
 - **Human-Readable Labels:** Preferentially maps obtuse XBRL QNames (e.g. `ns:Management`) back directly into their English equivalents (e.g. "Change in Management"). 
 - **Agent/LLM Optimized:** Strictly typed, fully documented, and absolutely silent (suppresses noisy stdout warnings emitted by processing engines). Output JSON is perfect for fundamental analysis bots.
 
