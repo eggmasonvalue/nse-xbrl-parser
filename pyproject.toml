@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "arelle-release>=2.38.17",
+    "bs4>=0.0.2",
+    "httpx[http2]>=0.28.1",
     "lxml>=5.3.0",
 ]
 

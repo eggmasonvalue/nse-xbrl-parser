@@ -11,8 +11,8 @@ from arelle import Cntlr
 
 logger = logging.getLogger(__name__)
 
-# The directory containing all historically assembled NSE taxonomies
-GOLDEN_TAXONOMY_DIR = Path(__file__).parent / "golden_taxonomy_v1"
+# Define paths relative to this file's location
+TAXONOMY_DIR = Path(__file__).parent / "taxonomies"
 
 def _find_schema_ref(xbrl_content: bytes) -> Optional[str]:
     """Find the schemaRef href inside the raw XBRL instance bytes."""
@@ -46,7 +46,8 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
     Crucially, to support absolute offline resolution without violating read-only 
     package installations (e.g. Docker, system-wide pip), this method dynamically 
     rewrites the `schemaRef` href attribute within the XML in-memory. It injects
-    an absolute `file://` URI pointing to the bundled `golden_taxonomy_v1` archive.
+    an absolute `file://` URI pointing to the bundled `taxonomies` archive.
+    If the requested schema is not packaged, it passes the original URI through unmodified.
     
     Args:
         xml_path (Path | str): Absolute or relative path to the XBRL instance document.
@@ -72,8 +73,8 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     logger.debug(f"Detected schemaRef: {schema_ref}")
 
-    # Resolve schema against the local bundled taxonomy archive
-    matching_schemas = list(GOLDEN_TAXONOMY_DIR.rglob(schema_ref))
+    # Search locally
+    matching_schemas = list(TAXONOMY_DIR.rglob(schema_ref))
     if not matching_schemas:
         raise FileNotFoundError(
             f"Schema '{schema_ref}' not found in the bundled taxonomy archive. "

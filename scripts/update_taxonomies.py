@@ -10,7 +10,7 @@ import shutil
 import glob
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger("GoldenTaxonomyBuilder")
+logger = logging.getLogger("TaxonomyBuilder")
 
 class NSEXBRLFetcher:
     """A minimal, independent HTTPX client to bypass NSE firewalls and download taxonomies."""
@@ -87,7 +87,7 @@ class NSEXBRLFetcher:
         logger.error(f"Exhausted all retries for {url}.")
 
 def main():
-    dest_dir = Path(__file__).parent.parent / "src" / "nse_xbrl_parser"/ "golden_taxonomy_v1"
+    dest_dir = Path(__file__).parent.parent / "src" / "nse_xbrl_parser"/ "taxonomies"
     dest_dir.mkdir(parents=True, exist_ok=True)
     
     fetcher = NSEXBRLFetcher()
@@ -145,7 +145,7 @@ def main():
                 if f.suffix.lower() not in [".xsd", ".xml"]:
                     continue
                 
-                # Maintain relative structure if desired, but classical flat Golden Taxonomy prefers flat
+                # Maintain relative structure if desired, but classical flat Taxonomy prefers flat
                 # However we must avoid namespace collisions, so keeping them exactly as extracted is safest.
                 # Actually, NSE schemas internally reference relatives like `../in-role-2023.xsd`, 
                 # meaning they must be entirely flattened into a root directory.

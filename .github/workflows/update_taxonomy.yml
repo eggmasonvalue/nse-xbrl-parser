@@ -1,4 +1,4 @@
-name: Update Golden Taxonomy
+name: Update Taxonomies
 
 on:
   schedule:
@@ -35,12 +35,12 @@ jobs:
 
       - name: Run Taxonomy Builder
         run: |
-          uv run python scripts/build_golden_taxonomy.py
+          uv run python scripts/update_taxonomies.py
 
       - name: Check for changes
         id: git-check
         run: |
-          git add src/nse_xbrl_parser/golden_taxonomy_v1/
+          git add src/nse_xbrl_parser/taxonomies/
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "No new schemas found."
@@ -54,7 +54,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "chore(taxonomy): auto-update golden taxonomy schemas"
+          git commit -m "chore(taxonomy): auto-update taxonomy schemas"
           git push
 
       # Note: PyPI Auto-Publishing should be handled by a separate release workflow

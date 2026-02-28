@@ -6,7 +6,7 @@ An open-source Python library to robustly parse National Stock Exchange (NSE) XB
 
 `nse-xbrl-parser` elegantly solves the infamous **"Missing Schema" / "Missing XSD"** problem. NSE XBRL filings often reference ancient taxonomy templates that have been wiped from their servers, or they `import` core schemas that are inexplicably omitted from the category-specific ZIP downloads.
 
-This library acts as a 100% offline parsing engine. It resolves all these references against an internal, heavily pruned `golden_taxonomy_v1` archive. In-memory URI injection ensures that your filesystem and production Docker containers remain completely clean.
+This library acts as a 100% offline parsing engine. It resolves all these references against an internal, heavily pruned `taxonomies` archive. In-memory URI injection ensures that your filesystem and production Docker containers remain completely clean.
 
 ## 🚀 Features
 - **Offline Resolution:** 44MB of historical NSE taxonomies bundled. No internet required during the `Arelle` schema validation phase.
