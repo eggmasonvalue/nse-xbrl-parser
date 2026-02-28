@@ -40,17 +40,29 @@ def _find_schema_ref(xbrl_content: bytes) -> Optional[str]:
     return None
 
 def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
-    """Parse an NSE XBRL XML file and return human-readable JSON facts.
+    """Parse an NSE XBRL XML document and yield a dictionary of human-readable facts.
     
-    This uses a dynamic absolute path rewriting strategy to force Arelle
-    to resolve schemas against the bundled golden_taxonomy_v1 archive,
-    without requiring massive disk copy operations.
+    This function utilizes the `arelle` engine to validate and extract facts. 
+    Crucially, to support absolute offline resolution without violating read-only 
+    package installations (e.g. Docker, system-wide pip), this method dynamically 
+    rewrites the `schemaRef` href attribute within the XML in-memory. It injects
+    an absolute `file://` URI pointing to the bundled `golden_taxonomy_v1` archive.
+    
+    Args:
+        xml_path (Path | str): Absolute or relative path to the XBRL instance document.
+        
+    Returns:
+        Dict[str, Any]: A dictionary where keys are the human-readable concept labels 
+                        (or QNames backoffs) and values are the corresponding facts.
+                        
+    Raises:
+        FileNotFoundError: If the source XML or required taxonomy schema does not exist.
+        ValueError: If the schemaRef cannot be detected or validation yields zero facts.
     """
     final_xbrl_path = Path(xml_path).absolute()
     if not final_xbrl_path.exists():
         raise FileNotFoundError(f"XBRL file not found: {final_xbrl_path}")
 
-    # Read the content to find the required schema
     with open(final_xbrl_path, "rb") as f:
         file_content = f.read()
 
@@ -60,49 +72,59 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     logger.debug(f"Detected schemaRef: {schema_ref}")
 
-    # Search for this exact schema inside our golden taxonomy
+    # Resolve schema against the local bundled taxonomy archive
     matching_schemas = list(GOLDEN_TAXONOMY_DIR.rglob(schema_ref))
     if not matching_schemas:
         raise FileNotFoundError(
-            f"Schema '{schema_ref}' not found in the golden taxonomy archive. "
-            "The NSE might have published a new taxonomy version."
+            f"Schema '{schema_ref}' not found in the bundled taxonomy archive. "
+            "The NSE may have published an unsupported taxonomy version."
         )
 
-    # Use the first match
     target_schema_path = matching_schemas[0].absolute()
-    logger.debug(f"Resolved schema locally to: {target_schema_path}")
+    
+    # We must rewrite the input XML to explicitly target the absolute `file://` URI
+    # of the located taxonomy schema, guaranteeing offline resolution regardless of CWD.
+    absolute_schema_uri = target_schema_path.as_uri()
+    
+    try:
+        content_str = file_content.decode("utf-8")
+        # Replace the relative href with our absolute URI
+        modified_xml_str = re.sub(
+            r'(schemaRef[^>]*href=["\'])[^"\']+(["\'])', 
+            rf'\g<1>{absolute_schema_uri}\g<2>', 
+            content_str,
+            count=1
+        )
+        modified_xml_bytes = modified_xml_str.encode("utf-8")
+    except UnicodeDecodeError as e:
+        logger.error(f"Failed to decode XML for href injection: {e}")
+        raise ValueError("XBRL file is not valid UTF-8, unable to inject schema URI.") from e
 
+    # Write the modified, self-contained XML to a pure system temporary directory
     with tempfile.TemporaryDirectory() as temp_dir_str:
         temp_dir = Path(temp_dir_str)
+        temp_xml_path = temp_dir / final_xbrl_path.name
         
-        # In order for Arelle to reliably resolve all relative imports embedded inside 
-        # the NSE schemas, the XML instance file MUST exist as a sibling to the 
-        # root entry-point schema.
-        # So we write a temporary copy of our target schema's directory tree explicitly 
-        # linked to our XML file.
-        # Wait - instead of copying the heavy taxonomy to the temporary file, we can
-        # securely copy the lightweight XML file into the permanent golden taxonomy tree temporarily!
-        temp_xml_in_golden = target_schema_path.parent / f"_temp_instance_{os.urandom(4).hex()}.xml"
-        
-        try:
-            # Drop the tiny XML filing right next to its schema deep in the golden vault
-            shutil.copy(final_xbrl_path, temp_xml_in_golden)
+        with open(temp_xml_path, "wb") as f_out:
+            f_out.write(modified_xml_bytes)
 
-            # Initialize Arelle
+        try:
+            # Initialize Arelle Controller (silent mode)
             cntlr = Cntlr.Cntlr(logFileName="logToBuffer")
             cntlr.modelManager.validate = True
 
-            # Process the instance
-            model_xbrl = cntlr.modelManager.load(str(temp_xml_in_golden))
+            # Load and validate the injected instance
+            model_xbrl = cntlr.modelManager.load(str(temp_xml_path))
 
             if model_xbrl is None or len(model_xbrl.facts) == 0:
                 raise ValueError("Arelle loaded model but found 0 facts. Schema validation may have failed.")
 
-            parsed_data = {}
+            parsed_data: Dict[str, Any] = {}
             for fact in model_xbrl.facts:
                 label = str(fact.qname)
 
                 if fact.concept is not None:
+                    # Prefer the standard en label, fallback to verbose
                     lbl = fact.concept.label(lang="en")
                     if not lbl:
                         lbl = fact.concept.label(
@@ -117,13 +139,8 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
             return parsed_data
 
         finally:
-            # Clean up the controller
             if 'cntlr' in locals():
-                if 'model_xbrl' in locals() and model_xbrl:
+                if 'model_xbrl' in locals() and model_xbrl is not None:
                     model_xbrl.close()
                 cntlr.close()
-            
-            # Clean up the injected XML from the golden taxonomy directory
-            if temp_xml_in_golden.exists():
-                os.remove(temp_xml_in_golden)
 
