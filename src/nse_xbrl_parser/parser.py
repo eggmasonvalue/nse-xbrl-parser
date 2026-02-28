@@ -1,5 +1,6 @@
 import logging
 import re
+import shutil
 import tempfile
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -81,65 +82,51 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     target_schema_path = matching_schemas[0].absolute()
     
-    # We must rewrite the input XML to explicitly target the absolute `file://` URI
-    # of the located taxonomy schema, guaranteeing offline resolution regardless of CWD.
-    absolute_schema_uri = target_schema_path.as_uri()
+    # To support both absolute and relative resolution without violating read-only 
+    # package installations, we copy the XBRL XML into the SAME directory as the 
+    # located schema. This allows Arelle to resolve the schema and all its 
+    # relative dependencies (e.g. ../core/...) natively.
+    temp_xml_path = target_schema_path.parent / f"_temp_{final_xbrl_path.name}"
     
     try:
-        content_str = file_content.decode("utf-8")
-        # Replace the relative href with our absolute URI
-        modified_xml_str = re.sub(
-            r'(schemaRef[^>]*href=["\'])[^"\']+(["\'])', 
-            rf'\g<1>{absolute_schema_uri}\g<2>', 
-            content_str,
-            count=1
-        )
-        modified_xml_bytes = modified_xml_str.encode("utf-8")
-    except UnicodeDecodeError as e:
-        logger.error(f"Failed to decode XML for href injection: {e}")
-        raise ValueError("XBRL file is not valid UTF-8, unable to inject schema URI.") from e
-
-    # Write the modified, self-contained XML to a pure system temporary directory
-    with tempfile.TemporaryDirectory() as temp_dir_str:
-        temp_dir = Path(temp_dir_str)
-        temp_xml_path = temp_dir / final_xbrl_path.name
+        shutil.copy2(final_xbrl_path, temp_xml_path)
         
-        with open(temp_xml_path, "wb") as f_out:
-            f_out.write(modified_xml_bytes)
+        # Initialize Arelle Controller (silent mode)
+        cntlr = Cntlr.Cntlr(logFileName="logToBuffer")
+        cntlr.modelManager.validate = True
 
-        try:
-            # Initialize Arelle Controller (silent mode)
-            cntlr = Cntlr.Cntlr(logFileName="logToBuffer")
-            cntlr.modelManager.validate = True
+        # Load and validate the local instance
+        model_xbrl = cntlr.modelManager.load(str(temp_xml_path))
 
-            # Load and validate the injected instance
-            model_xbrl = cntlr.modelManager.load(str(temp_xml_path))
+        if model_xbrl is None or len(model_xbrl.facts) == 0:
+            raise ValueError("Arelle loaded model but found 0 facts. Schema resolution or validation failed.")
 
-            if model_xbrl is None or len(model_xbrl.facts) == 0:
-                raise ValueError("Arelle loaded model but found 0 facts. Schema validation may have failed.")
+        parsed_data: Dict[str, Any] = {}
+        for fact in model_xbrl.facts:
+            label = str(fact.qname)
 
-            parsed_data: Dict[str, Any] = {}
-            for fact in model_xbrl.facts:
-                label = str(fact.qname)
+            if fact.concept is not None:
+                # Prefer the standard en label, fallback to verbose
+                lbl = fact.concept.label(lang="en")
+                if not lbl:
+                    lbl = fact.concept.label(
+                        lang="en",
+                        labelrole="http://www.xbrl.org/2003/role/verboseLabel",
+                    )
+                if lbl:
+                    label = lbl
 
-                if fact.concept is not None:
-                    # Prefer the standard en label, fallback to verbose
-                    lbl = fact.concept.label(lang="en")
-                    if not lbl:
-                        lbl = fact.concept.label(
-                            lang="en",
-                            labelrole="http://www.xbrl.org/2003/role/verboseLabel",
-                        )
-                    if lbl:
-                        label = lbl
+            parsed_data[label] = fact.value
 
-                parsed_data[label] = fact.value
+        return parsed_data
 
-            return parsed_data
+    finally:
+        # Cleanup the temporary copy in the taxonomy directory
+        if temp_xml_path.exists():
+            temp_xml_path.unlink()
 
-        finally:
-            if 'cntlr' in locals():
-                if 'model_xbrl' in locals() and model_xbrl is not None:
-                    model_xbrl.close()
-                cntlr.close()
+        if 'cntlr' in locals():
+            if 'model_xbrl' in locals() and model_xbrl is not None:
+                model_xbrl.close()
+            cntlr.close()
 

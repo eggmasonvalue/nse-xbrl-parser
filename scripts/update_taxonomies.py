@@ -144,19 +144,20 @@ def main():
                 if f.suffix.lower() not in [".xsd", ".xml"]:
                     continue
                 
-                # Maintain relative structure if desired, but classical flat Taxonomy prefers flat
-                # However we must avoid namespace collisions, so keeping them exactly as extracted is safest.
-                # Actually, NSE schemas internally reference relatives like `../in-role-2023.xsd`, 
-                # meaning they must be entirely flattened into a root directory.
-                rel_path = f.name
+                # Maintain the EXACT relative structure from the ZIP extraction.
+                # Many NSE schemas use relative paths like `../core/...` which only
+                # work if the folder hierarchy is preserved.
+                rel_path = f.relative_to(temp_dir)
                 target_path = dest_dir / rel_path
+                
+                # Ensure the subdirectory exists
+                target_path.parent.mkdir(parents=True, exist_ok=True)
                 
                 # Copy idempotently
                 if not target_path.exists():
                     shutil.copy2(f, target_path)
                     new_files_count += 1
                 else:
-                    # Check if file has changed (simple byte size check for speed, or overwrite if strictly newer)
                     # For safety, we'll aggressively overwrite existing schemas to ensure we have the very latest patch
                     shutil.copy2(f, target_path)
                     updated_files_count += 1
