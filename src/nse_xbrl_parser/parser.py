@@ -116,7 +116,10 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
                 if lbl:
                     label = lbl
 
-            parsed_data[label] = fact.value
+            if label in parsed_data:
+                parsed_data[label] = f"{parsed_data[label]}, {fact.value}"
+            else:
+                parsed_data[label] = fact.value
 
         return parsed_data
 
