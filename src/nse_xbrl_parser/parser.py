@@ -156,8 +156,8 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
             tree = ET.parse(final_xbrl_path)
             root = tree.getroot()
             
-            # Map existing parsed values to avoid duplicates
-            existing_values = set(str(v).strip() for v in parsed_data.values() if v)
+            # Track what Arelle successfully pulled so we don't duplicate its work
+            arelle_keys = set(parsed_data.keys())
             
             for elem in root.iter():
                 text = elem.text
@@ -175,12 +175,14 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
                     # Using regex to insert space before capitals
                     human_lbl = re.sub(r"([a-z])([A-Z])", r"\1 \2", tag).capitalize()
                     
+                    # If Arelle already mapped this property, trust Arelle's validation over our raw sweep
+                    if human_lbl in arelle_keys:
+                        continue
+                    
                     if human_lbl not in parsed_data:
                         parsed_data[human_lbl] = text
                     else:
-                        # Only append if it's genuinely a new list value to avoid duplicating Arelle facts
-                        if text not in str(parsed_data[human_lbl]).split(", "):
-                            parsed_data[human_lbl] = f"{parsed_data[human_lbl]}, {text}"
+                        parsed_data[human_lbl] = f"{parsed_data[human_lbl]}, {text}"
         except Exception as e:
             logger.debug(f"Raw XML fallback extraction failed: {e}")
 
