@@ -74,6 +74,33 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     # Search locally
     matching_schemas = list(TAXONOMY_DIR.rglob(schema_ref))
+    
+    if len(matching_schemas) > 1:
+        # Resolve collisions by looking at NSE XML filename abbreviations
+        xml_name = final_xbrl_path.name.lower()
+        refined = []
+        if "qip" in xml_name:
+            if "_ls" in xml_name:
+                refined = [s for s in matching_schemas if "QIP_LISTING" in str(s.parent).upper()]
+            elif "_ip" in xml_name:
+                refined = [s for s in matching_schemas if "QIP_IP" in str(s.parent).upper()]
+            else:
+                refined = [s for s in matching_schemas if "QIP" in str(s.parent).upper()]
+        elif "pref" in xml_name:
+            if "_ls" in xml_name:
+                refined = [s for s in matching_schemas if "PREF" in str(s.parent).upper() and "LISTING" in str(s.parent).upper()]
+            elif "_ip" in xml_name:
+                refined = [s for s in matching_schemas if "PREF" in str(s.parent).upper() and "IP" in str(s.parent).upper()]
+            else:
+                refined = [s for s in matching_schemas if "PREF" in str(s.parent).upper()]
+        elif "adr" in xml_name or "gdr" in xml_name:
+            refined = [s for s in matching_schemas if "ADR" in str(s.parent).upper() or "GDR" in str(s.parent).upper()]
+        elif "right" in xml_name:
+            refined = [s for s in matching_schemas if "RIGHT" in str(s.parent).upper()]
+            
+        if refined:
+            matching_schemas = refined
+            
     if not matching_schemas:
         raise FileNotFoundError(
             f"Schema '{schema_ref}' not found in the bundled taxonomy archive. "
@@ -120,6 +147,42 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
                 parsed_data[label] = f"{parsed_data[label]}, {fact.value}"
             else:
                 parsed_data[label] = fact.value
+
+        # Extreme Fallback: NSE schemas often contain un-taxonomized or misspelled items 
+        # (e.g. 'CategoryOfAllotees', 'PercentageOfTotalIssueSize') that Arelle explicitly 
+        # drops. We will use a fast raw XML sweep to rescue these fields.
+        try:
+            import xml.etree.ElementTree as ET
+            tree = ET.parse(final_xbrl_path)
+            root = tree.getroot()
+            
+            # Map existing parsed values to avoid duplicates
+            existing_values = set(str(v).strip() for v in parsed_data.values() if v)
+            
+            for elem in root.iter():
+                text = elem.text
+                if text and text.strip():
+                    text = text.strip()
+                    tag = elem.tag.split("}")[-1]
+                    
+                    # Ignore purely structural/XBRL internal tags
+                    if tag in ('context', 'entity', 'identifier', 'period', 'instant', 
+                               'startDate', 'endDate', 'segment', 'explicitMember', 
+                               'typedMember', 'unit', 'unitDenominator', 'unitNumerator', 'xbrl'):
+                        continue
+                        
+                    # Create a human readable label, e.g. "CategoryOfAllotees" -> "Category of allotees"
+                    # Using regex to insert space before capitals
+                    human_lbl = re.sub(r"([a-z])([A-Z])", r"\1 \2", tag).capitalize()
+                    
+                    if human_lbl not in parsed_data:
+                        parsed_data[human_lbl] = text
+                    else:
+                        # Only append if it's genuinely a new list value to avoid duplicating Arelle facts
+                        if text not in str(parsed_data[human_lbl]).split(", "):
+                            parsed_data[human_lbl] = f"{parsed_data[human_lbl]}, {text}"
+        except Exception as e:
+            logger.debug(f"Raw XML fallback extraction failed: {e}")
 
         return parsed_data
 
