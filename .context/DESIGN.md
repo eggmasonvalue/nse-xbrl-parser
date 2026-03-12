@@ -9,7 +9,7 @@
 - **Human Readable output**: Prioritize standard and verbose english labels over obtuse XML QNames.
 - **Intelligent Multi-Schema Merging (Resolved Technical Debt)**: Addressed the issue where identical root filenames (e.g. `in-capmkt-ent-2022-06-30.xsd`) inside the NSE archive caused Arelle validations to fail. We iterate and run Arelle against *all* matching XSD schemas across the different taxonomy directories, merging the parsed facts into a single unified result.
 - **Type-safe Array Handling (Resolved Technical Debt)**: When duplicate facts (like `NameOfAllottee`) appear, the parser now natively stores them as `List[str]` in the output dictionary instead of dissolving the array boundaries via string concatenation.
-- **Removed Fallback Hack (Resolved Technical Debt)**: Purged the fast `xml.etree.ElementTree` fallback iteration. The robust multi-schema validation guarantees that facts are cleanly extracted using proper schema resolution instead of relying on string formatting guesses.
+- **Optimized Fallback Extraction**: Maintained the raw `xml.etree.ElementTree` fallback strictly for un-taxonomized edge cases (e.g. NSE frequently drops `CategoryOfAllotees` outright from its internal XSD dictionaries). The fallback now strictly respects array boundaries and prevents string corruption.
 
 ### Design Decisions: Multi-Schema Merging vs. Namespace Routing
 When resolving the Intelligent Schema Resolution issue, two approaches were evaluated:

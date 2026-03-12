@@ -4,7 +4,7 @@
 ### Changed
 - **Multi-Schema Validation Engine**: Completely replaced the hacky filename-based schema collision resolution. `parse_xbrl_file` now iterates through *all* matching schema files in the taxonomy archive, validates the instance document against each of them, and securely merges the output. This robustly bypasses NSE-introduced spelling inconsistencies and omitted elements without relying on namespace targeting.
 - **Array Value Resolution**: Replaced string-concatenation for repeated XBRL tags. `parse_xbrl_file` now correctly aggregates multiple identical concepts (like `Name of allottee`) into a Python `List[str]` instead of a single comma-separated string.
-- **Removed Fallback Sweep**: Completely removed the raw `xml.etree.ElementTree` fallback rescue loop. The multi-schema merging engine guarantees sufficient coverage to natively rely on Arelle's validation logic.
+- **Optimized Fallback Sweep**: Reinstated and refined the `xml.etree.ElementTree` fallback loop to rescue fully un-taxonomized fields missing from NSE XSD definitions (e.g., `CategoryOfAllotees`, `PercentageOfTotalIssueSize`). The sweep now correctly parses identical tags into `List[str]` arrays without concatenating them, preventing corrupted outputs.
 
 ## [0.2.0] - 2026-02-28
 ### Fixed
