@@ -7,9 +7,17 @@ import urllib.parse
 import zipfile
 import tempfile
 import shutil
+import re
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("TaxonomyBuilder")
+
+
+def _safe_archive_dirname(url: str) -> str:
+    """Create a stable directory name for an extracted archive."""
+    raw_name = Path(urllib.parse.unquote(urllib.parse.urlparse(url).path)).stem
+    safe_name = re.sub(r'[<>:"/\\\\|?*]', "_", raw_name).strip()
+    return safe_name or "taxonomy_archive"
 
 class NSEXBRLFetcher:
     """A minimal, independent HTTPX client to bypass NSE firewalls and download taxonomies."""
@@ -101,9 +109,11 @@ def main():
         temp_dir = Path(temp_dir_str)
         
         # Download Phase
-        for idx, z_url in enumerate(zip_links):
-            zip_name = z_url.split("/")[-1]
-            temp_zip_path = temp_dir / zip_name
+        for z_url in zip_links:
+            zip_name = urllib.parse.unquote(z_url.split("/")[-1])
+            archive_root = temp_dir / _safe_archive_dirname(z_url)
+            archive_root.mkdir(parents=True, exist_ok=True)
+            temp_zip_path = archive_root / zip_name
             fetcher.download_file(z_url, temp_zip_path)
             
             # Extract main ZIP
@@ -111,19 +121,21 @@ def main():
                 logger.info(f"Extracting main ZIP: {zip_name}")
                 try:
                     with zipfile.ZipFile(temp_zip_path, 'r') as z:
-                        z.extractall(temp_dir)
+                        z.extractall(archive_root)
                 except zipfile.BadZipFile:
                     logger.error(f"Corrupted downloaded ZIP: {zip_name}")
-                
-        # Nested Extraction Phase
-        nested_zips = list(temp_dir.rglob("*.zip"))
-        logger.info(f"Extracting {len(nested_zips)} nested ZIPs...")
-        for nested_zip in nested_zips:
-            try:
-                with zipfile.ZipFile(nested_zip, 'r') as z:
-                    z.extractall(nested_zip.parent)
-            except zipfile.BadZipFile:
-                logger.error(f"Corrupted nested ZIP: {nested_zip.name}")
+
+                # Nested Extraction Phase
+                nested_zips = list(archive_root.rglob("*.zip"))
+                logger.info(f"Extracting {len(nested_zips)} nested ZIPs from {archive_root.name}...")
+                for nested_zip in nested_zips:
+                    if nested_zip == temp_zip_path:
+                        continue
+                    try:
+                        with zipfile.ZipFile(nested_zip, 'r') as z:
+                            z.extractall(nested_zip.parent)
+                    except zipfile.BadZipFile:
+                        logger.error(f"Corrupted nested ZIP: {nested_zip.name}")
 
         # Idempotent Copy Phase (Additive Only)
         # We only want .xsd (schema) and .xml (linkbases). Delete Excel Bloat (.xlsx, .xlsm, .xls)

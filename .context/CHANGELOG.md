@@ -4,7 +4,11 @@
 ### Changed
 - **Multi-Schema Validation Engine**: Completely replaced the hacky filename-based schema collision resolution. `parse_xbrl_file` now iterates through *all* matching schema files in the taxonomy archive, validates the instance document against each of them, and securely merges the output. This robustly bypasses NSE-introduced spelling inconsistencies and omitted elements without relying on namespace targeting.
 - **Array Value Resolution**: Replaced string-concatenation for repeated XBRL tags. `parse_xbrl_file` now correctly aggregates multiple identical concepts (like `Name of allottee`) into a Python `List[str]` instead of a single comma-separated string.
-- **Optimized Fallback Sweep**: Reinstated and refined the `xml.etree.ElementTree` fallback loop to rescue fully un-taxonomized fields missing from NSE XSD definitions (e.g., `CategoryOfAllotees`, `PercentageOfTotalIssueSize`). The sweep now correctly parses identical tags into `List[str]` arrays without concatenating them, preventing corrupted outputs.
+- **Archive-Scoped Taxonomy Extraction**: `update_taxonomies.py` now extracts each NSE ZIP into its own stable archive directory before merging into `src/nse_xbrl_parser/taxonomies`. This prevents cross-archive overwrites of shared relative paths such as `core/in-capmkt.xsd`.
+- **Namespace Compatibility Filtering**: `parse_xbrl_file` now skips entry-point schema candidates whose local relative imports already disagree with their declared namespaces, reducing noisy failed Arelle loads from damaged bundled releases.
+### Fixed
+- **Removed Raw XML Fallback**: `parse_xbrl_file` again fails fast when Arelle resolves zero facts. This keeps the parser taxonomy-driven and makes broken bundled schema dependencies visible instead of masking them with a sweep fallback.
+- **Fraud Taxonomy Packaging**: Added the upstream `Taxonomy - Announcement for Fraud or Default` archive as an isolated bundled release so `in-capmkt-ent-2024-02-29.xsd` resolves against the correct `2024-02-29` core schemas.
 
 ## [0.2.0] - 2026-02-28
 ### Fixed

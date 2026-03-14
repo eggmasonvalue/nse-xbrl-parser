@@ -1,7 +1,6 @@
 import logging
 import re
 import shutil
-import tempfile
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -12,6 +11,50 @@ logger = logging.getLogger(__name__)
 
 # Define paths relative to this file's location
 TAXONOMY_DIR = Path(__file__).parent / "taxonomies"
+
+
+def _read_target_namespace(schema_path: Path) -> Optional[str]:
+    """Read a schema file's targetNamespace without loading Arelle."""
+    try:
+        import xml.etree.ElementTree as ET
+
+        root = ET.parse(schema_path).getroot()
+        return root.attrib.get("targetNamespace")
+    except Exception as e:
+        logger.debug(f"Unable to read targetNamespace from {schema_path}: {e}")
+        return None
+
+
+def _schema_has_matching_local_imports(schema_path: Path) -> bool:
+    """Check whether a candidate schema's relative local imports match their declared namespaces."""
+    try:
+        import xml.etree.ElementTree as ET
+
+        root = ET.parse(schema_path).getroot()
+        has_local_import = False
+
+        for elem in root.iter():
+            if not elem.tag.endswith("import"):
+                continue
+
+            namespace = elem.attrib.get("namespace")
+            schema_location = elem.attrib.get("schemaLocation")
+            if not namespace or not schema_location or "://" in schema_location:
+                continue
+
+            imported_path = (schema_path.parent / schema_location).resolve()
+            if not imported_path.exists():
+                continue
+
+            has_local_import = True
+            imported_namespace = _read_target_namespace(imported_path)
+            if imported_namespace != namespace:
+                return False
+
+        return has_local_import
+    except Exception as e:
+        logger.debug(f"Unable to inspect local imports for {schema_path}: {e}")
+        return False
 
 def _find_schema_ref(xbrl_content: bytes) -> Optional[str]:
     """Find the schemaRef href inside the raw XBRL instance bytes."""
@@ -80,6 +123,10 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
             f"Schema '{schema_ref}' not found in the bundled taxonomy archive. "
             "The NSE may have published an unsupported taxonomy version."
         )
+
+    compatible_schemas = [path for path in matching_schemas if _schema_has_matching_local_imports(path)]
+    if compatible_schemas:
+        matching_schemas = compatible_schemas
 
     # We will aggregate all facts across every matching schema definition
     parsed_data: Dict[str, Any] = {}
@@ -162,65 +209,5 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     if not found_facts:
         raise ValueError("Arelle loaded model but found 0 facts. Schema resolution or validation failed.")
-
-    # Extreme Fallback: NSE schemas often contain un-taxonomized or misspelled items
-    # (e.g. 'CategoryOfAllotees', 'PercentageOfTotalIssueSize') that Arelle explicitly
-    # drops entirely across all taxonomy versions. We will use a fast raw XML sweep
-    # to rescue these fields.
-    try:
-        import xml.etree.ElementTree as ET
-        tree = ET.parse(final_xbrl_path)
-        root = tree.getroot()
-
-        # Track what Arelle successfully pulled so we don't duplicate its work
-        arelle_keys = set([k.lower().replace(" ", "") for k in parsed_data.keys()])
-
-        # Track raw fallback uniqueness via context and label to safely build arrays
-        unique_fallback_facts = set()
-
-        for elem in root.iter():
-            text = elem.text
-            if text and text.strip():
-                text = text.strip()
-                tag = elem.tag.split("}")[-1]
-
-                # Ignore purely structural/XBRL internal tags
-                if tag in ('context', 'entity', 'identifier', 'period', 'instant',
-                           'startDate', 'endDate', 'segment', 'explicitMember',
-                           'typedMember', 'unit', 'unitDenominator', 'unitNumerator', 'xbrl'):
-                    continue
-
-                # Create a human readable label, e.g. "CategoryOfAllotees" -> "Category of allotees"
-                human_lbl = ""
-                for i, char in enumerate(tag):
-                    if i > 0 and char.isupper() and tag[i-1].islower():
-                        human_lbl += " " + char
-                    else:
-                        human_lbl += char
-                human_lbl = human_lbl.capitalize()
-
-                # If Arelle already mapped this property, trust Arelle's validation over our raw sweep
-                if human_lbl.lower().replace(" ", "") in arelle_keys:
-                    continue
-
-                # We need to distinguish duplicates within the fallback itself (like arrays of CategoryOfAllotees).
-                # We can use the element's contextRef attribute.
-                ctx_ref = elem.attrib.get("contextRef")
-                if ctx_ref:
-                    fact_key = (human_lbl, ctx_ref, text)
-                    if fact_key in unique_fallback_facts:
-                        continue
-                    unique_fallback_facts.add(fact_key)
-
-                if human_lbl not in parsed_data:
-                    parsed_data[human_lbl] = text
-                else:
-                    existing = parsed_data[human_lbl]
-                    if isinstance(existing, list):
-                        existing.append(text)
-                    else:
-                        parsed_data[human_lbl] = [existing, text]
-    except Exception as e:
-        logger.debug(f"Raw XML fallback extraction failed: {e}")
 
     return parsed_data
