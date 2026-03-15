@@ -4,8 +4,9 @@ import shutil
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-# Arelle initialization requires setting the plugin dir before import if needed
-from arelle import Cntlr
+# Arelle session management
+from arelle.api.Session import Session
+from arelle.RuntimeOptions import RuntimeOptions
 
 from .taxonomy_store import (
     TAXONOMY_DIR,
@@ -205,75 +206,76 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     found_facts = False
 
-    for target_schema_path in matching_schemas:
-        target_schema_path = target_schema_path.absolute()
+    with Session() as session:
+        for target_schema_path in matching_schemas:
+            target_schema_path = target_schema_path.absolute()
 
-        # To support both absolute and relative resolution without violating read-only
-        # package installations, we copy the XBRL XML into the SAME directory as the
-        # located schema. This allows Arelle to resolve the schema and all its
-        # relative dependencies (e.g. ../core/...) natively.
-        temp_xml_path = target_schema_path.parent / f"_temp_{final_xbrl_path.name}"
+            # To support both absolute and relative resolution without violating read-only
+            # package installations, we copy the XBRL XML into the SAME directory as the
+            # located schema. This allows Arelle to resolve the schema and all its
+            # relative dependencies (e.g. ../core/...) natively.
+            temp_xml_path = target_schema_path.parent / f"_temp_{final_xbrl_path.name}"
 
-        cntlr = None
-        model_xbrl = None
-        try:
-            shutil.copy2(final_xbrl_path, temp_xml_path)
+            try:
+                shutil.copy2(final_xbrl_path, temp_xml_path)
 
-            # Initialize Arelle Controller (silent mode)
-            cntlr = Cntlr.Cntlr(logFileName="logToBuffer")
-            cntlr.modelManager.validate = True
+                options = RuntimeOptions(
+                    entrypointFile=str(temp_xml_path),
+                    logFile="logToBuffer",
+                    keepOpen=True,
+                    validate=True,
+                )
 
-            # Load and validate the local instance
-            model_xbrl = cntlr.modelManager.load(str(temp_xml_path))
+                session.run(options)
+                models = session.get_models()
+                model_xbrl = models[-1] if models else None
 
-            if model_xbrl is None or len(model_xbrl.facts) == 0:
-                logger.debug(f"Arelle loaded model for {target_schema_path} but found 0 facts.")
-                continue
+                if model_xbrl is None or len(model_xbrl.facts) == 0:
+                    try:
+                        arelle_logs = session.get_logs("text")
+                        logger.error(f"Arelle loaded model for {target_schema_path} but found 0 facts. Logs: {arelle_logs}")
+                    except Exception:
+                        logger.error(f"Arelle loaded model for {target_schema_path} but found 0 facts.")      
+                    continue
 
-            found_facts = True
-            for fact in model_xbrl.facts:
-                label = str(fact.qname)
+                found_facts = True
+                for fact in model_xbrl.facts:
+                    label = str(fact.qname)
 
-                if fact.concept is not None:
-                    # Prefer the standard en label, fallback to verbose
-                    lbl = fact.concept.label(lang="en")
-                    if not lbl:
-                        lbl = fact.concept.label(
-                            lang="en",
-                            labelrole="http://www.xbrl.org/2003/role/verboseLabel",
-                        )
-                    if lbl:
-                        label = lbl
+                    if fact.concept is not None:
+                        # Prefer the standard en label, fallback to verbose
+                        lbl = fact.concept.label(lang="en")
+                        if not lbl:
+                            lbl = fact.concept.label(
+                                lang="en",
+                                labelrole="http://www.xbrl.org/2003/role/verboseLabel",
+                            )
+                        if lbl:
+                            label = lbl
 
-                val = fact.value
-                context_id = fact.contextID if hasattr(fact, "contextID") else None
+                    val = fact.value
+                    context_id = fact.contextID if hasattr(fact, "contextID") else None
 
-                fact_key = (label, context_id, val)
+                    fact_key = (label, context_id, val)
 
-                if fact_key not in unique_facts:
-                    unique_facts.add(fact_key)
+                    if fact_key not in unique_facts:
+                        unique_facts.add(fact_key)
 
-                    if label in parsed_data:
-                        existing = parsed_data[label]
-                        if isinstance(existing, list):
-                            existing.append(val)
+                        if label in parsed_data:
+                            existing = parsed_data[label]
+                            if isinstance(existing, list):
+                                existing.append(val)
+                            else:
+                                parsed_data[label] = [existing, val]
                         else:
-                            parsed_data[label] = [existing, val]
-                    else:
-                        parsed_data[label] = val
+                            parsed_data[label] = val
 
-        except Exception as e:
-            logger.debug(f"Validation failed for schema {target_schema_path}: {e}")
+            except Exception as e:
+                logger.debug(f"Validation failed for schema {target_schema_path}: {e}")
 
-        finally:
-            # Cleanup the temporary copy in the taxonomy directory
-            if temp_xml_path.exists():
-                temp_xml_path.unlink()
-
-            if model_xbrl is not None:
-                model_xbrl.close()
-            if cntlr is not None:
-                cntlr.close()
+            finally:                # Cleanup the temporary copy in the taxonomy directory
+                if temp_xml_path.exists():
+                    temp_xml_path.unlink()
 
     if not found_facts:
         raise ValueError("Arelle loaded model but found 0 facts. Schema resolution or validation failed.")

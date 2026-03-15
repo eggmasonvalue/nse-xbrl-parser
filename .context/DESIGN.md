@@ -5,7 +5,7 @@
 - **Versioned Family Storage**: `taxonomy_store.py` now stores releases directly under `taxonomies/<family>/<release_id>/...`, with each release carrying its own `core/` and optional `META-INF/`.
 - **Append-Only Updater**: `update_taxonomies.py` now downloads and extracts each NSE ZIP in isolation, fingerprints detected release units using `family + core + file contents`, and only installs genuinely new releases for that family.
 - **Read-Only Compliance**: Safe for Docker containers and system-wide pip installs; the parser relies on a temporary colocated XML copy rather than rewriting installed package files.
-- **Arelle Integration**: Wrapped the complex `arelle` initialization to run silently and efficiently process the facts array against label stores.
+- **Arelle Integration**: Wrapped the `arelle` initialization to run silently using the modern `arelle.api.Session` context manager and `RuntimeOptions`, efficiently processing the facts array against label stores.
 - **Human Readable output**: Prioritize standard and verbose english labels over obtuse XML QNames.
 - **Intelligent Multi-Schema Merging (Resolved Technical Debt)**: Addressed the issue where identical root filenames (e.g. `in-capmkt-ent-2022-06-30.xsd`) inside the NSE archive caused Arelle validations to fail. We iterate and run Arelle against *all* matching XSD schemas across the different taxonomy directories, merging the parsed facts into a single unified result.
 - **Fast Indexed Discovery**: `collect_versioned_schema_candidates` leverages the `index.json` manifest to locate matching entry points instantly without executing slow recursive filesystem globs.
