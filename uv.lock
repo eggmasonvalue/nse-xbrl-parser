@@ -17,7 +17,7 @@ wheels = [
 
 [[package]]
 name = "arelle-release"
-version = "2.38.17"
+version = "2.38.21"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bottle" },
@@ -36,9 +36,9 @@ dependencies = [
     { name = "truststore" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cf/f9/52398e090f0668215d2684841d90e12a8547618ab35466e45820ea36c98b/arelle_release-2.38.17.tar.gz", hash = "sha256:1530d5e473bd4d00296e7480512de148cbaf85af976e8948b623cb2496522c6d", size = 5316295, upload-time = "2026-02-24T04:35:59.665Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7e/2f/17b5a882304225817455ab3d9e73064ba91254cd61e8420f2b5bd5db08a6/arelle_release-2.38.21.tar.gz", hash = "sha256:863be87368a558dfa9b442925d5fb4c4e525a6b6d8fbf7f7e4a4f9ba7d6e9098", size = 5321067, upload-time = "2026-03-11T19:58:25.206Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/87/b8/b61c73c3d9dc4c5b56171b625bbc6405f2db95462663b0f0adf7d20d4ac6/arelle_release-2.38.17-py3-none-any.whl", hash = "sha256:2fc8c0c6df38c992a8cf84b64b2daab4b761e8966f02e264dd64b21669d4546f", size = 5724346, upload-time = "2026-02-24T04:35:57.497Z" },
+    { url = "https://files.pythonhosted.org/packages/2e/d3/7bebd3b80cddbef4600224c4afff4bb88a4e64df0b558fd25a7725a0bf98/arelle_release-2.38.21-py3-none-any.whl", hash = "sha256:b0e9418fa4b951d129a27512f71851fc5fda282966bac089db1750d23ff2cfa3", size = 5730773, upload-time = "2026-03-11T19:58:23.302Z" },
 ]
 
 [[package]]
@@ -423,7 +423,7 @@ wheels = [
 [[package]]
 name = "nse-xbrl-parser"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "arelle-release" },
     { name = "bs4" },
@@ -440,7 +440,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "arelle-release", specifier = ">=2.38.17" },
+    { name = "arelle-release", specifier = ">=2.38.21,<2.39.0" },
     { name = "bs4", specifier = ">=0.0.2" },
     { name = "httpx", extras = ["http2"], specifier = ">=0.28.1" },
     { name = "lxml", specifier = ">=5.3.0" },

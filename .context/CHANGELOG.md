@@ -4,11 +4,15 @@
 ### Changed
 - **Multi-Schema Validation Engine**: Completely replaced the hacky filename-based schema collision resolution. `parse_xbrl_file` now iterates through *all* matching schema files in the taxonomy archive, validates the instance document against each of them, and securely merges the output. This robustly bypasses NSE-introduced spelling inconsistencies and omitted elements without relying on namespace targeting.
 - **Array Value Resolution**: Replaced string-concatenation for repeated XBRL tags. `parse_xbrl_file` now correctly aggregates multiple identical concepts (like `Name of allottee`) into a Python `List[str]` instead of a single comma-separated string.
-- **Archive-Scoped Taxonomy Extraction**: `update_taxonomies.py` now extracts each NSE ZIP into its own stable archive directory before merging into `src/nse_xbrl_parser/taxonomies`. This prevents cross-archive overwrites of shared relative paths such as `core/in-capmkt.xsd`.
-- **Namespace Compatibility Filtering**: `parse_xbrl_file` now skips entry-point schema candidates whose local relative imports already disagree with their declared namespaces, reducing noisy failed Arelle loads from damaged bundled releases.
+- **Versioned Taxonomy Storage**: Added `src/nse_xbrl_parser/taxonomy_store.py` and switched taxonomy storage to `src/nse_xbrl_parser/taxonomies/<family>/<release_id>/...`, with one release ID per family and no shared authoritative top-level `core/`.
+- **Append-Only Taxonomy Updates**: `scripts/update_taxonomies.py` now downloads each NSE ZIP in isolation, discovers family release units, fingerprints `family + core + contents`, and appends only genuinely new releases instead of overwriting flattened folders.
+- **Versioned-First Parsing**: `parse_xbrl_file` now searches versioned family releases before the flat taxonomy tree and requires all local relative imports to exist and namespace-match before a candidate schema is considered compatible.
+- **Workflow Verification**: The taxonomy update GitHub workflow now syncs the project environment and runs `pytest` after refreshing taxonomies, preventing scheduled commits from publishing a broken bundle.
 ### Fixed
+- **Python 3.12 Compatibility**: Updated `arelle-release` to `>=2.39.1` to fix a `MutableSet` import error in `arelle/PythonUtil.py` that occurred on Python 3.10+.
 - **Removed Raw XML Fallback**: `parse_xbrl_file` again fails fast when Arelle resolves zero facts. This keeps the parser taxonomy-driven and makes broken bundled schema dependencies visible instead of masking them with a sweep fallback.
 - **Fraud Taxonomy Packaging**: Added the upstream `Taxonomy - Announcement for Fraud or Default` archive as an isolated bundled release so `in-capmkt-ent-2024-02-29.xsd` resolves against the correct `2024-02-29` core schemas.
+- **QIP Listing Coverage**: Refreshing taxonomies now brings in the latest archive-scoped QIP bundle, restoring missing facts such as `Category of allotees`, `Percentage of total issue size`, `Date of BID opening`, and `Relavant date`.
 
 ## [0.2.0] - 2026-02-28
 ### Fixed

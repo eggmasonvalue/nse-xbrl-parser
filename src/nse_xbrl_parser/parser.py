@@ -7,10 +7,13 @@ from typing import Any, Dict, Optional
 # Arelle initialization requires setting the plugin dir before import if needed
 from arelle import Cntlr
 
-logger = logging.getLogger(__name__)
+from .taxonomy_store import (
+    TAXONOMY_DIR,
+    collect_flat_schema_candidates,
+    collect_versioned_schema_candidates,
+)
 
-# Define paths relative to this file's location
-TAXONOMY_DIR = Path(__file__).parent / "taxonomies"
+logger = logging.getLogger(__name__)
 
 
 def _read_target_namespace(schema_path: Path) -> Optional[str]:
@@ -44,7 +47,7 @@ def _schema_has_matching_local_imports(schema_path: Path) -> bool:
 
             imported_path = (schema_path.parent / schema_location).resolve()
             if not imported_path.exists():
-                continue
+                return False
 
             has_local_import = True
             imported_namespace = _read_target_namespace(imported_path)
@@ -85,11 +88,9 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
     """Parse an NSE XBRL XML document and yield a dictionary of human-readable facts.
 
     This function utilizes the `arelle` engine to validate and extract facts.
-    Crucially, to support absolute offline resolution without violating read-only
-    package installations (e.g. Docker, system-wide pip), this method dynamically
-    rewrites the `schemaRef` href attribute within the XML in-memory. It injects
-    an absolute `file://` URI pointing to the bundled `taxonomies` archive.
-    If the requested schema is not packaged, it passes the original URI through unmodified.
+    It searches bundled versioned taxonomy releases first, falls back to the
+    current flat taxonomy tree when necessary, and then copies the instance XML
+    into the selected schema directory so Arelle can resolve relative imports locally.
 
     Args:
         xml_path (Path | str): Absolute or relative path to the XBRL instance document.
@@ -115,8 +116,10 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     logger.debug(f"Detected schemaRef: {schema_ref}")
 
-    # Search locally
-    matching_schemas = list(TAXONOMY_DIR.rglob(schema_ref))
+    # Search versioned releases first, then fall back to the flat taxonomy tree.
+    matching_schemas = collect_versioned_schema_candidates(schema_ref)
+    if not matching_schemas:
+        matching_schemas = collect_flat_schema_candidates(schema_ref, TAXONOMY_DIR)
 
     if not matching_schemas:
         raise FileNotFoundError(

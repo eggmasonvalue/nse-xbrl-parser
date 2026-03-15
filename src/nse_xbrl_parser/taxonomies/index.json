@@ -1,0 +1,1948 @@
+{
+  "releases": [
+    {
+      "entry_points": [
+        "ADR_GDR_IP/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "ADR_GDR_IP",
+      "files": [
+        "ADR_GDR_IP/in-capmkt-def-2022-06-30.xml",
+        "ADR_GDR_IP/in-capmkt-ent-2022-06-30.xsd",
+        "ADR_GDR_IP/in-capmkt-pre-2022-06-30.xml",
+        "ADR_GDR_IP/in-capmkt-roles-2022-06-30.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "2893ac7a26f4759998b96aeaefefc68c8dca5f0c5670c1af1801f894d1a6c05b",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/ADR_GDR_IP/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "ADR_GDR_Taxonomy_20260227174227",
+      "release_id": "2022-06-30__2893ac7a",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\ADR_GDR_Taxonomy_20260227174227",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/ADR_GDR_Taxonomy_20260227174227.zip",
+      "stored_path": "ADR_GDR_IP/2022-06-30__2893ac7a",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/ADR_GDR_IP/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "ADR_GDR_Listing/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "ADR_GDR_Listing",
+      "files": [
+        "ADR_GDR_Listing/in-capmkt-def-2022-06-30.xml",
+        "ADR_GDR_Listing/in-capmkt-ent-2022-06-30.xsd",
+        "ADR_GDR_Listing/in-capmkt-pre-2022-06-30.xml",
+        "ADR_GDR_Listing/in-capmkt-roles-2022-06-30.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "fbfc27ad359ba20c1f565f12c1982124e9782fa370893471eeb89e223010e743",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/ADR_GDR_Listing/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "ADR_GDR_Taxonomy_20260227174227",
+      "release_id": "2022-06-30__fbfc27ad",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\ADR_GDR_Taxonomy_20260227174227",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/ADR_GDR_Taxonomy_20260227174227.zip",
+      "stored_path": "ADR_GDR_Listing/2022-06-30__fbfc27ad",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/ADR_GDR_Listing/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "ASCR/in-capmkt-ent-2023-09-30.xsd"
+      ],
+      "family": "ASCR",
+      "files": [
+        "ASCR/in-capmkt-def-2023-09-30.xml",
+        "ASCR/in-capmkt-ent-2023-09-30.xsd",
+        "ASCR/in-capmkt-pre-2023-09-30.xml",
+        "ASCR/in-capmkt-roles-2023-09-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "34067253193559750bda857ca2e38d36f91e45a463c015cb794281e6c283cf11",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/2023-09-30/in-capmkt",
+        "http://www.bseindia.com/xbrl/2023-09-30/in-capmkt-types",
+        "http://www.bseindia.com/xbrl/ASCR/2023-09-30/in-capmkt-roles"
+      ],
+      "provenance_name": "ASCR Taxonomy_30-09-2023",
+      "release_id": "2023-09-30__34067253",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\ASCR Taxonomy_30-09-2023",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/ASCR%20Taxonomy_30-09-2023.zip",
+      "stored_path": "ASCR/2023-09-30__34067253",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/ASCR/2023-09-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-09-30"
+    },
+    {
+      "entry_points": [
+        "Alteration_Of_Capital_And_Fund_Raising/in-capmkt-ent-2023-12-31.xsd"
+      ],
+      "family": "Alteration_Of_Capital_And_Fund_Raising",
+      "files": [
+        "Alteration_Of_Capital_And_Fund_Raising/in-capmkt-def-2023-12-31.xml",
+        "Alteration_Of_Capital_And_Fund_Raising/in-capmkt-ent-2023-12-31.xsd",
+        "Alteration_Of_Capital_And_Fund_Raising/in-capmkt-pre-2023-12-31.xml",
+        "Alteration_Of_Capital_And_Fund_Raising/in-capmkt-roles-2023-12-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "897cbeb1bd1deae3eeb16f0b27f837af546e5662997946fd3253acbd0d09223f",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-12-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-12-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Alteration_Of_Capital_And_Fund_Raising/2023-12-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy - Alteration of Capital and Fund Raising",
+      "release_id": "2023-12-31__897cbeb1",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy - Alteration of Capital and Fund Raising",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20-%20Alteration%20of%20Capital%20and%20Fund%20Raising.zip",
+      "stored_path": "Alteration_Of_Capital_And_Fund_Raising/2023-12-31__897cbeb1",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Alteration_Of_Capital_And_Fund_Raising/2023-12-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-12-31"
+    },
+    {
+      "entry_points": [
+        "Announcement_For_Agreements/in-capmkt-ent-2024-04-30.xsd"
+      ],
+      "family": "Announcement_For_Agreements",
+      "files": [
+        "Announcement_For_Agreements/in-capmkt-def-2024-04-30.xml",
+        "Announcement_For_Agreements/in-capmkt-ent-2024-04-30.xsd",
+        "Announcement_For_Agreements/in-capmkt-pre-2024-04-30.xml",
+        "Announcement_For_Agreements/in-capmkt-roles-2024-04-30.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "4d72fa919df11fa3dd10837d9cb29d50ed89c66ad2443f6cd96c6d064b034694",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-04-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-04-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Announcement_For_Agreements/2024-04-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy - Announcement for Agreements",
+      "release_id": "2024-04-30__4d72fa91",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy - Announcement for Agreements",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20-%20Announcement%20for%20Agreements.zip",
+      "stored_path": "Announcement_For_Agreements/2024-04-30__4d72fa91",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Announcement_For_Agreements/2024-04-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-04-30"
+    },
+    {
+      "entry_points": [
+        "Announcement_For_Fraud_Or_Default/in-capmkt-ent-2024-02-29.xsd"
+      ],
+      "family": "Announcement_For_Fraud_Or_Default",
+      "files": [
+        "Announcement_For_Fraud_Or_Default/in-capmkt-ent-2024-02-29.xsd",
+        "Announcement_For_Fraud_Or_Default/in-capmkt-pre-2024-02-29.xml",
+        "Announcement_For_Fraud_Or_Default/in-capmkt-roles-2024-02-29.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "d6816d047d797679d4f4ef120fe657626cf8d68b058c5a1fd3a95dce1e086f90",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-02-29/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-02-29/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Announcement_For_Fraud_Or_Default/2024-02-29/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy - Announcement for Fraud or Default",
+      "release_id": "2024-02-29__d6816d04",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy - Announcement for Fraud or Default",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20-%20Announcement%20for%20Fraud%20or%20Default.zip",
+      "stored_path": "Announcement_For_Fraud_Or_Default/2024-02-29__d6816d04",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Announcement_For_Fraud_Or_Default/2024-02-29/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-02-29"
+    },
+    {
+      "entry_points": [
+        "Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings/in-capmkt-ent-2023-11-30.xsd"
+      ],
+      "family": "Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings",
+      "files": [
+        "Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings/in-capmkt-ent-2023-11-30.xsd",
+        "Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings/in-capmkt-pre-2023-11-30.xml",
+        "Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings/in-capmkt-roles-2023-11-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "b33a8fd74179aa60cbecc89a1f9a1dcca0a7c81c2f04b2a6f8ee69ae2d751679",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-11-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-11-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings/2023-11-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy -One Time Settlement and RestructuringLoansOrBorrowings",
+      "release_id": "2023-11-30__b33a8fd7",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy -One Time Settlement and RestructuringLoansOrBorrowings",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20-One%20Time%20Settlement%20and%20RestructuringLoansOrBorrowings.zip",
+      "stored_path": "Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings/2023-11-30__b33a8fd7",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Announcement_For_OneTimeSettlement_And_RestructuringLoansOrBorrowings/2023-11-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-11-30"
+    },
+    {
+      "entry_points": [
+        "Announcements_Pertaining_To_Outcome_Of_Board_Meeting/in-capmkt-ent-2024-05-31.xsd"
+      ],
+      "family": "Announcements_Pertaining_To_Outcome_Of_Board_Meeting",
+      "files": [
+        "Announcements_Pertaining_To_Outcome_Of_Board_Meeting/in-capmkt-cal-2024-05-31.xml",
+        "Announcements_Pertaining_To_Outcome_Of_Board_Meeting/in-capmkt-ent-2024-05-31.xsd",
+        "Announcements_Pertaining_To_Outcome_Of_Board_Meeting/in-capmkt-pre-2024-05-31.xml",
+        "Announcements_Pertaining_To_Outcome_Of_Board_Meeting/in-capmkt-roles-2024-05-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "5a5ea01f0566480d2584e329c4f5ab93f732a6257c6bac92ecf64f83d38c0e7c",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Announcements_Pertaining_To_Outcome_Of_Board_Meeting/2024-05-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Announcements_Pertaining_To_Outcome_Of_Board_Meeting_20260224115811",
+      "release_id": "2024-05-31__5a5ea01f",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Announcements_Pertaining_To_Outcome_Of_Board_Meeting_20260224115811\\Taxonomy_Announcements_Pertaining_To_Outcome_Of_Board_Meeting_",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Taxonomy_Announcements_Pertaining_To_Outcome_Of_Board_Meeting_20260224115811.zip",
+      "stored_path": "Announcements_Pertaining_To_Outcome_Of_Board_Meeting/2024-05-31__5a5ea01f",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Announcements_Pertaining_To_Outcome_Of_Board_Meeting/2024-05-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-05-31"
+    },
+    {
+      "entry_points": [
+        "Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/in-capmkt-ent-2025-05-31.xsd"
+      ],
+      "family": "Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts",
+      "files": [
+        "Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/in-capmkt-def-2025-05-31.xml",
+        "Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/in-capmkt-ent-2025-05-31.xsd",
+        "Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/in-capmkt-pre-2025-05-31.xml",
+        "Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/in-capmkt-roles-2025-05-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "f016577a95b835844bf6629408a44cdaaa9e623605f3eeddbb0bcdfd9da5d27c",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2025-05-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2025-05-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/2025-05-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts",
+      "release_id": "2025-05-31__f016577a",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy_Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts.zip",
+      "stored_path": "Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/2025-05-31__f016577a",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Awarding_Or_Bagging_Or_Receiving_Of_Orders_Or_Contracts/2025-05-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-05-31"
+    },
+    {
+      "entry_points": [
+        "BRSR/in-capmkt-ent-2025-05-31.xsd"
+      ],
+      "family": "BRSR",
+      "files": [
+        "BRSR/in-capmkt-cal-2025-05-31.xml",
+        "BRSR/in-capmkt-def-2025-05-31.xml",
+        "BRSR/in-capmkt-ent-2025-05-31.xsd",
+        "BRSR/in-capmkt-pre-2025-05-31.xml",
+        "BRSR/in-capmkt-ref-2025-05-31.xml",
+        "BRSR/in-capmkt-roles-2025-05-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "8f9d913d29a7f0a59877c3ce1fca151fc8af2d91dc2afa15e8b6e3dfa9a83934",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2025-05-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2025-05-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/BRSR/2025-05-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_BUSINESS_RESPONSIBILITY_SUSTAINABILITY_REPORTING",
+      "release_id": "2025-05-31__8f9d913d",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_BUSINESS_RESPONSIBILITY_SUSTAINABILITY_REPORTING",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy_BUSINESS_RESPONSIBILITY_SUSTAINABILITY_REPORTING.zip",
+      "stored_path": "BRSR/2025-05-31__8f9d913d",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/BRSR/2025-05-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-05-31"
+    },
+    {
+      "entry_points": [
+        "Buyback_Open_Market/in-capmkt-ent-2023-03-31.xsd"
+      ],
+      "family": "Buyback_Open_Market",
+      "files": [
+        "Buyback_Open_Market/in-capmkt-ent-2023-03-31.xsd",
+        "Buyback_Open_Market/in-capmkt-pre-2023-03-31.xml",
+        "Buyback_Open_Market/in-capmkt-roles-2023-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "4802c988639b56b35f523b30cfaf5d00c1e92a4721cf0e832f0b1c7da01b472e",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-03-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Buyback_Open_Market/2023-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Buyback_Open_Market_Taxonomy_20260114155914",
+      "release_id": "2023-03-31__4802c988",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Buyback_Open_Market_Taxonomy_20260114155914",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-01/Buyback_Open_Market_Taxonomy_20260114155914.zip",
+      "stored_path": "Buyback_Open_Market/2023-03-31__4802c988",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Buyback_Open_Market/2023-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-03-31"
+    },
+    {
+      "entry_points": [
+        "Buyback_Tender_Route/in-capmkt-ent-2023-03-31.xsd"
+      ],
+      "family": "Buyback_Tender_Route",
+      "files": [
+        "Buyback_Tender_Route/in-capmkt-ent-2023-03-31.xsd",
+        "Buyback_Tender_Route/in-capmkt-pre-2023-03-31.xml",
+        "Buyback_Tender_Route/in-capmkt-roles-2023-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "32101d648532dded8b35e44f5bc174cff416755fb913f1e237a0615ea4bfce6b",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-03-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Buyback_Tender_Route/2023-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Buyback_Tender_Route_Taxonomy_20260114155943",
+      "release_id": "2023-03-31__32101d64",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Buyback_Tender_Route_Taxonomy_20260114155943",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-01/Buyback_Tender_Route_Taxonomy_20260114155943.zip",
+      "stored_path": "Buyback_Tender_Route/2023-03-31__32101d64",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Buyback_Tender_Route/2023-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-03-31"
+    },
+    {
+      "entry_points": [
+        "Changes_In_Management/in-capmkt-ent-2022-04-30.xsd"
+      ],
+      "family": "Changes_In_Management",
+      "files": [
+        "Changes_In_Management/in-capmkt-def-2022-04-30.xml",
+        "Changes_In_Management/in-capmkt-ent-2022-04-30.xsd",
+        "Changes_In_Management/in-capmkt-pre-2022-04-30.xml",
+        "Changes_In_Management/in-capmkt-roles-2022-04-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "d81be1fc90877ece5787edbd44dd34005244d2a780cb3a4409a52449e799926b",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-04-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-04-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Changes_In_Management/2022-04-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Changes_In_Management__20260224115401",
+      "release_id": "2022-04-30__d81be1fc",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Changes_In_Management__20260224115401\\Taxonomy_Changes_In_Management_",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Taxonomy_Changes_In_Management__20260224115401.zip",
+      "stored_path": "Changes_In_Management/2022-04-30__d81be1fc",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Changes_In_Management/2022-04-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-04-30"
+    },
+    {
+      "entry_points": [
+        "Closure_Of_Trading_Window/in-capmkt-ent-2023-06-30.xsd"
+      ],
+      "family": "Closure_Of_Trading_Window",
+      "files": [
+        "Closure_Of_Trading_Window/in-capmkt-ent-2023-06-30.xsd",
+        "Closure_Of_Trading_Window/in-capmkt-pre-2023-06-30.xml",
+        "Closure_Of_Trading_Window/in-capmkt-roles-2023-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "872ed1f7af3664969141a173e1e0a89b3136401b7126f1c62797e34206d0d8ef",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Closure_Of_Trading_Window/2023-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Closure_of_Trading_Window_20260226112113",
+      "release_id": "2023-06-30__872ed1f7",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Closure_of_Trading_Window_20260226112113\\Closure of Trading Window",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Closure_of_Trading_Window_20260226112113.zip",
+      "stored_path": "Closure_Of_Trading_Window/2023-06-30__872ed1f7",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Closure_Of_Trading_Window/2023-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-06-30"
+    },
+    {
+      "entry_points": [
+        "Corporate_Debt_Restructuring/in-capmkt-ent-2023-01-31.xsd"
+      ],
+      "family": "Corporate_Debt_Restructuring",
+      "files": [
+        "Corporate_Debt_Restructuring/in-capmkt-ent-2023-01-31.xsd",
+        "Corporate_Debt_Restructuring/in-capmkt-pre-2023-01-31.xml",
+        "Corporate_Debt_Restructuring/in-capmkt-roles-2023-01-31.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "e9ca1bdacc0fc28801a34b41843a7cf68874c9d03fb15f6d1155b3dfd7ee5b54",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-01-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-01-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Corporate_Debt_Restructuring/2023-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy - Corporate Debt Restructuring",
+      "release_id": "2023-01-31__e9ca1bda",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy - Corporate Debt Restructuring\\Corporate_Debt_Restructuring_Taxonomy",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20-%20Corporate%20Debt%20Restructuring.zip",
+      "stored_path": "Corporate_Debt_Restructuring/2023-01-31__e9ca1bda",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Corporate_Debt_Restructuring/2023-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-01-31"
+    },
+    {
+      "entry_points": [
+        "Corporate_Insolvency_Resolution_Process/in-capmkt-ent-2023-09-30.xsd"
+      ],
+      "family": "Corporate_Insolvency_Resolution_Process",
+      "files": [
+        "Corporate_Insolvency_Resolution_Process/in-capmkt-def-2023-09-30.xml",
+        "Corporate_Insolvency_Resolution_Process/in-capmkt-ent-2023-09-30.xsd",
+        "Corporate_Insolvency_Resolution_Process/in-capmkt-pre-2023-09-30.xml",
+        "Corporate_Insolvency_Resolution_Process/in-capmkt-roles-2023-09-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "73eb5fd56e55e7bc88a73a92fe3560ad2f3e902020a30f552763617f36241e37",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-09-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-09-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Corporate_Insolvency_Resolution_Process/2023-09-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Corporate_Insolvency_Resolution_Process",
+      "release_id": "2023-09-30__73eb5fd5",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Corporate_Insolvency_Resolution_Process",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy_Corporate_Insolvency_Resolution_Process.zip",
+      "stored_path": "Corporate_Insolvency_Resolution_Process/2023-09-30__73eb5fd5",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Corporate_Insolvency_Resolution_Process/2023-09-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-09-30"
+    },
+    {
+      "entry_points": [
+        "Credit_Rating/Credit Rating/in-capmkt-ent-2021-03-31.xsd"
+      ],
+      "family": "Credit_Rating",
+      "files": [
+        "Credit_Rating/Credit Rating/in-capmkt-def-2021-03-31.xml",
+        "Credit_Rating/Credit Rating/in-capmkt-ent-2021-03-31.xsd",
+        "Credit_Rating/Credit Rating/in-capmkt-pre-2021-03-31.xml",
+        "Credit_Rating/Credit Rating/in-capmkt-roles-2021-03-31.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "a6d3a3dc8bc781e5007a3fae9153537c15b25660e835efecb3e8ea6a594b038e",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2021-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/Credit_Rating/2021-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Credit rating",
+      "release_id": "2021-03-31__a6d3a3dc",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Credit rating",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Credit%20rating.zip",
+      "stored_path": "Credit_Rating/2021-03-31__a6d3a3dc",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Credit_Rating/2021-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2021-03-31"
+    },
+    {
+      "entry_points": [
+        "Default_History_Information/Default History Information/in-capmkt-ent-2021-03-31.xsd"
+      ],
+      "family": "Default_History_Information",
+      "files": [
+        "Default_History_Information/Default History Information/in-capmkt-def-2021-03-31.xml",
+        "Default_History_Information/Default History Information/in-capmkt-ent-2021-03-31.xsd",
+        "Default_History_Information/Default History Information/in-capmkt-pre-2021-03-31.xml",
+        "Default_History_Information/Default History Information/in-capmkt-roles-2021-03-31.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "9280077bebd0220b721544f75eec91164eec7b46571c8dbc264f0b1b4ed08a58",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2021-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/Default_History_Information/2021-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Default History Information",
+      "release_id": "2021-03-31__9280077b",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Default History Information",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Default%20History%20Information.zip",
+      "stored_path": "Default_History_Information/2021-03-31__9280077b",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Default_History_Information/2021-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2021-03-31"
+    },
+    {
+      "entry_points": [
+        "FCCB_IP/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "FCCB_IP",
+      "files": [
+        "FCCB_IP/in-capmkt-def-2022-06-30.xml",
+        "FCCB_IP/in-capmkt-ent-2022-06-30.xsd",
+        "FCCB_IP/in-capmkt-pre-2022-06-30.xml",
+        "FCCB_IP/in-capmkt-roles-2022-06-30.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "cec261a9756a870f623a07fafdb451c76f3c708da6d3aed709e61b36ec86af6d",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/FCCB_IP/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "FCCB_Taxonomy_20260227174451",
+      "release_id": "2022-06-30__cec261a9",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\FCCB_Taxonomy_20260227174451",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/FCCB_Taxonomy_20260227174451.zip",
+      "stored_path": "FCCB_IP/2022-06-30__cec261a9",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/FCCB_IP/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "FCCB_Listing/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "FCCB_Listing",
+      "files": [
+        "FCCB_Listing/in-capmkt-def-2022-06-30.xml",
+        "FCCB_Listing/in-capmkt-ent-2022-06-30.xsd",
+        "FCCB_Listing/in-capmkt-pre-2022-06-30.xml",
+        "FCCB_Listing/in-capmkt-roles-2022-06-30.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "6e19ac525308587b4963ea94f802a44bda7aab945009701bf26f4012c2456b28",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/FCCB_Listing/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "FCCB_Taxonomy_20260227174451",
+      "release_id": "2022-06-30__6e19ac52",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\FCCB_Taxonomy_20260227174451",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/FCCB_Taxonomy_20260227174451.zip",
+      "stored_path": "FCCB_Listing/2022-06-30__6e19ac52",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/FCCB_Listing/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "Financial_Results_REITs_InvITs/in-capmkt-ent-2025-06-30.xsd"
+      ],
+      "family": "Financial_Results_REITs_InvITs",
+      "files": [
+        "Financial_Results_REITs_InvITs/in-capmkt-cal-2025-06-30.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-def-2025-06-30.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-ent-2025-06-30.xsd",
+        "Financial_Results_REITs_InvITs/in-capmkt-pre-2025-06-30.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-ref-2025-06-30.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-roles-2025-06-30.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "a43d3912c0b00349be826715894ab9a2bd9335ef5a20ca785b28dcf1400fc569",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-06-30/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-06-30/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Financial_Results_REITs_InvITs/2025-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Financial Results REITs InvITs",
+      "release_id": "2025-06-30__a43d3912",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Financial Results REITs InvITs",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Financial%20Results%20REITs%20InvITs.zip",
+      "stored_path": "Financial_Results_REITs_InvITs/2025-06-30__a43d3912",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Financial_Results_REITs_InvITs/2025-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-06-30"
+    },
+    {
+      "entry_points": [
+        "General_Insurance/in-capmkt-ent-2020-03-31.xsd"
+      ],
+      "family": "General_Insurance",
+      "files": [
+        "General_Insurance/in-capmkt-cal-2020-03-31.xml",
+        "General_Insurance/in-capmkt-def-2020-03-31.xml",
+        "General_Insurance/in-capmkt-ent-2020-03-31.xsd",
+        "General_Insurance/in-capmkt-pre-2020-03-31.xml",
+        "General_Insurance/in-capmkt-roles-2020-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "3e9b37e3c53629ff46b03af06e8ff6f2cd89853c52fd9a6121dec1fb4fabdd84",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/2020-03-31/in-capmkt",
+        "http://www.bseindia.com/xbrl/2020-03-31/in-capmkt-types",
+        "http://www.bseindia.com/xbrl/General_Insurance/2020-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Financial Results_General_Insurance_Taxonomy",
+      "release_id": "2020-03-31__3e9b37e3",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Financial Results_General_Insurance_Taxonomy\\General_Insurance_Taxonomy\\General Insurance 2020-03-31",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Financial%20Results_General_Insurance_Taxonomy.zip",
+      "stored_path": "General_Insurance/2020-03-31__3e9b37e3",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/General_Insurance/2020-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2020-03-31"
+    },
+    {
+      "entry_points": [
+        "ImpactOfAuditQualifications/in-capmkt-ent-2023-02-28.xsd"
+      ],
+      "family": "ImpactOfAuditQualifications",
+      "files": [
+        "ImpactOfAuditQualifications/in-capmkt-def-2023-02-28.xml",
+        "ImpactOfAuditQualifications/in-capmkt-ent-2023-02-28.xsd",
+        "ImpactOfAuditQualifications/in-capmkt-pre-2023-02-28.xml",
+        "ImpactOfAuditQualifications/in-capmkt-roles-2023-02-28.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "9265ce3cab0ef900fbc313a381041f8e3dc3026235b9a94e4ef79742561b531c",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-02-28/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-02-28/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/ImpactOfAuditQualifications/2023-02-28/in-capmkt-roles"
+      ],
+      "provenance_name": "Statement_on_Impact_of_Audit_Qualifications__Unmodified_Opinion_20260225104437",
+      "release_id": "2023-02-28__9265ce3c",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Statement_on_Impact_of_Audit_Qualifications__Unmodified_Opinion_20260225104437",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Statement_on_Impact_of_Audit_Qualifications__Unmodified_Opinion_20260225104437.zip",
+      "stored_path": "ImpactOfAuditQualifications/2023-02-28__9265ce3c",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/ImpactOfAuditQualifications/2023-02-28/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-02-28"
+    },
+    {
+      "entry_points": [
+        "In_PrincipleApproval/in-capmkt-ent-2022-03-31.xsd"
+      ],
+      "family": "In_PrincipleApproval",
+      "files": [
+        "In_PrincipleApproval/in-capmkt-def-2022-03-31.xml",
+        "In_PrincipleApproval/in-capmkt-ent-2022-03-31.xsd",
+        "In_PrincipleApproval/in-capmkt-pre-2022-03-31.xml",
+        "In_PrincipleApproval/in-capmkt-roles-2022-03-31.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "ec4cf9ee06622b14d7ce3b37bf2a9e943179741534148f7d67993dfc6aa76653",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/In_PrincipleApproval/2022-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_In-Principle_20260227161313",
+      "release_id": "2022-03-31__ec4cf9ee",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_In-Principle_20260227161313",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Taxonomy_In-Principle_20260227161313.zip",
+      "stored_path": "In_PrincipleApproval/2022-03-31__ec4cf9ee",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/In_PrincipleApproval/2022-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-03-31"
+    },
+    {
+      "entry_points": [
+        "Insurance/in-capmkt-ent-2020-03-31.xsd"
+      ],
+      "family": "Insurance",
+      "files": [
+        "Insurance/in-capmkt-cal-2020-03-31.xml",
+        "Insurance/in-capmkt-def-2020-03-31.xml",
+        "Insurance/in-capmkt-ent-2020-03-31.xsd",
+        "Insurance/in-capmkt-pre-2020-03-31.xml",
+        "Insurance/in-capmkt-roles-2020-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "c8e9982f527218667f126f94f9e92a22b75d517f9c40bfdea6b1554e5cc9cfd4",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/2020-03-31/in-capmkt",
+        "http://www.bseindia.com/xbrl/2020-03-31/in-capmkt-types",
+        "http://www.bseindia.com/xbrl/Insurance/2020-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Financial Results _Life_Insurance_Taxonomy",
+      "release_id": "2020-03-31__c8e9982f",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Financial Results _Life_Insurance_Taxonomy\\Life_Insurance_Taxonomy\\Life Insurance Taxonomy 2020-03-31\\LI Taxonomy",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Financial%20Results%20_Life_Insurance_Taxonomy.zip",
+      "stored_path": "Insurance/2020-03-31__c8e9982f",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/Insurance/2020-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2020-03-31"
+    },
+    {
+      "entry_points": [
+        "IntegratedFinance_Banking/in-capmkt-ent-2025-01-31.xsd"
+      ],
+      "family": "IntegratedFinance_Banking",
+      "files": [
+        "IntegratedFinance_Banking/in-capmkt-cal-2025-01-31.xml",
+        "IntegratedFinance_Banking/in-capmkt-def-2025-01-31.xml",
+        "IntegratedFinance_Banking/in-capmkt-ent-2025-01-31.xsd",
+        "IntegratedFinance_Banking/in-capmkt-pre-2025-01-31.xml",
+        "IntegratedFinance_Banking/in-capmkt-ref-2025-01-31.xml",
+        "IntegratedFinance_Banking/in-capmkt-roles-2025-01-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "9dcc5209febb6fac9a86c6ecc32c24a1d3e9c1a33497b802446ed5605c87dfdb",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_Banking/2025-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Integrated Filing (Finance) Banking",
+      "release_id": "2025-01-31__9dcc5209",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Integrated Filing (Finance) Banking",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Integrated%20Filing%20%28Finance%29%20Banking.zip",
+      "stored_path": "IntegratedFinance_Banking/2025-01-31__9dcc5209",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_Banking/2025-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "IntegratedFinance_GI/in-capmkt-ent-2025-01-31.xsd"
+      ],
+      "family": "IntegratedFinance_GI",
+      "files": [
+        "IntegratedFinance_GI/in-capmkt-cal-2025-01-31.xml",
+        "IntegratedFinance_GI/in-capmkt-def-2025-01-31.xml",
+        "IntegratedFinance_GI/in-capmkt-ent-2025-01-31.xsd",
+        "IntegratedFinance_GI/in-capmkt-pre-2025-01-31.xml",
+        "IntegratedFinance_GI/in-capmkt-ref-2025-01-31.xml",
+        "IntegratedFinance_GI/in-capmkt-roles-2025-01-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "a4c296fc6579e47c10c3234d2fafece8ed5926a17774e60daa9a090fa343f8d2",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_GI/2025-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Integrated filing finance (General Insurance)",
+      "release_id": "2025-01-31__a4c296fc",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Integrated filing finance (General Insurance)",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Integrated%20filing%20finance%20%28General%20Insurance%29.zip",
+      "stored_path": "IntegratedFinance_GI/2025-01-31__a4c296fc",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_GI/2025-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "IntegratedFinance_IndAS/in-capmkt-ent-2025-01-31.xsd"
+      ],
+      "family": "IntegratedFinance_IndAS",
+      "files": [
+        "IntegratedFinance_IndAS/in-capmkt-cal-2025-01-31.xml",
+        "IntegratedFinance_IndAS/in-capmkt-def-2025-01-31.xml",
+        "IntegratedFinance_IndAS/in-capmkt-ent-2025-01-31.xsd",
+        "IntegratedFinance_IndAS/in-capmkt-pre-2025-01-31.xml",
+        "IntegratedFinance_IndAS/in-capmkt-ref-2025-01-31.xml",
+        "IntegratedFinance_IndAS/in-capmkt-roles-2025-01-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "501151a8f307d8a1d7fa46a1cb2169faf28855b36d6470d0a014471f738ff037",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_IndAS/2025-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Integrated filing finance (IndAS)",
+      "release_id": "2025-01-31__501151a8",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Integrated filing finance (IndAS)",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Integrated%20filing%20finance%20%28IndAS%29.zip",
+      "stored_path": "IntegratedFinance_IndAS/2025-01-31__501151a8",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_IndAS/2025-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "IntegratedFinance_LI/in-capmkt-ent-2025-01-31.xsd"
+      ],
+      "family": "IntegratedFinance_LI",
+      "files": [
+        "IntegratedFinance_LI/in-capmkt-cal-2025-01-31.xml",
+        "IntegratedFinance_LI/in-capmkt-def-2025-01-31.xml",
+        "IntegratedFinance_LI/in-capmkt-ent-2025-01-31.xsd",
+        "IntegratedFinance_LI/in-capmkt-pre-2025-01-31.xml",
+        "IntegratedFinance_LI/in-capmkt-ref-2025-01-31.xml",
+        "IntegratedFinance_LI/in-capmkt-roles-2025-01-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "bd92188156675f4a04623a4fb07614e31c0d46037547eb4f0043da2e75281305",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_LI/2025-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Integrated filing finance (Life insurance)",
+      "release_id": "2025-01-31__bd921881",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Integrated filing finance (Life insurance)",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Integrated%20filing%20finance%20%28Life%20insurance%29.zip",
+      "stored_path": "IntegratedFinance_LI/2025-01-31__bd921881",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_LI/2025-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "IntegratedFinance_NBFC/in-capmkt-ent-2025-01-31.xsd"
+      ],
+      "family": "IntegratedFinance_NBFC",
+      "files": [
+        "IntegratedFinance_NBFC/in-capmkt-cal-2025-01-31.xml",
+        "IntegratedFinance_NBFC/in-capmkt-def-2025-01-31.xml",
+        "IntegratedFinance_NBFC/in-capmkt-ent-2025-01-31.xsd",
+        "IntegratedFinance_NBFC/in-capmkt-pre-2025-01-31.xml",
+        "IntegratedFinance_NBFC/in-capmkt-ref-2025-01-31.xml",
+        "IntegratedFinance_NBFC/in-capmkt-roles-2025-01-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "6e2c70b5810f267773230d035d6b503708d8ed2ef8e38524b5f47032d629bdd8",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_NBFC/2025-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Integrated filing finance (NBFC)",
+      "release_id": "2025-01-31__6e2c70b5",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Integrated filing finance (NBFC)",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Integrated%20filing%20finance%20%28NBFC%29.zip",
+      "stored_path": "IntegratedFinance_NBFC/2025-01-31__6e2c70b5",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_NBFC/2025-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "IntegratedFinance_OtherThanBank/in-capmkt-ent-2025-01-31.xsd"
+      ],
+      "family": "IntegratedFinance_OtherThanBank",
+      "files": [
+        "IntegratedFinance_OtherThanBank/in-capmkt-cal-2025-01-31.xml",
+        "IntegratedFinance_OtherThanBank/in-capmkt-def-2025-01-31.xml",
+        "IntegratedFinance_OtherThanBank/in-capmkt-ent-2025-01-31.xsd",
+        "IntegratedFinance_OtherThanBank/in-capmkt-pre-2025-01-31.xml",
+        "IntegratedFinance_OtherThanBank/in-capmkt-ref-2025-01-31.xml",
+        "IntegratedFinance_OtherThanBank/in-capmkt-roles-2025-01-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "9475c2ceaea0798e80fe028c407f64ef7b7c269ccd8edc5976c53cded5a22cf8",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-01-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_OtherThanBank/2025-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Integrated filing (finance) other than bank",
+      "release_id": "2025-01-31__9475c2ce",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Integrated filing (finance) other than bank",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Integrated%20filing%20%28finance%29%20other%20than%20bank.zip",
+      "stored_path": "IntegratedFinance_OtherThanBank/2025-01-31__9475c2ce",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_OtherThanBank/2025-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "IntegratedGovernance/in-capmkt-ent-2024-12-31.xsd"
+      ],
+      "family": "IntegratedGovernance",
+      "files": [
+        "IntegratedGovernance/in-capmkt-cal-2024-12-31.xml",
+        "IntegratedGovernance/in-capmkt-def-2024-12-31.xml",
+        "IntegratedGovernance/in-capmkt-ent-2024-12-31.xsd",
+        "IntegratedGovernance/in-capmkt-pre-2024-12-31.xml",
+        "IntegratedGovernance/in-capmkt-ref-2024-12-31.xml",
+        "IntegratedGovernance/in-capmkt-roles-2024-12-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "5b150479236007e78dd86d196db1553408f3f700e3f13288281da8c02b97e503",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2024-12-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2024-12-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedGovernance/2024-12-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Integrated Governance_0",
+      "release_id": "2024-12-31__5b150479",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Integrated Governance_0",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy_Integrated%20Governance_0.zip",
+      "stored_path": "IntegratedGovernance/2024-12-31__5b150479",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedGovernance/2024-12-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-12-31"
+    },
+    {
+      "entry_points": [
+        "Interest_Payment/Interest Payment/in-capmkt-ent-2021-03-31.xsd"
+      ],
+      "family": "Interest_Payment",
+      "files": [
+        "Interest_Payment/Interest Payment/in-capmkt-def-2021-03-31.xml",
+        "Interest_Payment/Interest Payment/in-capmkt-ent-2021-03-31.xsd",
+        "Interest_Payment/Interest Payment/in-capmkt-pre-2021-03-31.xml",
+        "Interest_Payment/Interest Payment/in-capmkt-roles-2021-03-31.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "d251ae7b82a845dbfcb63ed46bc5d8122fcc2e087c9723a46f8cfd1349cf7652",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2021-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/Interest_Payment/2021-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy Interest Payment",
+      "release_id": "2021-03-31__d251ae7b",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy Interest Payment",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20Interest%20Payment.zip",
+      "stored_path": "Interest_Payment/2021-03-31__d251ae7b",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Interest_Payment/2021-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2021-03-31"
+    },
+    {
+      "entry_points": [
+        "InvestorComplaints/Investor Complaints/in-capmkt-ent-2024-05-31.xsd"
+      ],
+      "family": "InvestorComplaints",
+      "files": [
+        "InvestorComplaints/Investor Complaints/in-capmkt-cal-2024-05-31.xml",
+        "InvestorComplaints/Investor Complaints/in-capmkt-ent-2024-05-31.xsd",
+        "InvestorComplaints/Investor Complaints/in-capmkt-pre-2024-05-31.xml",
+        "InvestorComplaints/Investor Complaints/in-capmkt-roles-2024-05-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "5e09aaff559d2f41262fcc73de3c89da0f73b7003428dbf60ca4ae251b95d12f",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/InvestorComplaints/2024-05-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Investor Complaints_Taxonomy_31-05-2024",
+      "release_id": "2024-05-31__5e09aaff",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Investor Complaints_Taxonomy_31-05-2024",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Investor%20Complaints_Taxonomy_31-05-2024.zip",
+      "stored_path": "InvestorComplaints/2024-05-31__5e09aaff",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/InvestorComplaints/2024-05-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-05-31"
+    },
+    {
+      "entry_points": [
+        "Investor_Complaints_REITS_INVITS/in-capmkt-ent-2021-03-31.xsd"
+      ],
+      "family": "Investor_Complaints_REITS_INVITS",
+      "files": [
+        "Investor_Complaints_REITS_INVITS/in-capmkt-cal-2021-03-31.xml",
+        "Investor_Complaints_REITS_INVITS/in-capmkt-def-2021-03-31.xml",
+        "Investor_Complaints_REITS_INVITS/in-capmkt-ent-2021-03-31.xsd",
+        "Investor_Complaints_REITS_INVITS/in-capmkt-pre-2021-03-31.xml",
+        "Investor_Complaints_REITS_INVITS/in-capmkt-roles-2021-03-31.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "f176e9018fd716232b61c6e0ccb6139cfefe5ed737be1cb7ff4af77e7c1fb4d6",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2021-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2021-03-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Investor_Complaints_REITS_INVITS/2021-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Investor_Complaints_REITS_INVITS_Taxonomy",
+      "release_id": "2021-03-31__f176e901",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Investor_Complaints_REITS_INVITS_Taxonomy",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Investor_Complaints_REITS_INVITS_Taxonomy.zip",
+      "stored_path": "Investor_Complaints_REITS_INVITS/2021-03-31__f176e901",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Investor_Complaints_REITS_INVITS/2021-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2021-03-31"
+    },
+    {
+      "entry_points": [
+        "ListingStage/in-capmkt-ent-2022-03-31.xsd"
+      ],
+      "family": "ListingStage",
+      "files": [
+        "ListingStage/in-capmkt-cal-2022-03-31.xml",
+        "ListingStage/in-capmkt-def-2022-03-31.xml",
+        "ListingStage/in-capmkt-ent-2022-03-31.xsd",
+        "ListingStage/in-capmkt-pre-2022-03-31.xml",
+        "ListingStage/in-capmkt-roles-2022-03-31.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "901dcfb6dd626110d05bd643a17648509db53f0dc8c1f6b011d10c60a16f747b",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/ListingStage/2022-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Listing_Stage_20260227192731",
+      "release_id": "2022-03-31__901dcfb6",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Listing_Stage_20260227192731",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Taxonomy_Listing_Stage_20260227192731.zip",
+      "stored_path": "ListingStage/2022-03-31__901dcfb6",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/ListingStage/2022-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-03-31"
+    },
+    {
+      "entry_points": [
+        "Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/in-capmkt-ent-2023-06-30.xsd"
+      ],
+      "family": "Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation",
+      "files": [
+        "Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/in-capmkt-def-2023-06-30.xml",
+        "Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/in-capmkt-ent-2023-06-30.xsd",
+        "Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/in-capmkt-pre-2023-06-30.xml",
+        "Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/in-capmkt-roles-2023-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "b10c10769887c94475d2539bb9f6bf314f557c9948a12d045397ef4d35bdef0d",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/2023-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation_0",
+      "release_id": "2023-06-30__b10c1076",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation_0",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy_Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation_0.zip",
+      "stored_path": "Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/2023-06-30__b10c1076",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Loss_Of_Share_Certificate_And_Issue_Of_Duplicate_Share_Certificate_Or_Letter_Of_Confirmation/2023-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-06-30"
+    },
+    {
+      "entry_points": [
+        "Notice_Of_Shareholders_Meeting/in-capmkt-ent-2024-05-31.xsd"
+      ],
+      "family": "Notice_Of_Shareholders_Meeting",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Notice_Of_Shareholders_Meeting/in-capmkt-def-2024-05-31.xml",
+        "Notice_Of_Shareholders_Meeting/in-capmkt-ent-2024-05-31.xsd",
+        "Notice_Of_Shareholders_Meeting/in-capmkt-pre-2024-05-31.xml",
+        "Notice_Of_Shareholders_Meeting/in-capmkt-roles-2024-05-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "b2dd2310246c603a3927a6e48f4c47655a36e521987cdc710690fc95d05771ee",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Notice_Of_Shareholders_Meeting/2024-05-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy - Notice of Shareholders Meeting_0",
+      "release_id": "2024-05-31__b2dd2310",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy - Notice of Shareholders Meeting_0",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20-%20Notice%20of%20Shareholders%20Meeting_0.zip",
+      "stored_path": "Notice_Of_Shareholders_Meeting/2024-05-31__b2dd2310",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Notice_Of_Shareholders_Meeting/2024-05-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-05-31"
+    },
+    {
+      "entry_points": [
+        "PreferentialIssue_IP/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "PreferentialIssue_IP",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "PreferentialIssue_IP/in-capmkt-def-2022-06-30.xml",
+        "PreferentialIssue_IP/in-capmkt-ent-2022-06-30.xsd",
+        "PreferentialIssue_IP/in-capmkt-pre-2022-06-30.xml",
+        "PreferentialIssue_IP/in-capmkt-roles-2022-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "809e49b1f99d2013617807187175dc61283dfc9fdbd7863ff6377b861100d370",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/PreferentialIssue_IP/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Preferential_Issue_Taxonomy_20260227174648",
+      "release_id": "2022-06-30__809e49b1",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Preferential_Issue_Taxonomy_20260227174648",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Preferential_Issue_Taxonomy_20260227174648.zip",
+      "stored_path": "PreferentialIssue_IP/2022-06-30__809e49b1",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/PreferentialIssue_IP/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "PreferentialIssue_Listing/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "PreferentialIssue_Listing",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "PreferentialIssue_Listing/in-capmkt-def-2022-06-30.xml",
+        "PreferentialIssue_Listing/in-capmkt-ent-2022-06-30.xsd",
+        "PreferentialIssue_Listing/in-capmkt-pre-2022-06-30.xml",
+        "PreferentialIssue_Listing/in-capmkt-roles-2022-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "a5ff5f478b50d91f767631ce3fee71ff0f6ba934fb0e4aa5fa69f724daf6e762",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/PreferentialIssue_Listing/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Preferential_Issue_Taxonomy_20260227174648",
+      "release_id": "2022-06-30__a5ff5f47",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Preferential_Issue_Taxonomy_20260227174648",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Preferential_Issue_Taxonomy_20260227174648.zip",
+      "stored_path": "PreferentialIssue_Listing/2022-06-30__a5ff5f47",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/PreferentialIssue_Listing/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "Prior_Intimation_Of_Board_Meeting/in-capmkt-ent-2023-05-31.xsd"
+      ],
+      "family": "Prior_Intimation_Of_Board_Meeting",
+      "files": [
+        "Prior_Intimation_Of_Board_Meeting/in-capmkt-ent-2023-05-31.xsd",
+        "Prior_Intimation_Of_Board_Meeting/in-capmkt-pre-2023-05-31.xml",
+        "Prior_Intimation_Of_Board_Meeting/in-capmkt-roles-2023-05-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "9448f6ca081c909b336893fefb207cfd50682f84fe5c2a82330cf0297d4ce64f",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-05-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-05-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Prior_Intimation_Of_Board_Meeting/2023-05-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy - Prior Intimation of Board Meeting",
+      "release_id": "2023-05-31__9448f6ca",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy - Prior Intimation of Board Meeting",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20-%20Prior%20Intimation%20of%20Board%20Meeting.zip",
+      "stored_path": "Prior_Intimation_Of_Board_Meeting/2023-05-31__9448f6ca",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Prior_Intimation_Of_Board_Meeting/2023-05-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-05-31"
+    },
+    {
+      "entry_points": [
+        "QIP_IP/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "QIP_IP",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "QIP_IP/in-capmkt-def-2022-06-30.xml",
+        "QIP_IP/in-capmkt-ent-2022-06-30.xsd",
+        "QIP_IP/in-capmkt-pre-2022-06-30.xml",
+        "QIP_IP/in-capmkt-roles-2022-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "4981fa535ea0e3ba55cfc86ba20b7e2a71816a6ffdf5f3afe55cee18dd59c920",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/QIP_IP/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "QIP_Taxonomy_20260227175525",
+      "release_id": "2022-06-30__4981fa53",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\QIP_Taxonomy_20260227175525",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/QIP_Taxonomy_20260227175525.zip",
+      "stored_path": "QIP_IP/2022-06-30__4981fa53",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/QIP_IP/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "QIP_Listing/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "QIP_Listing",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "QIP_Listing/in-capmkt-def-2022-06-30.xml",
+        "QIP_Listing/in-capmkt-ent-2022-06-30.xsd",
+        "QIP_Listing/in-capmkt-pre-2022-06-30.xml",
+        "QIP_Listing/in-capmkt-roles-2022-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "0fa553b4f9682f5267650776ff2c754ec144f715dec21dfa0fa365b4f2934147",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/QIP_Listing/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "QIP_Taxonomy_20260227175525",
+      "release_id": "2022-06-30__0fa553b4",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\QIP_Taxonomy_20260227175525",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/QIP_Taxonomy_20260227175525.zip",
+      "stored_path": "QIP_Listing/2022-06-30__0fa553b4",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/QIP_Listing/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "Redemption_Payment/Redemption Payment/in-capmkt-ent-2021-03-31.xsd"
+      ],
+      "family": "Redemption_Payment",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "Redemption_Payment/Redemption Payment/in-capmkt-def-2021-03-31.xml",
+        "Redemption_Payment/Redemption Payment/in-capmkt-ent-2021-03-31.xsd",
+        "Redemption_Payment/Redemption Payment/in-capmkt-pre-2021-03-31.xml",
+        "Redemption_Payment/Redemption Payment/in-capmkt-roles-2021-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "d37c78dd45994c0021332746a7e76af69284de7012628c73d4d5334232793eae",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2021-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/Redemption_Payment/2021-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "RPS Taxonomy centralized database",
+      "release_id": "2021-03-31__d37c78dd",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\RPS Taxonomy centralized database",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/RPS%20Taxonomy%20centralized%20database.zip",
+      "stored_path": "Redemption_Payment/2021-03-31__d37c78dd",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Redemption_Payment/2021-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2021-03-31"
+    },
+    {
+      "entry_points": [
+        "Regulation60/in-capmkt-ent-2020-11-30.xsd"
+      ],
+      "family": "Regulation60",
+      "files": [
+        "Regulation60/in-capmkt-def-2020-11-30.xml",
+        "Regulation60/in-capmkt-ent-2020-11-30.xsd",
+        "Regulation60/in-capmkt-pre-2020-11-30.xml",
+        "Regulation60/in-capmkt-roles-2020-11-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "10bab880682de4c53ba90957553f33bee99ce2ad6ef384820c08084c001ee044",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/2020-11-30/in-capmkt",
+        "http://www.bseindia.com/xbrl/2020-11-30/in-capmkt-types",
+        "http://www.bseindia.com/xbrl/Regulation60/2020-11-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Regulation60_RecordDateTaxonomy",
+      "release_id": "2020-11-30__10bab880",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Regulation60_RecordDateTaxonomy",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Regulation60_RecordDateTaxonomy.zip",
+      "stored_path": "Regulation60/2020-11-30__10bab880",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/Regulation60/2020-11-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2020-11-30"
+    },
+    {
+      "entry_points": [
+        "Regulation_30_Restructuring/in-capmkt-ent-2023-01-31.xsd"
+      ],
+      "family": "Regulation_30_Restructuring",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "Regulation_30_Restructuring/in-capmkt-cal-2023-01-31.xml",
+        "Regulation_30_Restructuring/in-capmkt-def-2023-01-31.xml",
+        "Regulation_30_Restructuring/in-capmkt-ent-2023-01-31.xsd",
+        "Regulation_30_Restructuring/in-capmkt-pre-2023-01-31.xml",
+        "Regulation_30_Restructuring/in-capmkt-roles-2023-01-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "5a78fe23489c66170c160c8661cd70d921c50237d1f0bbc90f171e3d5b28f97d",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2023-01-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2023-01-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Regulation_30_Restructuring/2023-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Regulation_30_Restructuring_1_20260224115658",
+      "release_id": "2023-01-31__5a78fe23",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Regulation_30_Restructuring_1_20260224115658\\Taxonomy_Regulation_30_Restructuring\\Taxonomy_Regulation_30_Restructuring_31-01-2023",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Taxonomy_Regulation_30_Restructuring_1_20260224115658.zip",
+      "stored_path": "Regulation_30_Restructuring/2023-01-31__5a78fe23",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Regulation_30_Restructuring/2023-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2023-01-31"
+    },
+    {
+      "entry_points": [
+        "Regulation_50_Prior_Intimation_Of_Board_Meeting/in-capmkt-ent-2025-03-31.xsd"
+      ],
+      "family": "Regulation_50_Prior_Intimation_Of_Board_Meeting",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Regulation_50_Prior_Intimation_Of_Board_Meeting/in-capmkt-def-2025-03-31.xml",
+        "Regulation_50_Prior_Intimation_Of_Board_Meeting/in-capmkt-ent-2025-03-31.xsd",
+        "Regulation_50_Prior_Intimation_Of_Board_Meeting/in-capmkt-pre-2025-03-31.xml",
+        "Regulation_50_Prior_Intimation_Of_Board_Meeting/in-capmkt-roles-2025-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "315c11eedc3f39c6aaf4890433bc6c731ce93c30248ebe36388d5a02ffbdd5cc",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2025-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2025-03-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Regulation_50_Prior_Intimation_Of_Board_Meeting/2025-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Regulation_50_Prior_Intimation_Of_Board_Meeting_20251231172205",
+      "release_id": "2025-03-31__315c11ee",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Regulation_50_Prior_Intimation_Of_Board_Meeting_20251231172205",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2025-12/Taxonomy_Regulation_50_Prior_Intimation_Of_Board_Meeting_20251231172205.zip",
+      "stored_path": "Regulation_50_Prior_Intimation_Of_Board_Meeting/2025-03-31__315c11ee",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Regulation_50_Prior_Intimation_Of_Board_Meeting/2025-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-03-31"
+    },
+    {
+      "entry_points": [
+        "RelatedPartyTransactions/in-capmkt-ent-2024-03-31.xsd"
+      ],
+      "family": "RelatedPartyTransactions",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "RelatedPartyTransactions/in-capmkt-def-2024-03-31.xml",
+        "RelatedPartyTransactions/in-capmkt-ent-2024-03-31.xsd",
+        "RelatedPartyTransactions/in-capmkt-pre-2024-03-31.xml",
+        "RelatedPartyTransactions/in-capmkt-roles-2024-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "72e6663b3e5f33f8278e98774e27b0c14f939aa4370eb514405799ffb41ba647",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-03-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/RelatedPartyTransactions/2024-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Related Party Transactions _2024",
+      "release_id": "2024-03-31__72e6663b",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Related Party Transactions _2024",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy_Related%20Party%20Transactions%20_2024.zip",
+      "stored_path": "RelatedPartyTransactions/2024-03-31__72e6663b",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/RelatedPartyTransactions/2024-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-03-31"
+    },
+    {
+      "entry_points": [
+        "Right_Issue_IP/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "Right_Issue_IP",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "Right_Issue_IP/in-capmkt-def-2022-06-30.xml",
+        "Right_Issue_IP/in-capmkt-ent-2022-06-30.xsd",
+        "Right_Issue_IP/in-capmkt-pre-2022-06-30.xml",
+        "Right_Issue_IP/in-capmkt-roles-2022-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "e22295a011c57aee24207e8250ab5a8c10bb336a386345dbf6dcf3822d59cb4d",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Right_Issue_IP/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Rights_Issue_Taxonomy_20260227175140",
+      "release_id": "2022-06-30__e22295a0",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Rights_Issue_Taxonomy_20260227175140",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Rights_Issue_Taxonomy_20260227175140.zip",
+      "stored_path": "Right_Issue_IP/2022-06-30__e22295a0",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Right_Issue_IP/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "Right_Issue_Listing/in-capmkt-ent-2022-06-30.xsd"
+      ],
+      "family": "Right_Issue_Listing",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "Right_Issue_Listing/in-capmkt-ent-2022-06-30.xsd",
+        "Right_Issue_Listing/in-capmkt-pre-2022-06-30.xml",
+        "Right_Issue_Listing/in-capmkt-roles-2022-06-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "6d65a9401f4ed3411e3cdc4bb218618852665eefa3f000c1d9a2e77b9c40356a",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-06-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Right_Issue_Listing/2022-06-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Rights_Issue_Taxonomy_20260227175140",
+      "release_id": "2022-06-30__6d65a940",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Rights_Issue_Taxonomy_20260227175140",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-02/Rights_Issue_Taxonomy_20260227175140.zip",
+      "stored_path": "Right_Issue_Listing/2022-06-30__6d65a940",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Right_Issue_Listing/2022-06-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-06-30"
+    },
+    {
+      "entry_points": [
+        "ShareCapitalAudit/in-bse-aud-2025-01-31.xsd"
+      ],
+      "family": "ShareCapitalAudit",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "META-INF/taxonomyPackage.xml",
+        "ShareCapitalAudit/in-bse-aud-2025-01-31.xsd",
+        "ShareCapitalAudit/in-bse-aud-def-2025-01-31.xml",
+        "ShareCapitalAudit/in-bse-aud-label-2025-01-31.xml",
+        "ShareCapitalAudit/in-bse-aud-pre-2025-01-31.xml",
+        "ShareCapitalAudit/in-bse-aud-ref-2025-01-31.xml",
+        "ShareCapitalAudit/in-bse-aud-roles-2025-01-31.xsd",
+        "ShareCapitalAudit/in-bse-aud-types-2025-01-31.xsd"
+      ],
+      "fingerprint": "9876c83b8683da20a2ad18529ccdb8e9f32a1eba6d4e8f5477fc7fde023b4bc4",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-roles",
+        "http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-types"
+      ],
+      "provenance_name": "Taxonomy RecoShareCapital",
+      "release_id": "2025-01-31__9876c83b",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy RecoShareCapital\\Taxonomy RecoShareCapital",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy%20RecoShareCapital.zip",
+      "stored_path": "ShareCapitalAudit/2025-01-31__9876c83b",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud"
+      ],
+      "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "StatementofDeviation/Statement of Deviation/in-capmkt-ent-2021-03-31.xsd"
+      ],
+      "family": "StatementofDeviation",
+      "files": [
+        "StatementofDeviation/Statement of Deviation/in-capmkt-def-2021-03-31.xml",
+        "StatementofDeviation/Statement of Deviation/in-capmkt-ent-2021-03-31.xsd",
+        "StatementofDeviation/Statement of Deviation/in-capmkt-pre-2021-03-31.xml",
+        "StatementofDeviation/Statement of Deviation/in-capmkt-roles-2021-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "21ea5b35d247fab05f735c5a839eb4be555d07d92d50e742a581d80c197eb00a",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/2021-03-31/in-capmkt",
+        "http://www.bseindia.com/xbrl/2021-03-31/in-capmkt-types",
+        "http://www.bseindia.com/xbrl/StatementofDeviation/2021-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Statement_of_Deviation_Taxonomy",
+      "release_id": "2021-03-31__21ea5b35",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Statement_of_Deviation_Taxonomy\\Statement_of_Deviation_Taxonomy",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Statement_of_Deviation_Taxonomy.zip",
+      "stored_path": "StatementofDeviation/2021-03-31__21ea5b35",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/StatementofDeviation/2021-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2021-03-31"
+    },
+    {
+      "entry_points": [
+        "Trading_Plan/in-capmkt-ent-2024-08-31.xsd"
+      ],
+      "family": "Trading_Plan",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Trading_Plan/in-capmkt-def-2024-08-31.xml",
+        "Trading_Plan/in-capmkt-ent-2024-08-31.xsd",
+        "Trading_Plan/in-capmkt-pre-2024-08-31.xml",
+        "Trading_Plan/in-capmkt-roles-2024-08-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "e9a49282ce12eb5d74013a744fbb5271969e92815fd2e307ddbad6ca73c20448",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-08-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-08-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Trading_Plan/2024-08-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Trading_Plan_31-08-2024",
+      "release_id": "2024-08-31__e9a49282",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Taxonomy_Trading_Plan_31-08-2024",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Taxonomy_Trading_Plan_31-08-2024.zip",
+      "stored_path": "Trading_Plan/2024-08-31__e9a49282",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Trading_Plan/2024-08-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-08-31"
+    },
+    {
+      "entry_points": [
+        "UHP_REIT_INVIT/in-capmkt-ent-2022-03-31.xsd"
+      ],
+      "family": "UHP_REIT_INVIT",
+      "files": [
+        "UHP_REIT_INVIT/in-capmkt-def-2022-03-31.xml",
+        "UHP_REIT_INVIT/in-capmkt-ent-2022-03-31.xsd",
+        "UHP_REIT_INVIT/in-capmkt-pre-2022-03-31.xml",
+        "UHP_REIT_INVIT/in-capmkt-roles-2022-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "861697516392739864882c358939b1c84bb078c5089b429027564ad65bde6e10",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/UHP_REIT_INVIT/2022-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "UHP_REIT_INVIT Taxonomy",
+      "release_id": "2022-03-31__86169751",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\UHP_REIT_INVIT Taxonomy",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/UHP_REIT_INVIT%20Taxonomy.zip",
+      "stored_path": "UHP_REIT_INVIT/2022-03-31__86169751",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/UHP_REIT_INVIT/2022-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-03-31"
+    },
+    {
+      "entry_points": [
+        "cg/in-bse-cg-2021-09-30.xsd"
+      ],
+      "family": "cg",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "META-INF/taxonomyPackage.xml",
+        "cg/in-bse-cg-2021-09-30.xsd",
+        "cg/in-bse-cg-def-2021-09-30.xml",
+        "cg/in-bse-cg-label-2021-09-30.xml",
+        "cg/in-bse-cg-pre-2021-09-30.xml",
+        "cg/in-bse-cg-ref-2021-09-30.xml",
+        "cg/in-bse-cg-roles-2021-09-30.xsd",
+        "cg/in-bse-cg-types-2021-09-30.xsd"
+      ],
+      "fingerprint": "1071f19cf76c94b9d66ab344cc4ecc3e76a6bd420f24091e93100b699f21b63c",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles",
+        "http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-types"
+      ],
+      "provenance_name": "CG_Taxonomy",
+      "release_id": "2021-09-30__1071f19c",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\CG_Taxonomy\\CG_Taxonomy\\CG taxonomy 2021-09-30",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/CG_Taxonomy.zip",
+      "stored_path": "cg/2021-09-30__1071f19c",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg"
+      ],
+      "version": "2021-09-30"
+    },
+    {
+      "entry_points": [
+        "co/in-bse-co-2017-09-15.xsd"
+      ],
+      "family": "co",
+      "files": [
+        "co/Definition/in-bse-co-def-2017-09-15.xml",
+        "co/Presentation/in-bse-co-pre-2017-09-15.xml",
+        "co/in-bse-co-2017-09-15.xsd",
+        "co/in-bse-co-label-2017-09-15.xml",
+        "co/in-bse-co-ref-2017-09-15.xml",
+        "co/in-bse-co-roles-2017-09-15.xsd",
+        "co/in-bse-co-types-2017-09-15.xsd"
+      ],
+      "fingerprint": "31d057296370fff7b5833a5df3e1778844b237aa7bcbd0135c486d47bac5132a",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/co/2017-09-15/in-bse-co-roles",
+        "http://www.bseindia.com/xbrl/co/2017-09-15/in-bse-co-types"
+      ],
+      "provenance_name": "PIT_Taxomomy",
+      "release_id": "2017-09-15__31d05729",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\PIT_Taxomomy\\Taxomomy 2017-09-15",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/PIT_Taxomomy.zip",
+      "stored_path": "co/2017-09-15__31d05729",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/co/2017-09-15/in-bse-co"
+      ],
+      "version": "2017-09-15"
+    },
+    {
+      "entry_points": [
+        "fin/banking_entry_point_2019-09-30.xsd",
+        "fin/in-bse-fin-2019-09-30.xsd"
+      ],
+      "family": "fin",
+      "files": [
+        "fin/Calculation/in-bse-fin-cal-2019-09-30.xml",
+        "fin/Definition/in-bse-fin-def-2019-09-30.xml",
+        "fin/Presentation/in-bse-fin-pre-2019-09-30.xml",
+        "fin/banking_entry_point_2019-09-30.xsd",
+        "fin/in-bse-fin-2019-09-30.xsd",
+        "fin/in-bse-fin-label-2019-09-30.xml",
+        "fin/in-bse-fin-ref-2019-09-30.xml",
+        "fin/in-bse-fin-roles-2019-09-30.xsd",
+        "fin/in-bse-fin-types-2019-09-30.xsd"
+      ],
+      "fingerprint": "4fcf335c3145b14e3173bdc40e81f4241c8d12bb099db319d2fead7981ead3d3",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin",
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin-roles",
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin-types"
+      ],
+      "provenance_name": "Financial Results_Banking Taxonomy",
+      "release_id": "2019-09-30__4fcf335c",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Financial Results_Banking Taxonomy\\Financial Results_Banking Taxonomy\\Banking Taxonomy-2019-09-30",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Financial%20Results_Banking%20Taxonomy.zip",
+      "stored_path": "fin/2019-09-30__4fcf335c",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin",
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin/in-bse-fin-ent"
+      ],
+      "version": "2019-09-30"
+    },
+    {
+      "entry_points": [
+        "fin/in-bse-fin-2019-09-30.xsd",
+        "fin/other_than_banks_entry_point_2019-09-30.xsd"
+      ],
+      "family": "fin",
+      "files": [
+        "fin/Calculation/in-bse-fin-cal-2019-09-30.xml",
+        "fin/Definition/in-bse-fin-def-2019-09-30.xml",
+        "fin/Presentation/in-bse-fin-pre-2019-09-30.xml",
+        "fin/in-bse-fin-2019-09-30.xsd",
+        "fin/in-bse-fin-label-2019-09-30.xml",
+        "fin/in-bse-fin-ref-2019-09-30.xml",
+        "fin/in-bse-fin-roles-2019-09-30.xsd",
+        "fin/in-bse-fin-types-2019-09-30.xsd",
+        "fin/other_than_banks_entry_point_2019-09-30.xsd"
+      ],
+      "fingerprint": "5aa65fe5911835064ba2cf04a8c4f83c6d11692727ad985acc5f8f3e180a8341",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin",
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin-roles",
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin-types"
+      ],
+      "provenance_name": "Financial Results_Other Than Banks",
+      "release_id": "2019-09-30__5aa65fe5",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Financial Results_Other Than Banks\\Financial Results_Other Than Banks\\Main Taxonomy- 2019-09-30",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Financial%20Results_Other%20Than%20Banks.zip",
+      "stored_path": "fin/2019-09-30__5aa65fe5",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin",
+        "http://www.bseindia.com/xbrl/fin/2019-09-30/in-bse-fin/in-bse-fin-ent"
+      ],
+      "version": "2019-09-30"
+    },
+    {
+      "entry_points": [
+        "fin/in-bse-fin-2020-03-31.xsd"
+      ],
+      "family": "fin",
+      "files": [
+        "fin/Calculation/in-bse-fin-cal-2019-09-30.xml",
+        "fin/Calculation/in-bse-fin-cal-2020-03-31.xml",
+        "fin/Definition/in-bse-fin-def-2019-09-30.xml",
+        "fin/Definition/in-bse-fin-def-2020-03-31.xml",
+        "fin/Presentation/in-bse-fin-pre-2019-09-30.xml",
+        "fin/Presentation/in-bse-fin-pre-2020-03-31.xml",
+        "fin/in-bse-fin-2020-03-31.xsd",
+        "fin/in-bse-fin-label-2020-03-31.xml",
+        "fin/in-bse-fin-ref-2020-03-31.xml",
+        "fin/in-bse-fin-roles-2020-03-31.xsd",
+        "fin/in-bse-fin-types-2020-03-31.xsd"
+      ],
+      "fingerprint": "295072a2b78192a6a7c97a6a5d451629cfbd8fbe951536ab573bbffe208afab1",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles",
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-types"
+      ],
+      "provenance_name": "Financial Results_NBFCTaxonomy",
+      "release_id": "2020-03-31__295072a2",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Financial Results_NBFCTaxonomy\\NBFCTaxonomy\\NBFC Taxonomy 2020-03-31",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Financial%20Results_NBFCTaxonomy.zip",
+      "stored_path": "fin/2020-03-31__295072a2",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin"
+      ],
+      "version": "2020-03-31"
+    },
+    {
+      "entry_points": [
+        "fin/Ind-AS_entry_point_2020-03-31.xsd",
+        "fin/in-bse-fin-2020-03-31.xsd"
+      ],
+      "family": "fin",
+      "files": [
+        "fin/Calculation/in-bse-fin-cal-2020-03-31.xml",
+        "fin/Definition/in-bse-fin-def-2020-03-31.xml",
+        "fin/Ind-AS_entry_point_2020-03-31.xsd",
+        "fin/Presentation/in-bse-fin-pre-2020-03-31.xml",
+        "fin/in-bse-fin-2020-03-31.xsd",
+        "fin/in-bse-fin-label-2020-03-31.xml",
+        "fin/in-bse-fin-ref-2020-03-31.xml",
+        "fin/in-bse-fin-roles-2020-03-31.xsd",
+        "fin/in-bse-fin-types-2020-03-31.xsd"
+      ],
+      "fingerprint": "69965026e9e21e3339cf3681dd0f07f3c73997702fcd1c1c9021e839cb51586c",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin",
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-roles",
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin-types"
+      ],
+      "provenance_name": "Financial Results_Ind AS Taxonomy",
+      "release_id": "2020-03-31__69965026",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Financial Results_Ind AS Taxonomy\\Financial Results_Ind AS Taxonomy\\Ind AS Taxonomy 2020-03-31",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Financial%20Results_Ind%20AS%20Taxonomy.zip",
+      "stored_path": "fin/2020-03-31__69965026",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin",
+        "http://www.bseindia.com/xbrl/fin/2020-03-31/in-bse-fin/in-bse-fin-ent"
+      ],
+      "version": "2020-03-31"
+    },
+    {
+      "entry_points": [
+        "shp/in-bse-shp-2025-10-31.xsd"
+      ],
+      "family": "shp",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "META-INF/taxonomyPackage.xml",
+        "shp/in-bse-shp-2025-10-31.xsd",
+        "shp/in-bse-shp-cal-2025-10-31.xml",
+        "shp/in-bse-shp-def-2025-10-31.xml",
+        "shp/in-bse-shp-label-2025-10-31.xml",
+        "shp/in-bse-shp-pre-2025-10-31.xml",
+        "shp/in-bse-shp-ref-2025-10-31.xml",
+        "shp/in-bse-shp-roles-2025-10-31.xsd",
+        "shp/in-bse-shp-types-2025-10-31.xsd"
+      ],
+      "fingerprint": "b15136b3cddd0307b97da3d8ea940a34e4e182a79e86c0ba7450f48b752faec8",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles",
+        "http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-types"
+      ],
+      "provenance_name": "SHP_Taxonomy_20251031_20251229121107",
+      "release_id": "2025-10-31__b15136b3",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\SHP_Taxonomy_20251031_20251229121107\\SHP Taxonomy_2025-10-31",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2025-12/SHP_Taxonomy_20251031_20251229121107.zip",
+      "stored_path": "shp/2025-10-31__b15136b3",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp"
+      ],
+      "version": "2025-10-31"
+    },
+    {
+      "entry_points": [
+        "voting/in-bse-voting-2016-01-12.xsd"
+      ],
+      "family": "voting",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "META-INF/taxonomyPackage.xml",
+        "voting/Definition/in-bse-voting-def-2016-01-12.xml",
+        "voting/Presentation/in-bse-voting-pre-2016-01-12.xml",
+        "voting/in-bse-voting-2016-01-12.xsd",
+        "voting/in-bse-voting-label-2016-01-12.xml",
+        "voting/in-bse-voting-ref-2016-01-12.xml",
+        "voting/in-bse-voting-roles-2016-01-12.xsd",
+        "voting/in-bse-voting-types-2016-01-12.xsd"
+      ],
+      "fingerprint": "b589d56d1b60af5068dd5950084b30d150b65912e7ea7794189557761affd809",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles",
+        "http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-types"
+      ],
+      "provenance_name": "Voting_Taxonomy",
+      "release_id": "2016-01-12__b589d56d",
+      "source_path": "C:\\Users\\uig55220\\AppData\\Local\\Temp\\tmpsmnkgth8\\Voting_Taxonomy\\Voting_Taxonomy\\Taxonomy-2016-01-12",
+      "source_url": "https://nsearchives.nseindia.com/web/sites/default/files/inline-files/Voting_Taxonomy.zip",
+      "stored_path": "voting/2016-01-12__b589d56d",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting"
+      ],
+      "version": "2016-01-12"
+    }
+  ]
+}

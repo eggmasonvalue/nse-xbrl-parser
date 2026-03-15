@@ -6,8 +6,14 @@ import logging
 import urllib.parse
 import zipfile
 import tempfile
-import shutil
 import re
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SRC_ROOT = REPO_ROOT / "src"
+if str(SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(SRC_ROOT))
+
+from nse_xbrl_parser.taxonomy_store import TAXONOMY_DIR, discover_release_units, install_release, release_is_self_contained
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("TaxonomyBuilder")
@@ -94,21 +100,20 @@ class NSEXBRLFetcher:
         logger.error(f"Exhausted all retries for {url}.")
 
 def main():
-    dest_dir = Path(__file__).parent.parent / "src" / "nse_xbrl_parser"/ "taxonomies"
-    dest_dir.mkdir(parents=True, exist_ok=True)
-    
+    TAXONOMY_DIR.mkdir(parents=True, exist_ok=True)
+
     fetcher = NSEXBRLFetcher()
     zip_links = fetcher.fetch_taxonomy_links()
-    
+
     if not zip_links:
         logger.error("No taxonomy links found. Exiting.")
         sys.exit(1)
-        
-    # Process within an isolated temporary directory
+
     with tempfile.TemporaryDirectory() as temp_dir_str:
         temp_dir = Path(temp_dir_str)
-        
-        # Download Phase
+        added_release_count = 0
+        skipped_release_count = 0
+
         for z_url in zip_links:
             zip_name = urllib.parse.unquote(z_url.split("/")[-1])
             archive_root = temp_dir / _safe_archive_dirname(z_url)
@@ -124,8 +129,8 @@ def main():
                         z.extractall(archive_root)
                 except zipfile.BadZipFile:
                     logger.error(f"Corrupted downloaded ZIP: {zip_name}")
+                    continue
 
-                # Nested Extraction Phase
                 nested_zips = list(archive_root.rglob("*.zip"))
                 logger.info(f"Extracting {len(nested_zips)} nested ZIPs from {archive_root.name}...")
                 for nested_zip in nested_zips:
@@ -137,48 +142,32 @@ def main():
                     except zipfile.BadZipFile:
                         logger.error(f"Corrupted nested ZIP: {nested_zip.name}")
 
-        # Idempotent Copy Phase (Additive Only)
-        # We only want .xsd (schema) and .xml (linkbases). Delete Excel Bloat (.xlsx, .xlsm, .xls)
-        logger.info(f"Merging valid taxonomies into {dest_dir} (Idempotent Additive)")
-        new_files_count = 0
-        updated_files_count = 0
-        deleted_excel_count = 0
-        
-        # Walk through the temp extraction directory
-        for f in temp_dir.rglob("*"):
-            if f.is_file():
-                # Explicitly ignore Bloat
-                if f.suffix.lower() in [".xlsx", ".xlsm", ".xls", ".pdf"]:
-                    deleted_excel_count += 1
-                    continue
-                    
-                # We only want XSDs and XMLs
-                if f.suffix.lower() not in [".xsd", ".xml"]:
-                    continue
-                
-                # Maintain the EXACT relative structure from the ZIP extraction.
-                # Many NSE schemas use relative paths like `../core/...` which only
-                # work if the folder hierarchy is preserved.
-                rel_path = f.relative_to(temp_dir)
-                target_path = dest_dir / rel_path
-                
-                # Ensure the subdirectory exists
-                target_path.parent.mkdir(parents=True, exist_ok=True)
-                
-                # Copy idempotently
-                if not target_path.exists():
-                    shutil.copy2(f, target_path)
-                    new_files_count += 1
-                else:
-                    # For safety, we'll aggressively overwrite existing schemas to ensure we have the very latest patch
-                    shutil.copy2(f, target_path)
-                    updated_files_count += 1
-                    
-        logger.info("Refinement Summary:")
-        logger.info(f" - Ignored {deleted_excel_count} bloat files (XLSX, PDF, etc)")
-        logger.info(f" - Added {new_files_count} brand new schemas")
-        logger.info(f" - Overwrote/Updated {updated_files_count} existing schemas")
-        
+                releases = discover_release_units(archive_root)
+                logger.info(f"Discovered {len(releases)} release units in {archive_root.name}.")
+                for release in releases:
+                    if not release_is_self_contained(release):
+                        logger.warning(
+                            f"Skipping non-self-contained release {release.family}/{release.release_id} from {archive_root.name}"
+                        )
+                        skipped_release_count += 1
+                        continue
+                    added, target_dir = install_release(
+                        release,
+                        destination_root=TAXONOMY_DIR,
+                        source_url=z_url,
+                        provenance_name=archive_root.name,
+                    )
+                    if added:
+                        added_release_count += 1
+                        logger.info(f"Added release {release.family}/{release.release_id} -> {target_dir}")
+                    else:
+                        skipped_release_count += 1
+                        logger.info(f"Skipped existing release {release.family}/{release.release_id}")
+
+        logger.info("Release Summary:")
+        logger.info(f" - Added {added_release_count} new canonical releases")
+        logger.info(f" - Skipped {skipped_release_count} duplicate releases")
+
     logger.info("Taxonomy build complete.")
 
 if __name__ == "__main__":
