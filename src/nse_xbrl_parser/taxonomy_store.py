@@ -309,10 +309,24 @@ def iter_versioned_release_roots(taxonomy_root: Path = TAXONOMY_DIR) -> list[Pat
 
 
 def collect_versioned_schema_candidates(schema_ref: str, taxonomy_root: Path = TAXONOMY_DIR) -> list[Path]:
+    """Search versioned releases for a schema reference using the index for speed."""
+    index = load_index(taxonomy_root / "index.json")
     candidates: list[Path] = []
-    for release_root in iter_versioned_release_roots(taxonomy_root):
-        candidates.extend(release_root.rglob(schema_ref))
-    return sorted(candidates)
+    
+    for release in index.get("releases", []):
+        stored_path = release.get("stored_path")
+        if not stored_path:
+            continue
+            
+        # Check if the schema_ref is in the files of this release
+        # We need to match the filename part of the path
+        for file_rel_path in release.get("files", []):
+            if file_rel_path.split("/")[-1] == schema_ref:
+                candidates.append(taxonomy_root / stored_path / file_rel_path)
+            elif file_rel_path == schema_ref: # Just in case it's a flat path
+                candidates.append(taxonomy_root / stored_path / file_rel_path)
+                
+    return sorted(list(set(candidates)))
 
 
 def collect_flat_schema_candidates(schema_ref: str, taxonomy_root: Path = TAXONOMY_DIR) -> list[Path]:

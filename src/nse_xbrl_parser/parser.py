@@ -84,6 +84,29 @@ def _find_schema_ref(xbrl_content: bytes) -> Optional[str]:
             pass
     return None
 
+def _get_instance_namespaces(xbrl_content: bytes) -> set[str]:
+    """Extract all unique namespaces from the XBRL instance document."""
+    namespaces = set()
+    try:
+        import xml.etree.ElementTree as ET
+        from io import BytesIO
+
+        # We need to capture all namespace declarations
+        # iterparse with "start-ns" is perfect for this
+        for event, (prefix, uri) in ET.iterparse(BytesIO(xbrl_content), events=["start-ns"]):
+            namespaces.add(uri)
+    except Exception as e:
+        logger.debug(f"Namespace extraction failed: {e}. Falling back to regex.")
+        try:
+            content_str = xbrl_content.decode("utf-8", errors="ignore")
+            # Simple regex to find xmlns:prefix="uri" or xmlns="uri"
+            matches = re.findall(r'xmlns(?::\w+)?=["\']([^"\']+)["\']', content_str)
+            for m in matches:
+                namespaces.add(m)
+        except Exception:
+            pass
+    return namespaces
+
 def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
     """Parse an NSE XBRL XML document and yield a dictionary of human-readable facts.
 
@@ -116,6 +139,9 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
 
     logger.debug(f"Detected schemaRef: {schema_ref}")
 
+    instance_namespaces = _get_instance_namespaces(file_content)
+    logger.debug(f"Detected instance namespaces: {instance_namespaces}")
+
     # Search versioned releases first, then fall back to the flat taxonomy tree.
     matching_schemas = collect_versioned_schema_candidates(schema_ref)
     if not matching_schemas:
@@ -126,6 +152,45 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
             f"Schema '{schema_ref}' not found in the bundled taxonomy archive. "
             "The NSE may have published an unsupported taxonomy version."
         )
+
+    # Disambiguation based on namespaces to avoid expensive multiple Arelle evaluations
+    if len(matching_schemas) > 1:
+        from .taxonomy_store import load_index
+        index = load_index()
+        
+        target_namespace_matches = []
+        imported_namespace_matches = []
+        
+        for schema_path in matching_schemas:
+            # Find the release this schema belongs to
+            # A versioned schema path is like .../family/release_id/schema_ref
+            # or .../family/release_id/subfolder/schema_ref
+            try:
+                rel_parts = schema_path.relative_to(TAXONOMY_DIR).parts
+                if len(rel_parts) >= 2:
+                    family = rel_parts[0]
+                    release_id = rel_parts[1]
+                    
+                    for release in index.get("releases", []):
+                        if release["family"] == family and release["release_id"] == release_id:
+                            # Primary match: target namespaces
+                            if any(ns in instance_namespaces for ns in release.get("target_namespaces", [])):
+                                target_namespace_matches.append(schema_path)
+                                break
+                            # Secondary match: imported namespaces
+                            if any(ns in instance_namespaces for ns in release.get("imported_core_namespaces", [])):
+                                imported_namespace_matches.append(schema_path)
+                                break
+            except ValueError:
+                # Not in TAXONOMY_DIR (maybe it's a flat schema candidate)
+                continue
+        
+        if target_namespace_matches:
+            logger.debug(f"Filtered {len(matching_schemas)} schemas down to {len(target_namespace_matches)} based on target_namespaces.")
+            matching_schemas = target_namespace_matches
+        elif imported_namespace_matches:
+            logger.debug(f"Filtered {len(matching_schemas)} schemas down to {len(imported_namespace_matches)} based on imported_core_namespaces.")
+            matching_schemas = imported_namespace_matches
 
     compatible_schemas = [path for path in matching_schemas if _schema_has_matching_local_imports(path)]
     if compatible_schemas:
