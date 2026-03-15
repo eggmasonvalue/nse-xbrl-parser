@@ -12,6 +12,7 @@
 - **Strict Local Import Validation**: Candidate entry-points are only considered compatible when all local relative imports exist and their `targetNamespace` values match the declared `xsd:import namespace`.
 - **Type-safe Array Handling (Resolved Technical Debt)**: When duplicate facts (like `NameOfAllottee`) appear, the parser now natively stores them as `List[str]` in the output dictionary instead of dissolving the array boundaries via string concatenation.
 - **Fail-Fast Validation**: If Arelle cannot resolve any facts for the selected schema set, the parser raises instead of falling back to a raw XML sweep. Broken bundled taxonomies are treated as packaging defects that must be fixed at the source.
+- **Live Filing Regression Coverage**: `tests/test_parser.py` now includes `curl`-based integration regressions for several NSE filings (preferential issue listing, fraud/default announcement, notice of shareholders meeting, CIM appointment, and alteration of capital). Each regression verifies that the corresponding bundled taxonomy still yields the expected human-readable facts when parsing the live XML.
 
 ### Current Storage Strategy
 - **No Shared Global Core**: A single top-level `taxonomies/core` is not treated as authoritative anymore. Releases are identified and stored with their own `core/`.

@@ -10,6 +10,7 @@ graph TD;
     Matcher -->|Versioned-first lookup| Versioned[(taxonomies/<family>/<release_id>)]
     Matcher -->|Flat fallback| Flat[(taxonomies current flat tree)]
     Updater[update_taxonomies.py] --> Versioned
+    LiveTests[tests/test_parser.py live curl regressions] --> API
     Versioned --> Index[index.json]
     Matcher --> Copier[Instance Copier]
     Copier -->|Copy to schema parent| Temp[Local XML instance]
@@ -26,6 +27,7 @@ graph TD;
 6. **Locality Injection**: The parser copies the input XBRL XML into the SAME directory as the discovered schema (as a `_temp_` file). This allows Arelle to resolve `..` relative paths natively.
 7. **Validation and Fact Extraction**: The `arelle` engine loads the temporary XML, resolves labels, and emits unique facts.
 8. **Cleanup**: The temporary `_temp_` XML is immediately unlinked.
+9. **Live Regression Tests**: `tests/test_parser.py` can fetch multiple NSE filings (preferential issue listing, fraud/default announcement, notice of shareholders meeting, CIM, and alteration of capital) with `curl`, feed each into `parse_xbrl_file()`, and assert stable facts. Transport failures are treated as environmental skips so the parser is only evaluated after a successful download.
 
 ## Principles
 * **Read-Only**: The module's root directory (`site-packages`) is never written to.

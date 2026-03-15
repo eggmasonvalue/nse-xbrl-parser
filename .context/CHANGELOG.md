@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- **Live NSE Regression Tests**: Added parser integration tests that download several representative NSE filings (`PREF_ISSUE_LS_1634111_10032026122945_WEB.xml`, the related fraud/default announcement, the shareholders-meeting notice, a CIM appointment, and an alteration-of-capital announcement) via `curl`, parse them with the bundled taxonomies, and verify key facts while skipping cleanly if the NSE host is unavailable.
 ### Changed
 - **Multi-Schema Validation Engine**: Completely replaced the hacky filename-based schema collision resolution. `parse_xbrl_file` now iterates through *all* matching schema files in the taxonomy archive, validates the instance document against each of them, and securely merges the output. This robustly bypasses NSE-introduced spelling inconsistencies and omitted elements without relying on namespace targeting.
 - **Array Value Resolution**: Replaced string-concatenation for repeated XBRL tags. `parse_xbrl_file` now correctly aggregates multiple identical concepts (like `Name of allottee`) into a Python `List[str]` instead of a single comma-separated string.

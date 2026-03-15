@@ -9,3 +9,6 @@ It bundles an offline `taxonomies` archive where each taxonomy family stores his
 
 ## Purpose
 Originally extracted from the KnowledgeLM project, `nse-xbrl-parser` is built to be an open-source, easily installable parser that any Python module can consume safely for automated financial data harvesting.
+
+## Verification Coverage
+The test suite includes live regression coverage for several representative NSE filings: a preferential issue listing, a fraud disclosure, a notice of shareholders meeting, a board appointment (CIM), and an alteration of capital announcement. Each test downloads the XML via `curl`, parses the file with the bundled taxonomies, and asserts a small set of stable facts while skipping cleanly if the NSE host cannot be reached.

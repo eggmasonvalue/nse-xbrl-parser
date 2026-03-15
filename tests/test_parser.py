@@ -1,5 +1,74 @@
+import shutil
+import subprocess
+from pathlib import Path
+
 import pytest
+
 from nse_xbrl_parser import parse_xbrl_file
+
+
+PREFERENTIAL_ISSUE_LISTING_URL = (
+    "https://nsearchives.nseindia.com/corporate/xbrl/"
+    "PREF_ISSUE_LS_1634111_10032026122945_WEB.xml"
+)
+FRAUD_DISCLOSURE_URL = (
+    "https://nsearchives.nseindia.com/corporate/xbrl/"
+    "Fraud_543386_232026114438_ANN_FRAUD_WebXMLFile_20260302_114440997.xml"
+)
+NOTICE_OF_SHAREHOLDERS_URL = (
+    "https://nsearchives.nseindia.com/corporate/xbrl/"
+    "NOTICE_OF_SHAREHOLDERS_MEETINGS_1630641_26022026110702_WEB.xml"
+)
+CIM_APPOINTMENT_URL = (
+    "https://nsearchives.nseindia.com/corporate/xbrl/"
+    "CIM_80184_1633670_08032026122822_WEB.xml"
+)
+ALTERATION_OF_CAPITAL_URL = (
+    "https://nsearchives.nseindia.com/corporate/xbrl/"
+    "ALTERATION_OF_CAPITAL_AND_FUND_RAISING_992794_30112023082854_WEB.xml"
+)
+
+
+def _download_with_curl(destination: Path, url: str):
+    curl_bin = shutil.which("curl.exe") or shutil.which("curl")
+    if not curl_bin:
+        pytest.skip("curl is not available in the test environment.")
+
+    result = subprocess.run(
+        [
+            curl_bin,
+            "--http1.1",
+            "-L",
+            "--retry",
+            "3",
+            "--retry-all-errors",
+            "--connect-timeout",
+            "20",
+            "--max-time",
+            "180",
+            "-A",
+            "Mozilla/5.0",
+            "-H",
+            "Accept: application/xml,text/xml,*/*",
+            url,
+            "-o",
+            str(destination),
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        pytest.skip(
+            "Unable to fetch live NSE filing via curl: "
+            f"{result.stderr.strip() or result.stdout.strip()}"
+        )
+
+
+def _fetch_live_filing(tmp_path, filename, url):
+    path = tmp_path / filename
+    _download_with_curl(path, url)
+    return path
 
 def test_parse_xbrl_file_not_found():
     with pytest.raises(FileNotFoundError):
@@ -107,3 +176,78 @@ def test_parse_qip_listing_includes_allottee_category_fields(tmp_path):
     assert facts["Percentage of total issue size"] == "0.2332"
     assert facts["Date of BID opening"] == "2026-03-04"
     assert facts["Relavant date"] == "2026-03-02"
+
+
+def test_parse_live_fraud_disclosure_from_nse_url(tmp_path):
+    filing = _fetch_live_filing(tmp_path, "fraud_disclosure.xml", FRAUD_DISCLOSURE_URL)
+
+    facts = parse_xbrl_file(filing)
+
+    assert facts["Name of the company"] == "Fino Payments Bank Limited"
+    assert facts["NSE symbol"] == "FINOPB"
+    assert facts["Type of announcement"] == "New"
+    assert facts["Date of report"] == "2026-03-02"
+
+
+def test_parse_live_notice_of_shareholders_meeting(tmp_path):
+    filing = _fetch_live_filing(
+        tmp_path,
+        "notice_of_shareholders_meeting.xml",
+        NOTICE_OF_SHAREHOLDERS_URL,
+    )
+
+    facts = parse_xbrl_file(filing)
+
+    assert facts["Name of the company"] == "Fino Payments Bank Limited"
+    assert facts["NSE symbol"] == "FINOPB"
+    assert facts["Type of announcement"] == "New"
+    assert facts["Date of shareholders meeting"] == "2026-02-28"
+    assert facts["Amount of remuneration"] == "56984704"
+    assert facts["Event for notice of shareholders meeting"] == "Postal Ballot"
+    assert facts["Mode of shareholders meeting"] == "Postal Ballot"
+
+
+def test_parse_live_cim_appointment_details(tmp_path):
+    filing = _fetch_live_filing(tmp_path, "cim_appointment.xml", CIM_APPOINTMENT_URL)
+
+    facts = parse_xbrl_file(filing)
+
+    assert facts["Name of the company"] == "FINO PAYMENTS BANK LIMITED"
+    assert facts["NSE symbol"] == "FINOPB"
+    assert facts["Designation"] == "Others"
+    assert facts["Reason of change"] == "Appointment"
+    assert (
+        facts["Name of the person or auditor or audit firm or RTA"]
+        == "Ketan Dhirendra Merchant"
+    )
+
+
+def test_parse_live_alteration_of_capital_and_fund_raising(tmp_path):
+    filing = _fetch_live_filing(
+        tmp_path,
+        "alteration_of_capital.xml",
+        ALTERATION_OF_CAPITAL_URL,
+    )
+
+    facts = parse_xbrl_file(filing)
+
+    assert facts["Name of the company"] == "FINO PAYMENTS BANK LIMITED"
+    assert facts["NSE symbol"] == "FINOPB"
+    assert facts["Date of report"] == "2023-11-30"
+    assert facts["Type of announcement"] == "Update"
+
+
+def test_parse_live_preferential_issue_listing_from_nse_url(tmp_path):
+    filing = _fetch_live_filing(
+        tmp_path,
+        "pref_issue_listing.xml",
+        PREFERENTIAL_ISSUE_LISTING_URL,
+    )
+
+    facts = parse_xbrl_file(filing)
+
+    assert facts["Name of the company"] == "Grill Splendour Services Limited"
+    assert facts["NSE symbol"] == "BIRDYS"
+    assert facts["Offer price per security"] == "85.61"
+    assert facts["Date of allotment of shares"] == "2025-02-20"
+    assert facts["Total number of shares allotted"] == "239745"
