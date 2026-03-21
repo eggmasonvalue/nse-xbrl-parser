@@ -1,0 +1,1114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_GeneralInformationAbstract" xlink:label="GeneralInformationAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_GeneralInformationAbstract1" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GeneralInformationAbstract" xlink:to="reference_GeneralInformationAbstract1" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ScripCode" xlink:label="ScripCode" />
+    <reference xlink:type="resource" xlink:label="reference_ScripCode2" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ScripCode" xlink:to="reference_ScripCode2" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfTheCompany" xlink:label="NameOfTheCompany" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheCompany3" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 4</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheCompany" xlink:to="reference_NameOfTheCompany3" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeAddress" xlink:label="RegisteredOfficeAddress" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeAddress4" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeAddress" xlink:to="reference_RegisteredOfficeAddress4" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceAddress" xlink:label="CorrespondenceAddress" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceAddress5" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceAddress" xlink:to="reference_CorrespondenceAddress5" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DateOfQuarterEnded" xlink:label="DateOfQuarterEnded" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfQuarterEnded6" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 1</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfQuarterEnded" xlink:to="reference_DateOfQuarterEnded6" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ISIN" xlink:label="ISIN" />
+    <reference xlink:type="resource" xlink:label="reference_ISIN7" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 2</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ISIN" xlink:to="reference_ISIN7" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_FaceValueOfTheShares" xlink:label="FaceValueOfTheShares" />
+    <reference xlink:type="resource" xlink:label="reference_FaceValueOfTheShares8" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 3</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FaceValueOfTheShares" xlink:to="reference_FaceValueOfTheShares8" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DetailsOfReconciliationOfShareCapitalAuditAbstract" xlink:label="DetailsOfReconciliationOfShareCapitalAuditAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfReconciliationOfShareCapitalAuditAbstract9" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfReconciliationOfShareCapitalAuditAbstract" xlink:to="reference_DetailsOfReconciliationOfShareCapitalAuditAbstract9" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedAbstract" xlink:label="NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedAbstract10" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedAbstract" xlink:to="reference_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedAbstract10" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedTable" xlink:label="NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedTable" />
+    <reference xlink:type="resource" xlink:label="reference_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedTable11" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedTable" xlink:to="reference_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedTable11" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_IdentificationOfStockExchangesAxis" xlink:label="IdentificationOfStockExchangesAxis" />
+    <reference xlink:type="resource" xlink:label="reference_IdentificationOfStockExchangesAxis12" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IdentificationOfStockExchangesAxis" xlink:to="reference_IdentificationOfStockExchangesAxis12" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedLineItems" xlink:label="NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedLineItems13" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedLineItems" xlink:to="reference_NamesOfTheStockExchangesWhereTheCompanySSecuritiesAreListedLineItems13" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfTheStockExchange" xlink:label="NameOfTheStockExchange" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheStockExchange14" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9,Para 18</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheStockExchange" xlink:to="reference_NameOfTheStockExchange14" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NumberOfSharesIssued" xlink:label="NumberOfSharesIssued" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesIssued15" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 10</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesIssued" xlink:to="reference_NumberOfSharesIssued15" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NumberOfSharesListed" xlink:label="NumberOfSharesListed" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesListed16" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 11</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesListed" xlink:to="reference_NumberOfSharesListed16" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NumberOfSharesHeldInDematerialisedFormInCDSL" xlink:label="NumberOfSharesHeldInDematerialisedFormInCDSL" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesHeldInDematerialisedFormInCDSL17" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 12</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesHeldInDematerialisedFormInCDSL" xlink:to="reference_NumberOfSharesHeldInDematerialisedFormInCDSL17" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PercentageOfSharesHeldInDematerialisedFormInCDSLToNumberOfSharesIssued" xlink:label="PercentageOfSharesHeldInDematerialisedFormInCDSLToNumberOfSharesIssued" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfSharesHeldInDematerialisedFormInCDSLToNumberOfSharesIssued18" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 12</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfSharesHeldInDematerialisedFormInCDSLToNumberOfSharesIssued" xlink:to="reference_PercentageOfSharesHeldInDematerialisedFormInCDSLToNumberOfSharesIssued18" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NumberOfSharesHeldInDematerialisedFormInNSDL" xlink:label="NumberOfSharesHeldInDematerialisedFormInNSDL" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesHeldInDematerialisedFormInNSDL19" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 13</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesHeldInDematerialisedFormInNSDL" xlink:to="reference_NumberOfSharesHeldInDematerialisedFormInNSDL19" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PercentageOfSharesHeldInDematerialisedFormInNSDLToNumberOfSharesIssued" xlink:label="PercentageOfSharesHeldInDematerialisedFormInNSDLToNumberOfSharesIssued" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfSharesHeldInDematerialisedFormInNSDLToNumberOfSharesIssued20" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 13</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfSharesHeldInDematerialisedFormInNSDLToNumberOfSharesIssued" xlink:to="reference_PercentageOfSharesHeldInDematerialisedFormInNSDLToNumberOfSharesIssued20" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NumberOfSharesHeldInPhysicalFormat" xlink:label="NumberOfSharesHeldInPhysicalFormat" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesHeldInPhysicalFormat21" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 14</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesHeldInPhysicalFormat" xlink:to="reference_NumberOfSharesHeldInPhysicalFormat21" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PercentageOfSharesHeldInPhysicalFormatToNumberOfSharesIssued" xlink:label="PercentageOfSharesHeldInPhysicalFormatToNumberOfSharesIssued" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfSharesHeldInPhysicalFormatToNumberOfSharesIssued22" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 14</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfSharesHeldInPhysicalFormatToNumberOfSharesIssued" xlink:to="reference_PercentageOfSharesHeldInPhysicalFormatToNumberOfSharesIssued22" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonsForDifferenceBetweenNumberOfSharesIssuedAndListedTextBlock" xlink:label="ReasonsForDifferenceBetweenNumberOfSharesIssuedAndListedTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonsForDifferenceBetweenNumberOfSharesIssuedAndListedTextBlock23" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 16</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonsForDifferenceBetweenNumberOfSharesIssuedAndListedTextBlock" xlink:to="reference_ReasonsForDifferenceBetweenNumberOfSharesIssuedAndListedTextBlock23" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonsForDifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfSharesTextBlock" xlink:label="ReasonsForDifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfSharesTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonsForDifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfSharesTextBlock24" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 16</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonsForDifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfSharesTextBlock" xlink:to="reference_ReasonsForDifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfSharesTextBlock24" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonsForDifferenceBetweenNumberOfSharesListedAndTotalNumberOfSharesTextBlock" xlink:label="ReasonsForDifferenceBetweenNumberOfSharesListedAndTotalNumberOfSharesTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonsForDifferenceBetweenNumberOfSharesListedAndTotalNumberOfSharesTextBlock25" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 16</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonsForDifferenceBetweenNumberOfSharesListedAndTotalNumberOfSharesTextBlock" xlink:to="reference_ReasonsForDifferenceBetweenNumberOfSharesListedAndTotalNumberOfSharesTextBlock25" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationAbstract" xlink:label="CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationAbstract26" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationAbstract" xlink:to="reference_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationAbstract26" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTable" xlink:label="CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTable" />
+    <reference xlink:type="resource" xlink:label="reference_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTable27" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTable" xlink:to="reference_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTable27" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DetailsOfChangesInShareCapitalAxis" xlink:label="DetailsOfChangesInShareCapitalAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfChangesInShareCapitalAxis28" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfChangesInShareCapitalAxis" xlink:to="reference_DetailsOfChangesInShareCapitalAxis28" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationLineItems" xlink:label="CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationLineItems29" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationLineItems" xlink:to="reference_CertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationLineItems29" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonForChangesInShareCapital" xlink:label="ReasonForChangesInShareCapital" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonForChangesInShareCapital30" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonForChangesInShareCapital" xlink:to="reference_ReasonForChangesInShareCapital30" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NumberOfShares" xlink:label="NumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfShares31" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 15</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfShares" xlink:to="reference_NumberOfShares31" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherCompanyHasAppliedForListing" xlink:label="WhetherCompanyHasAppliedForListing" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherCompanyHasAppliedForListing32" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherCompanyHasAppliedForListing" xlink:to="reference_WhetherCompanyHasAppliedForListing32" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherIntimatedToCDSL" xlink:label="WhetherIntimatedToCDSL" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherIntimatedToCDSL33" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherIntimatedToCDSL" xlink:to="reference_WhetherIntimatedToCDSL33" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherIntimatedToNSDL" xlink:label="WhetherIntimatedToNSDL" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherIntimatedToNSDL34" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherIntimatedToNSDL" xlink:to="reference_WhetherIntimatedToNSDL34" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NamesOfStockExchangesWhereInPrincipalApprovalIsPending" xlink:label="NamesOfStockExchangesWhereInPrincipalApprovalIsPending" />
+    <reference xlink:type="resource" xlink:label="reference_NamesOfStockExchangesWhereInPrincipalApprovalIsPending35" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NamesOfStockExchangesWhereInPrincipalApprovalIsPending" xlink:to="reference_NamesOfStockExchangesWhereInPrincipalApprovalIsPending35" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherRegisterOfMembersIsUpdated" xlink:label="WhetherRegisterOfMembersIsUpdated" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherRegisterOfMembersIsUpdated36" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 18</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherRegisterOfMembersIsUpdated" xlink:to="reference_WhetherRegisterOfMembersIsUpdated36" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_UpdatedDateOfRegisterOfMembers" xlink:label="UpdatedDateOfRegisterOfMembers" />
+    <reference xlink:type="resource" xlink:label="reference_UpdatedDateOfRegisterOfMembers37" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 18</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="UpdatedDateOfRegisterOfMembers" xlink:to="reference_UpdatedDateOfRegisterOfMembers37" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReferenceOfPreviousQuarterWithRegardsToExcessDematerialisedShares" xlink:label="ReferenceOfPreviousQuarterWithRegardsToExcessDematerialisedShares" />
+    <reference xlink:type="resource" xlink:label="reference_ReferenceOfPreviousQuarterWithRegardsToExcessDematerialisedShares38" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 19</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReferenceOfPreviousQuarterWithRegardsToExcessDematerialisedShares" xlink:to="reference_ReferenceOfPreviousQuarterWithRegardsToExcessDematerialisedShares38" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_HasTheCompanyResolvedTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter" xlink:label="HasTheCompanyResolvedTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter" />
+    <reference xlink:type="resource" xlink:label="reference_HasTheCompanyResolvedTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter39" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 20</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="HasTheCompanyResolvedTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter" xlink:to="reference_HasTheCompanyResolvedTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter39" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonForNotResolvingTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter" xlink:label="ReasonForNotResolvingTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonForNotResolvingTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter40" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 20</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonForNotResolvingTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter" xlink:to="reference_ReasonForNotResolvingTheMatterOfExcessDematerialisedSharesInTheCurrentQuarter40" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DetailsOfTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysWithTheReasonsForDelayAbstract" xlink:label="DetailsOfTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysWithTheReasonsForDelayAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysWithTheReasonsForDelayAbstract41" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 21</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysWithTheReasonsForDelayAbstract" xlink:to="reference_DetailsOfTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysWithTheReasonsForDelayAbstract41" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_TotalNumberOfDematRequestsConfirmedAfter21Days" xlink:label="TotalNumberOfDematRequestsConfirmedAfter21Days" />
+    <reference xlink:type="resource" xlink:label="reference_TotalNumberOfDematRequestsConfirmedAfter21Days42" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 21</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalNumberOfDematRequestsConfirmedAfter21Days" xlink:to="reference_TotalNumberOfDematRequestsConfirmedAfter21Days42" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_TotalNumberOfSharesConfirmedAfter21Days" xlink:label="TotalNumberOfSharesConfirmedAfter21Days" />
+    <reference xlink:type="resource" xlink:label="reference_TotalNumberOfSharesConfirmedAfter21Days43" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 21</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalNumberOfSharesConfirmedAfter21Days" xlink:to="reference_TotalNumberOfSharesConfirmedAfter21Days43" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_TotalNumberOfDematRequestsPendingAfter21Days" xlink:label="TotalNumberOfDematRequestsPendingAfter21Days" />
+    <reference xlink:type="resource" xlink:label="reference_TotalNumberOfDematRequestsPendingAfter21Days44" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 21</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalNumberOfDematRequestsPendingAfter21Days" xlink:to="reference_TotalNumberOfDematRequestsPendingAfter21Days44" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_TotalNumberOfSharesPendingAfter21Days" xlink:label="TotalNumberOfSharesPendingAfter21Days" />
+    <reference xlink:type="resource" xlink:label="reference_TotalNumberOfSharesPendingAfter21Days45" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 21</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalNumberOfSharesPendingAfter21Days" xlink:to="reference_TotalNumberOfSharesPendingAfter21Days45" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DetailsOfComplianceOfficerAbstract" xlink:label="DetailsOfComplianceOfficerAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfComplianceOfficerAbstract46" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfComplianceOfficerAbstract" xlink:to="reference_DetailsOfComplianceOfficerAbstract46" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfTheComplianceOfficer" xlink:label="NameOfTheComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheComplianceOfficer47" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheComplianceOfficer" xlink:to="reference_NameOfTheComplianceOfficer47" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ContactNumberOfTheComplianceOfficer" xlink:label="ContactNumberOfTheComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_ContactNumberOfTheComplianceOfficer48" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ContactNumberOfTheComplianceOfficer" xlink:to="reference_ContactNumberOfTheComplianceOfficer48" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_FaxNumberOfTheComplianceOfficer" xlink:label="FaxNumberOfTheComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_FaxNumberOfTheComplianceOfficer49" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FaxNumberOfTheComplianceOfficer" xlink:to="reference_FaxNumberOfTheComplianceOfficer49" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_EMailIdOfTheComplianceOfficer" xlink:label="EMailIdOfTheComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_EMailIdOfTheComplianceOfficer50" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EMailIdOfTheComplianceOfficer" xlink:to="reference_EMailIdOfTheComplianceOfficer50" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DetailsOfCertifyingAuditorAbstract" xlink:label="DetailsOfCertifyingAuditorAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfCertifyingAuditorAbstract51" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfCertifyingAuditorAbstract" xlink:to="reference_DetailsOfCertifyingAuditorAbstract51" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_QualificationOfCertifyingAuditor" xlink:label="QualificationOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_QualificationOfCertifyingAuditor52" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="QualificationOfCertifyingAuditor" xlink:to="reference_QualificationOfCertifyingAuditor52" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfCertifyingAuditor" xlink:label="NameOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfCertifyingAuditor53" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfCertifyingAuditor" xlink:to="reference_NameOfCertifyingAuditor53" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DateOfSigningOfCertifyingAuditor" xlink:label="DateOfSigningOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfSigningOfCertifyingAuditor54" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfSigningOfCertifyingAuditor" xlink:to="reference_DateOfSigningOfCertifyingAuditor54" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_AddressOfCertifyingAuditor" xlink:label="AddressOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_AddressOfCertifyingAuditor55" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AddressOfCertifyingAuditor" xlink:to="reference_AddressOfCertifyingAuditor55" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ContactNumberOfCertifyingAuditor" xlink:label="ContactNumberOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_ContactNumberOfCertifyingAuditor56" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ContactNumberOfCertifyingAuditor" xlink:to="reference_ContactNumberOfCertifyingAuditor56" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_FaxNumberOfCertifyingAuditor" xlink:label="FaxNumberOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_FaxNumberOfCertifyingAuditor57" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FaxNumberOfCertifyingAuditor" xlink:to="reference_FaxNumberOfCertifyingAuditor57" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_MembershipNumberOfCertifyingAuditor" xlink:label="MembershipNumberOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_MembershipNumberOfCertifyingAuditor58" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MembershipNumberOfCertifyingAuditor" xlink:to="reference_MembershipNumberOfCertifyingAuditor58" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DetailsOfRegistrarAndShareTransferAgentAbstract" xlink:label="DetailsOfRegistrarAndShareTransferAgentAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfRegistrarAndShareTransferAgentAbstract59" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfRegistrarAndShareTransferAgentAbstract" xlink:to="reference_DetailsOfRegistrarAndShareTransferAgentAbstract59" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_AppointmentOfCommonAgencyForShareRegistryWork" xlink:label="AppointmentOfCommonAgencyForShareRegistryWork" />
+    <reference xlink:type="resource" xlink:label="reference_AppointmentOfCommonAgencyForShareRegistryWork60" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AppointmentOfCommonAgencyForShareRegistryWork" xlink:to="reference_AppointmentOfCommonAgencyForShareRegistryWork60" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfRTA" xlink:label="NameOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfRTA61" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfRTA" xlink:to="reference_NameOfRTA61" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_SEBIRegistrationNumber" xlink:label="SEBIRegistrationNumber" />
+    <reference xlink:type="resource" xlink:label="reference_SEBIRegistrationNumber62" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SEBIRegistrationNumber" xlink:to="reference_SEBIRegistrationNumber62" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_AddressOfRTA" xlink:label="AddressOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_AddressOfRTA63" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AddressOfRTA" xlink:to="reference_AddressOfRTA63" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ContactNumberOfRTA" xlink:label="ContactNumberOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_ContactNumberOfRTA64" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ContactNumberOfRTA" xlink:to="reference_ContactNumberOfRTA64" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_EmailIdOfRTA" xlink:label="EmailIdOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_EmailIdOfRTA65" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EmailIdOfRTA" xlink:to="reference_EmailIdOfRTA65" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DisclosureOfNotesOnReconciliationOfShareCapitalAuditExplanatoryTextBlock" xlink:label="DisclosureOfNotesOnReconciliationOfShareCapitalAuditExplanatoryTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNotesOnReconciliationOfShareCapitalAuditExplanatoryTextBlock66" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 25</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNotesOnReconciliationOfShareCapitalAuditExplanatoryTextBlock" xlink:to="reference_DisclosureOfNotesOnReconciliationOfShareCapitalAuditExplanatoryTextBlock66" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_IncreaseDecreaseInNumberOfShares" xlink:label="IncreaseDecreaseInNumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_IncreaseDecreaseInNumberOfShares67" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IncreaseDecreaseInNumberOfShares" xlink:to="reference_IncreaseDecreaseInNumberOfShares67" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchangeMember" xlink:label="StockExchangeMember" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchangeMember68" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchangeMember" xlink:to="reference_StockExchangeMember68" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange1Member" xlink:label="StockExchange1Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange1Member69" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange1Member" xlink:to="reference_StockExchange1Member69" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange2Member" xlink:label="StockExchange2Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange2Member70" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange2Member" xlink:to="reference_StockExchange2Member70" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange3Member" xlink:label="StockExchange3Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange3Member71" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange3Member" xlink:to="reference_StockExchange3Member71" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange4Member" xlink:label="StockExchange4Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange4Member72" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange4Member" xlink:to="reference_StockExchange4Member72" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange5Member" xlink:label="StockExchange5Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange5Member73" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange5Member" xlink:to="reference_StockExchange5Member73" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange6Member" xlink:label="StockExchange6Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange6Member74" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange6Member" xlink:to="reference_StockExchange6Member74" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange7Member" xlink:label="StockExchange7Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange7Member75" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange7Member" xlink:to="reference_StockExchange7Member75" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange8Member" xlink:label="StockExchange8Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange8Member76" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange8Member" xlink:to="reference_StockExchange8Member76" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange9Member" xlink:label="StockExchange9Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange9Member77" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange9Member" xlink:to="reference_StockExchange9Member77" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StockExchange10Member" xlink:label="StockExchange10Member" />
+    <reference xlink:type="resource" xlink:label="reference_StockExchange10Member78" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 9</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StockExchange10Member" xlink:to="reference_StockExchange10Member78" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonForDelayForNonConfirmationOfDematRequestAfter21Days" xlink:label="ReasonForDelayForNonConfirmationOfDematRequestAfter21Days" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonForDelayForNonConfirmationOfDematRequestAfter21Days79" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 21</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonForDelayForNonConfirmationOfDematRequestAfter21Days" xlink:to="reference_ReasonForDelayForNonConfirmationOfDematRequestAfter21Days79" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonForDelayForNonConfirmationOfDematRequestWithin21Days" xlink:label="ReasonForDelayForNonConfirmationOfDematRequestWithin21Days" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonForDelayForNonConfirmationOfDematRequestWithin21Days80" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 21</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonForDelayForNonConfirmationOfDematRequestWithin21Days" xlink:to="reference_ReasonForDelayForNonConfirmationOfDematRequestWithin21Days80" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DetailsOfShareCapitalDomain" xlink:label="DetailsOfShareCapitalDomain" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfShareCapitalDomain81" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 17</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfShareCapitalDomain" xlink:to="reference_DetailsOfShareCapitalDomain81" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeAddressAbstract" xlink:label="RegisteredOfficeAddressAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeAddressAbstract82" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeAddressAbstract" xlink:to="reference_RegisteredOfficeAddressAbstract82" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeCity" xlink:label="RegisteredOfficeCity" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeCity83" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeCity" xlink:to="reference_RegisteredOfficeCity83" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficePinCode" xlink:label="RegisteredOfficePinCode" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficePinCode84" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficePinCode" xlink:to="reference_RegisteredOfficePinCode84" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeState" xlink:label="RegisteredOfficeState" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeState85" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeState" xlink:to="reference_RegisteredOfficeState85" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeContactNumber" xlink:label="RegisteredOfficeContactNumber" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeContactNumber86" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeContactNumber" xlink:to="reference_RegisteredOfficeContactNumber86" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeFaxNumber" xlink:label="RegisteredOfficeFaxNumber" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeFaxNumber87" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeFaxNumber" xlink:to="reference_RegisteredOfficeFaxNumber87" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceAddressAbstract" xlink:label="CorrespondenceAddressAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceAddressAbstract88" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceAddressAbstract" xlink:to="reference_CorrespondenceAddressAbstract88" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceCity" xlink:label="CorrespondenceCity" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceCity89" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceCity" xlink:to="reference_CorrespondenceCity89" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondencePinCode" xlink:label="CorrespondencePinCode" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondencePinCode90" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondencePinCode" xlink:to="reference_CorrespondencePinCode90" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceState" xlink:label="CorrespondenceState" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceState91" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceState" xlink:to="reference_CorrespondenceState91" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceContactNumber" xlink:label="CorrespondenceContactNumber" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceContactNumber92" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceContactNumber" xlink:to="reference_CorrespondenceContactNumber92" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceFaxNumber" xlink:label="CorrespondenceFaxNumber" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceFaxNumber93" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceFaxNumber" xlink:to="reference_CorrespondenceFaxNumber93" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WebsiteAdressOfRTA" xlink:label="WebsiteAdressOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_WebsiteAdressOfRTA94" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WebsiteAdressOfRTA" xlink:to="reference_WebsiteAdressOfRTA94" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PercentageOfTotalNumberOfSharesheldToNumberOfSharesIssued" xlink:label="PercentageOfTotalNumberOfSharesheldToNumberOfSharesIssued" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfTotalNumberOfSharesheldToNumberOfSharesIssued95" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 15</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfTotalNumberOfSharesheldToNumberOfSharesIssued" xlink:to="reference_PercentageOfTotalNumberOfSharesheldToNumberOfSharesIssued95" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PercentageOfTotalIssuedCapital" xlink:label="PercentageOfTotalIssuedCapital" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfTotalIssuedCapital96" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para10</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfTotalIssuedCapital" xlink:to="reference_PercentageOfTotalIssuedCapital96" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DesignationOfTheComplianceOfficer" xlink:label="DesignationOfTheComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_DesignationOfTheComplianceOfficer97" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DesignationOfTheComplianceOfficer" xlink:to="reference_DesignationOfTheComplianceOfficer97" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CityOfRTA" xlink:label="CityOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_CityOfRTA98" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CityOfRTA" xlink:to="reference_CityOfRTA98" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PincodeOfRTA" xlink:label="PincodeOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_PincodeOfRTA99" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PincodeOfRTA" xlink:to="reference_PincodeOfRTA99" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_StateOfRTA" xlink:label="StateOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_StateOfRTA100" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StateOfRTA" xlink:to="reference_StateOfRTA100" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_FirmRegistrationNumberOfCertifyingAuditor" xlink:label="FirmRegistrationNumberOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_FirmRegistrationNumberOfCertifyingAuditor101" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FirmRegistrationNumberOfCertifyingAuditor" xlink:to="reference_FirmRegistrationNumberOfCertifyingAuditor101" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_FaxNumberOfRTA" xlink:label="FaxNumberOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_FaxNumberOfRTA102" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FaxNumberOfRTA" xlink:to="reference_FaxNumberOfRTA102" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeStdCode" xlink:label="RegisteredOfficeStdCode" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeStdCode103" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeStdCode" xlink:to="reference_RegisteredOfficeStdCode103" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceSTDCode" xlink:label="CorrespondenceSTDCode" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceSTDCode104" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceSTDCode" xlink:to="reference_CorrespondenceSTDCode104" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_STDCodeOfTheComplianceOfficer" xlink:label="STDCodeOfTheComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_STDCodeOfTheComplianceOfficer105" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="STDCodeOfTheComplianceOfficer" xlink:to="reference_STDCodeOfTheComplianceOfficer105" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_STDCodeOfCertifyingAuditor" xlink:label="STDCodeOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_STDCodeOfCertifyingAuditor106" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="STDCodeOfCertifyingAuditor" xlink:to="reference_STDCodeOfCertifyingAuditor106" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_STDCodeOfRTA" xlink:label="STDCodeOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_STDCodeOfRTA107" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="STDCodeOfRTA" xlink:to="reference_STDCodeOfRTA107" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_MembershipNumberOfComplianceOfficer" xlink:label="MembershipNumberOfComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_MembershipNumberOfComplianceOfficer108" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MembershipNumberOfComplianceOfficer" xlink:to="reference_MembershipNumberOfComplianceOfficer108" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_COPNumberOfCertifyingAuditor" xlink:label="COPNumberOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_COPNumberOfCertifyingAuditor109" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="COPNumberOfCertifyingAuditor" xlink:to="reference_COPNumberOfCertifyingAuditor109" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_STDCodeOfFaxNumberOfTheComplianceOfficer" xlink:label="STDCodeOfFaxNumberOfTheComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_STDCodeOfFaxNumberOfTheComplianceOfficer110" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 22</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="STDCodeOfFaxNumberOfTheComplianceOfficer" xlink:to="reference_STDCodeOfFaxNumberOfTheComplianceOfficer110" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_STDCodeOfFaxNumberOfCertifyingAuditor" xlink:label="STDCodeOfFaxNumberOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_STDCodeOfFaxNumberOfCertifyingAuditor111" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 23</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="STDCodeOfFaxNumberOfCertifyingAuditor" xlink:to="reference_STDCodeOfFaxNumberOfCertifyingAuditor111" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_STDCodeOfFaxNumberOfRTA" xlink:label="STDCodeOfFaxNumberOfRTA" />
+    <reference xlink:type="resource" xlink:label="reference_STDCodeOfFaxNumberOfRTA112" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 24</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="STDCodeOfFaxNumberOfRTA" xlink:to="reference_STDCodeOfFaxNumberOfRTA112" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeSTDCodeOfFaxNumber" xlink:label="RegisteredOfficeSTDCodeOfFaxNumber" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeSTDCodeOfFaxNumber113" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 5</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeSTDCodeOfFaxNumber" xlink:to="reference_RegisteredOfficeSTDCodeOfFaxNumber113" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceSTDCodeOfFaxNumber" xlink:label="CorrespondenceSTDCodeOfFaxNumber" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceSTDCodeOfFaxNumber114" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Name>SEBI (Depositories and Participants) Regulations, 1996</ref:Name>
+      <ref:Paragraph>Para 6</ref:Paragraph>
+      <ref:Section>Regulation 55A</ref:Section>
+      <ref:Publisher>SEBI</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceSTDCodeOfFaxNumber" xlink:to="reference_CorrespondenceSTDCodeOfFaxNumber114" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfTheFirm" xlink:label="NameOfTheFirm" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheFirm115" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheFirm" xlink:to="reference_NameOfTheFirm115" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_Symbol" xlink:label="Symbol" />
+    <reference xlink:type="resource" xlink:label="reference_Symbol116" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="Symbol" xlink:to="reference_Symbol116" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_MSEISymbol" xlink:label="MSEISymbol" />
+    <reference xlink:type="resource" xlink:label="reference_MSEISymbol117" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MSEISymbol" xlink:to="reference_MSEISymbol117" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeDistrict" xlink:label="RegisteredOfficeDistrict" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeDistrict118" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeDistrict" xlink:to="reference_RegisteredOfficeDistrict118" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeISDCode" xlink:label="RegisteredOfficeISDCode" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeISDCode119" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeISDCode" xlink:to="reference_RegisteredOfficeISDCode119" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeCountry" xlink:label="RegisteredOfficeCountry" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeCountry120" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeCountry" xlink:to="reference_RegisteredOfficeCountry120" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeWebsite" xlink:label="RegisteredOfficeWebsite" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeWebsite121" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeWebsite" xlink:to="reference_RegisteredOfficeWebsite121" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RegisteredOfficeEmail" xlink:label="RegisteredOfficeEmail" />
+    <reference xlink:type="resource" xlink:label="reference_RegisteredOfficeEmail122" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RegisteredOfficeEmail" xlink:to="reference_RegisteredOfficeEmail122" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceDistrict" xlink:label="CorrespondenceDistrict" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceDistrict123" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceDistrict" xlink:to="reference_CorrespondenceDistrict123" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceISDCode" xlink:label="CorrespondenceISDCode" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceISDCode124" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceISDCode" xlink:to="reference_CorrespondenceISDCode124" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceCountry" xlink:label="CorrespondenceCountry" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceCountry125" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceCountry" xlink:to="reference_CorrespondenceCountry125" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorrespondenceEmail" xlink:label="CorrespondenceEmail" />
+    <reference xlink:type="resource" xlink:label="reference_CorrespondenceEmail126" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorrespondenceEmail" xlink:to="reference_CorrespondenceEmail126" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DisclosureOfNoteOnNamesOfTheStockExchangesWhereTheCompanySecuritiesAreListedTextBlock" xlink:label="DisclosureOfNoteOnNamesOfTheStockExchangesWhereTheCompanySecuritiesAreListedTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNoteOnNamesOfTheStockExchangesWhereTheCompanySecuritiesAreListedTextBlock127" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNoteOnNamesOfTheStockExchangesWhereTheCompanySecuritiesAreListedTextBlock" xlink:to="reference_DisclosureOfNoteOnNamesOfTheStockExchangesWhereTheCompanySecuritiesAreListedTextBlock127" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DifferenceBetweenNumberOfSharesIssuedAndListed" xlink:label="DifferenceBetweenNumberOfSharesIssuedAndListed" />
+    <reference xlink:type="resource" xlink:label="reference_DifferenceBetweenNumberOfSharesIssuedAndListed128" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DifferenceBetweenNumberOfSharesIssuedAndListed" xlink:to="reference_DifferenceBetweenNumberOfSharesIssuedAndListed128" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfShares" xlink:label="DifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_DifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfShares129" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfShares" xlink:to="reference_DifferenceBetweenNumberOfSharesIssuedAndTotalNumberOfShares129" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DifferenceBetweenNumberOfSharesListedAndTotalNumberOfShares" xlink:label="DifferenceBetweenNumberOfSharesListedAndTotalNumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_DifferenceBetweenNumberOfSharesListedAndTotalNumberOfShares130" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DifferenceBetweenNumberOfSharesListedAndTotalNumberOfShares" xlink:to="reference_DifferenceBetweenNumberOfSharesListedAndTotalNumberOfShares130" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherComapanyHasChangesInShareCapitalDuringTheQuarter" xlink:label="WhetherComapanyHasChangesInShareCapitalDuringTheQuarter" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherComapanyHasChangesInShareCapitalDuringTheQuarter131" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherComapanyHasChangesInShareCapitalDuringTheQuarter" xlink:to="reference_WhetherComapanyHasChangesInShareCapitalDuringTheQuarter131" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DisclosureOfNoteOnCertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTextBlock" xlink:label="DisclosureOfNoteOnCertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNoteOnCertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTextBlock132" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNoteOnCertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTextBlock" xlink:to="reference_DisclosureOfNoteOnCertifyingTheDetailsOfChangesInShareCapitalDuringTheQuarterUnderConsiderationTextBlock132" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DisclosureOfNoteOnOtherDetailsOfAuditorTextBlock" xlink:label="DisclosureOfNoteOnOtherDetailsOfAuditorTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNoteOnOtherDetailsOfAuditorTextBlock133" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNoteOnOtherDetailsOfAuditorTextBlock" xlink:to="reference_DisclosureOfNoteOnOtherDetailsOfAuditorTextBlock133" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DisclosureOfNoteOnTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysTextBlock" xlink:label="DisclosureOfNoteOnTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNoteOnTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysTextBlock134" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNoteOnTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysTextBlock" xlink:to="reference_DisclosureOfNoteOnTotalNumberOfRequestsConfirmedAfter21DaysAndTheTotalNumberOfRequestsPendingBeyond21DaysTextBlock134" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CityOfCertifyingAuditor" xlink:label="CityOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_CityOfCertifyingAuditor135" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CityOfCertifyingAuditor" xlink:to="reference_CityOfCertifyingAuditor135" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PinCodeOfCertifyingAuditor" xlink:label="PinCodeOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_PinCodeOfCertifyingAuditor136" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PinCodeOfCertifyingAuditor" xlink:to="reference_PinCodeOfCertifyingAuditor136" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_EmailOfCertifyingAuditor" xlink:label="EmailOfCertifyingAuditor" />
+    <reference xlink:type="resource" xlink:label="reference_EmailOfCertifyingAuditor137" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EmailOfCertifyingAuditor" xlink:to="reference_EmailOfCertifyingAuditor137" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherQualifiedCompanySecretaryIsComplianceOfficer" xlink:label="WhetherQualifiedCompanySecretaryIsComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherQualifiedCompanySecretaryIsComplianceOfficer138" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherQualifiedCompanySecretaryIsComplianceOfficer" xlink:to="reference_WhetherQualifiedCompanySecretaryIsComplianceOfficer138" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherAnyChangeInComplianceOfficerDuringTheQuarter" xlink:label="WhetherAnyChangeInComplianceOfficerDuringTheQuarter" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherAnyChangeInComplianceOfficerDuringTheQuarter139" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherAnyChangeInComplianceOfficerDuringTheQuarter" xlink:to="reference_WhetherAnyChangeInComplianceOfficerDuringTheQuarter139" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfPreviousComplianceOfficer" xlink:label="NameOfPreviousComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfPreviousComplianceOfficer140" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfPreviousComplianceOfficer" xlink:to="reference_NameOfPreviousComplianceOfficer140" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DateOfAppointmentOfPreviousComplianceOfficer" xlink:label="DateOfAppointmentOfPreviousComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfAppointmentOfPreviousComplianceOfficer141" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfAppointmentOfPreviousComplianceOfficer" xlink:to="reference_DateOfAppointmentOfPreviousComplianceOfficer141" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DateOfCessationOfPreviousComplianceOfficer" xlink:label="DateOfCessationOfPreviousComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfCessationOfPreviousComplianceOfficer142" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfCessationOfPreviousComplianceOfficer" xlink:to="reference_DateOfCessationOfPreviousComplianceOfficer142" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherThePreviousComplianceOfficerWasQualifiedCompanySecretary" xlink:label="WhetherThePreviousComplianceOfficerWasQualifiedCompanySecretary" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherThePreviousComplianceOfficerWasQualifiedCompanySecretary143" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherThePreviousComplianceOfficerWasQualifiedCompanySecretary" xlink:to="reference_WhetherThePreviousComplianceOfficerWasQualifiedCompanySecretary143" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_MembershipNumberOfPreviousComplianceOfficer" xlink:label="MembershipNumberOfPreviousComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_MembershipNumberOfPreviousComplianceOfficer144" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MembershipNumberOfPreviousComplianceOfficer" xlink:to="reference_MembershipNumberOfPreviousComplianceOfficer144" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherAnyChangeInRegistrarAndShareTransferAgents" xlink:label="WhetherAnyChangeInRegistrarAndShareTransferAgents" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherAnyChangeInRegistrarAndShareTransferAgents145" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherAnyChangeInRegistrarAndShareTransferAgents" xlink:to="reference_WhetherAnyChangeInRegistrarAndShareTransferAgents145" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_NameOfPreviousRegistrarAndShareTransferAgents" xlink:label="NameOfPreviousRegistrarAndShareTransferAgents" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfPreviousRegistrarAndShareTransferAgents146" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfPreviousRegistrarAndShareTransferAgents" xlink:to="reference_NameOfPreviousRegistrarAndShareTransferAgents146" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DateOfCessationPreviousRegistrarAndShareTransferAgents" xlink:label="DateOfCessationPreviousRegistrarAndShareTransferAgents" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfCessationPreviousRegistrarAndShareTransferAgents147" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfCessationPreviousRegistrarAndShareTransferAgents" xlink:to="reference_DateOfCessationPreviousRegistrarAndShareTransferAgents147" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_DateOfAppointmentOfComplianceOfficer" xlink:label="DateOfAppointmentOfComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfAppointmentOfComplianceOfficer148" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfAppointmentOfComplianceOfficer" xlink:to="reference_DateOfAppointmentOfComplianceOfficer148" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherCompanyHasCIN" xlink:label="WhetherCompanyHasCIN" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherCompanyHasCIN149" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherCompanyHasCIN" xlink:to="reference_WhetherCompanyHasCIN149" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_CorporateIdentityNumber" xlink:label="CorporateIdentityNumber" />
+    <reference xlink:type="resource" xlink:label="reference_CorporateIdentityNumber150" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CorporateIdentityNumber" xlink:to="reference_CorporateIdentityNumber150" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PANOfComplianceOfficer" xlink:label="PANOfComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_PANOfComplianceOfficer151" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PANOfComplianceOfficer" xlink:to="reference_PANOfComplianceOfficer151" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_PANOfPreviousComplianceOfficer" xlink:label="PANOfPreviousComplianceOfficer" />
+    <reference xlink:type="resource" xlink:label="reference_PANOfPreviousComplianceOfficer152" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PANOfPreviousComplianceOfficer" xlink:to="reference_PANOfPreviousComplianceOfficer152" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherComplianceOfficerAppointed" xlink:label="WhetherComplianceOfficerAppointed" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherComplianceOfficerAppointed153" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherComplianceOfficerAppointed" xlink:to="reference_WhetherComplianceOfficerAppointed153" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_WhetherRegisteredwithSEBI" xlink:label="WhetherRegisteredwithSEBI" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherRegisteredwithSEBI154" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherRegisteredwithSEBI" xlink:to="reference_WhetherRegisteredwithSEBI154" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_RemarksRelatingToRegisterAndShareTransferAgentExplanatoryTextBlock" xlink:label="RemarksRelatingToRegisterAndShareTransferAgentExplanatoryTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_RemarksRelatingToRegisterAndShareTransferAgentExplanatoryTextBlock155" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="RemarksRelatingToRegisterAndShareTransferAgentExplanatoryTextBlock" xlink:to="reference_RemarksRelatingToRegisterAndShareTransferAgentExplanatoryTextBlock155" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_TotalNumberOfSecurityHoldersAsOnEndOfTheQuarter" xlink:label="TotalNumberOfSecurityHoldersAsOnEndOfTheQuarter" />
+    <reference xlink:type="resource" xlink:label="reference_TotalNumberOfSecurityHoldersAsOnEndOfTheQuarter156" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TotalNumberOfSecurityHoldersAsOnEndOfTheQuarter" xlink:to="reference_TotalNumberOfSecurityHoldersAsOnEndOfTheQuarter156" />
+    <loc xlink:type="locator" xlink:href="in-bse-aud-2025-01-31.xsd#in-bse-aud_ReasonForEnteringTheSameMembershipNumber" xlink:label="ReasonForEnteringTheSameMembershipNumber" />
+    <reference xlink:type="resource" xlink:label="reference_ReasonForEnteringTheSameMembershipNumber157" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>BSE</ref:Publisher>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ReasonForEnteringTheSameMembershipNumber" xlink:to="reference_ReasonForEnteringTheSameMembershipNumber157" />
+  </referenceLink>
+</linkbase>

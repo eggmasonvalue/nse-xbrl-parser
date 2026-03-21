@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:in-bse-voting-roles="http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles/GeneralInformationAboutTheCompany" id="GeneralInformationAboutTheCompany">
+        <link:definition>[100100] General Information about the company</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles/VotingResult" id="VotingResult">
+        <link:definition>[200100] Voting Result</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles/ResolutionDetails" id="ResolutionDetails">
+        <link:definition>[300100] Resolution Details</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles/ResolutionDetails1" id="ResolutionDetails1">
+        <link:definition>[300101] Resolution Details1</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/voting/2016-01-12/in-bse-voting-roles/ResolutionDetails2" id="ResolutionDetails2">
+        <link:definition>[300102] Resolution Details2</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+</xsd:schema>

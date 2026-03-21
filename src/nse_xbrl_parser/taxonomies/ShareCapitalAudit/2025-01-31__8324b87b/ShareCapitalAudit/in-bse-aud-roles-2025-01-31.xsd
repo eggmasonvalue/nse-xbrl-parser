@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-roles" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:in-bse-aud-roles="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-roles" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-roles/GeneralInformationAboutTheCompany" id="GeneralInformationAboutTheCompany">
+        <link:definition>[100100] General Information about the company</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-roles/ReconciliationOfShareCapitalAuditFormat" id="ReconciliationOfShareCapitalAuditFormat">
+        <link:definition>[100101] Reconciliation of share capital audit format</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-roles/ReconciliationOfShareCapitalAuditFormat1" id="ReconciliationOfShareCapitalAuditFormat1">
+        <link:definition>[100102] Reconciliation of share capital audit format</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-roles/AxisDefaults" id="AxisDefaults">
+        <link:definition>[100103] AxisDefaults</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Updated by Microvista Technologies Pvt. Ltd. -->
+<tp:taxonomyPackage xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="en" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+	<tp:identifier lang="en">http://www.sebi.gov.in/xbrl/2025-06-30</tp:identifier>
+	<tp:name lang="en">Financial Results REITs InvITs Taxonomy</tp:name>
+	<tp:description lang="en">Financial Results REITs InvITs Taxonomy as per SEBI (Real Estate Investment Trusts) Regulations, 2014, SEBI (Infrastructure Investment Trusts) Regulations, 2014</tp:description>
+	<tp:version>1.0</tp:version>
+	<tp:publisher lang="en">Securities and Exchange Board of India</tp:publisher>
+	<tp:publisherURL>http://www.sebi.gov.in</tp:publisherURL>
+	<tp:publisherCountry>IN</tp:publisherCountry>
+	<tp:publicationDate>2025-07-31</tp:publicationDate>
+	<tp:entryPoints>
+		<tp:entryPoint>
+			<tp:name lang="en">Financial Results REITs InvITs Taxonomy</tp:name>
+			<tp:entryPointDocument href="http://www.sebi.gov.in/xbrl/2025-06-30/Financial_Results_REITs_InvITs/in-capmkt-ent-2025-06-30.xsd" />
+		</tp:entryPoint>
+	</tp:entryPoints>
+</tp:taxonomyPackage>

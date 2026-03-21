@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--                     
+            ***************BSE Specific data types *************
+             ***************Developed By : Microvista Technologies************           
+ -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+          xmlns:link="http://www.xbrl.org/2003/linkbase" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:in-bse-aud-types="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-types" 
+    targetNamespace="http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud-types" 
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+   <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="https://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  
+  <xsd:complexType name="QualificationOfAuditor">
+    <xsd:simpleContent>
+      <xsd:restriction base="xbrli:tokenItemType">
+        <xsd:enumeration value="Chartered accountant" />
+		<xsd:enumeration value="Company secretary" />
+		<xsd:enumeration value="Cost Accountant" />
+	</xsd:restriction>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="StockExchange">
+    <xsd:simpleContent>
+      <xsd:restriction base="xbrli:tokenItemType">
+        <xsd:enumeration value="BSE Ltd" />
+		<xsd:enumeration value="National Stock Exchange of India Ltd(NSE)" />
+		<xsd:enumeration value="Metropolitan Stock Exchange of India Ltd(MSEI)" />
+		<xsd:enumeration value="Calcutta Stock Exchange of India Ltd(CSE)" />
+	</xsd:restriction>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="PermanentAccountNumber">
+    <xsd:simpleContent>
+      <xsd:restriction base="xbrli:stringItemType">
+        <xsd:length fixed="true" value="10"/>
+        <xsd:pattern value="[A-Z][A-Z][A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9][A-Z]"/>
+      </xsd:restriction>
+    </xsd:simpleContent>
+  </xsd:complexType>
+   <xsd:complexType name="CINNumber">
+    <xsd:simpleContent>
+      <xsd:restriction base="xbrli:stringItemType">
+        <xsd:length fixed="true" value="21"/>
+      </xsd:restriction>
+    </xsd:simpleContent>
+	</xsd:complexType>
+  <xsd:complexType name="CompanyHasAppliedForListing">
+	<xsd:simpleContent>
+		<xsd:restriction base="xbrli:tokenItemType">
+			<xsd:enumeration value="Applied" />
+			<xsd:enumeration value="Not Applied" />
+			<xsd:enumeration value="NA" />
+		</xsd:restriction>
+	</xsd:simpleContent>
+   </xsd:complexType>
+  <xsd:complexType name="ScripCode">
+    <xsd:simpleContent>
+      <xsd:restriction base="xbrli:stringItemType">
+        <xsd:length fixed="true" value="6"/>
+      </xsd:restriction>
+    </xsd:simpleContent>
+  </xsd:complexType>
+   <xsd:complexType name="ISIN">
+    <xsd:simpleContent>
+      <xsd:restriction base="xbrli:stringItemType">
+	          <xsd:length fixed="true" value="12"/>
+        <!--<xsd:length fixed="true" value="10"/>-->
+        <!--<xsd:pattern value="[A-Z][A-Z][A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9][A-Z]"/>-->
+      </xsd:restriction>
+    </xsd:simpleContent>
+   </xsd:complexType>
+   <xsd:complexType name="RegisteredwithSEBI">
+	<xsd:simpleContent>
+		<xsd:restriction base="xbrli:tokenItemType">
+			<xsd:enumeration value="Yes" />
+			<xsd:enumeration value="No" />
+			<xsd:enumeration value="NA" />
+		</xsd:restriction>
+	</xsd:simpleContent>
+   </xsd:complexType>
+ </xsd:schema>

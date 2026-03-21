@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:in-bse-shp-roles="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/DetailsOfGeneralInformationAboutCompany" id="DetailsOfGeneralInformationAboutCompany">
+        <link:definition>[100100] Details of general information about company</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/StatementOfDeclaration" id="StatementOfDeclaration">
+        <link:definition>[100200] Statement of declaration</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/SummaryStatementHoldingOfSpecifiedSecurities" id="SummaryStatementHoldingOfSpecifiedSecurities">
+        <link:definition>[100201] Summary statement holding of specified securities</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/StatementShowingShareholdingPattern" id="StatementShowingShareholdingPattern">
+        <link:definition>[100300] Statement showing shareholding pattern</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternIndividualsOrHUF" id="ShareholdingPatternIndividualsOrHUF">
+        <link:definition>[100301] Shareholding pattern - Individuals or HUF</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternCentralGovernmentOrStateGovernments" id="ShareholdingPatternCentralGovernmentOrStateGovernments">
+        <link:definition>[100302] Shareholding pattern - Central government or State governments</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternIndianFinancialInstitutionsOrBanks" id="ShareholdingPatternIndianFinancialInstitutionsOrBanks">
+        <link:definition>[100303] Shareholding pattern - Indian - financial institutions or banks </link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternOtherIndianShareholders" id="ShareholdingPatternOtherIndianShareholders">
+        <link:definition>[100304] Shareholding pattern - Other Indian shareholders </link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternNonResidentIndividualsOrForeignIndividuals" id="ShareholdingPatternNonResidentIndividualsOrForeignIndividuals">
+        <link:definition>[100305] Shareholding pattern - Non-resident individuals or foreign individuals</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternForeignGovernment" id="ShareholdingPatternForeignGovernment">
+        <link:definition>[100306] Shareholding pattern - Foreign - Government </link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternForeignInstitutions" id="ShareholdingPatternForeignInstitutions">
+        <link:definition>[100307] Shareholding pattern - Foreign - institutions</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternForeignPortfolioInvestor" id="ShareholdingPatternForeignPortfolioInvestor">
+        <link:definition>[100308] Shareholding pattern - Foreign portfolio investor</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternOtherForeignShareholders" id="ShareholdingPatternOtherForeignShareholders">
+        <link:definition>[100309] Shareholding pattern - Other foreign shareholders</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternMutualFundsOrUTI" id="ShareholdingPatternMutualFundsOrUTI">
+        <link:definition>[100310] Shareholding pattern - Mutual funds or UTI</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternVentureCapitalFunds" id="ShareholdingPatternVentureCapitalFunds">
+        <link:definition>[100311] Shareholding pattern - Venture capital funds</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternAlternativeInvestmentFunds" id="ShareholdingPatternAlternativeInvestmentFunds">
+        <link:definition>[100312] Shareholding pattern - Alternative investment funds</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternForeignVentureCapitalInvestors" id="ShareholdingPatternForeignVentureCapitalInvestors">
+        <link:definition>[100313] Shareholding pattern - Foreign venture capital investors</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternInsuranceCompanies" id="ShareholdingPatternInsuranceCompanies">
+        <link:definition>[100314] Shareholding pattern - Insurance Companies</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternProvidentFundsOrPensionFunds" id="ShareholdingPatternProvidentFundsOrPensionFunds">
+        <link:definition>[100315] Shareholding pattern - Provident Funds or pension funds</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternNBFCsRegisteredWithRBI" id="ShareholdingPatternNBFCsRegisteredWithRBI">
+        <link:definition>[100316] Shareholding pattern - NBFCs registered with RBI</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternOverseasDepositories" id="ShareholdingPatternOverseasDepositories">
+        <link:definition>[100317] Shareholding pattern - Overseas Depositories </link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternOtherNonInstitutions" id="ShareholdingPatternOtherNonInstitutions">
+        <link:definition>[100318] Shareholding pattern - Other Non-Institutions</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternCustodianOrDRHolder" id="ShareholdingPatternCustodianOrDRHolder">
+        <link:definition>[100319] Shareholding pattern - Custodian or DR holder</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternEmployeeBenefitsTrusts" id="ShareholdingPatternEmployeeBenefitsTrusts">
+        <link:definition>[100320] Shareholding pattern - Employee benefits trusts</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternBanks" id="ShareholdingPatternBanks">
+        <link:definition>[100321] Shareholding pattern - Banks</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternAssetReconstructionCompanies" id="ShareholdingPatternAssetReconstructionCompanies">
+        <link:definition>[100322] Shareholding pattern - Asset reconstruction companies</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternSovereignWealthFundsDomestic" id="ShareholdingPatternSovereignWealthFundsDomestic">
+        <link:definition>[100323] Shareholding pattern - Sovereign wealth funds domestic</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternOtherFinancialInstitutions" id="ShareholdingPatternOtherFinancialInstitutions">
+        <link:definition>[100324] Shareholding pattern - Other financial institutions</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternOtherInstitutionsDomestic" id="ShareholdingPatternOtherInstitutionsDomestic">
+        <link:definition>[100325] Shareholding pattern - Other institutions domestic</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternForeignDirectInvestment" id="ShareholdingPatternForeignDirectInvestment">
+        <link:definition>[100326] Shareholding pattern - Foreign direct investment</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternSovereignWealthFundsForeign" id="ShareholdingPatternSovereignWealthFundsForeign">
+        <link:definition>[100327] Shareholding pattern - Sovereign wealth funds foreign</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternInstitutionsForeignPortfolioInvestorOne" id="ShareholdingPatternInstitutionsForeignPortfolioInvestorOne">
+        <link:definition>[100328] Shareholding pattern - Institutions foreign portfolio investor I</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternInstitutionsForeignPortfolioInvestorTwo" id="ShareholdingPatternInstitutionsForeignPortfolioInvestorTwo">
+        <link:definition>[100329] Shareholding pattern - Institutions foreign portfolio investor II</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternOtherInstitutionsForeign" id="ShareholdingPatternOtherInstitutionsForeign">
+        <link:definition>[100330] Shareholding pattern - Other institutions foreign</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternCentralGovernmentOrPresidentOfIndia" id="ShareholdingPatternCentralGovernmentOrPresidentOfIndia">
+        <link:definition>[100331] Shareholding pattern - Central government or president of india</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternStateGovernmentsOrGovernors" id="ShareholdingPatternStateGovernmentsOrGovernors">
+        <link:definition>[100332] Shareholding pattern - State governments or governors</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternShareholdingByCompaniesOrBodiesCorporateWhereCentralOrStateGovernmentIsPromoter" id="ShareholdingPatternShareholdingByCompaniesOrBodiesCorporateWhereCentralOrStateGovernmentIsPromoter">
+        <link:definition>[100333] Shareholding pattern - Shareholding by companies or bodies corporate where central or state government is promoter</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternAssociateCompaniesOrSubsidiaries" id="ShareholdingPatternAssociateCompaniesOrSubsidiaries">
+        <link:definition>[100334] Shareholding pattern - Associate companies or subsidiaries</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternDirectorsAndDirectorsRelatives" id="ShareholdingPatternDirectorsAndDirectorsRelatives">
+        <link:definition>[100335] Shareholding pattern - Directors and directors relatives</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternKeyManagerialPersonnel" id="ShareholdingPatternKeyManagerialPersonnel">
+        <link:definition>[100336] Shareholding pattern - Key managerial personnel</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternRelativesOfPromotersOtherThanPromoterGroup" id="ShareholdingPatternRelativesOfPromotersOtherThanPromoterGroup">
+        <link:definition>[100337] Shareholding pattern - Relatives of promoters other than promoter group</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternTrustsWhereAnyPersonBelongingToPromoterAndPromoterGroupIsTrusteeOrBeneficiaryOrAuthorOfTrust" id="ShareholdingPatternTrustsWhereAnyPersonBelongingToPromoterAndPromoterGroupIsTrusteeOrBeneficiaryOrAuthorOfTrust">
+        <link:definition>[100338] Shareholding pattern - Trusts where any person belonging to promoter and promoter group is trustee or beneficiary or author of trust</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternInvestorEducationAndProtectionFund" id="ShareholdingPatternInvestorEducationAndProtectionFund">
+        <link:definition>[100339] Shareholding pattern - Investor education and protection fund</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternResidentIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakh" id="ShareholdingPatternResidentIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakh">
+        <link:definition>[100340] Shareholding pattern - Resident individual shareholders holding nominal share capital up to rs two lakh</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternResidentIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakh" id="ShareholdingPatternResidentIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakh">
+        <link:definition>[100341] Shareholding pattern - Resident individual shareholders holding nominal share capital in excess of rs two lakh</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternNonResidentIndians" id="ShareholdingPatternNonResidentIndians">
+        <link:definition>[100342] Shareholding pattern - Non resident indians</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternForeignNationals" id="ShareholdingPatternForeignNationals">
+        <link:definition>[100343] Shareholding pattern - Foreign nationals</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternForeignCompanies" id="ShareholdingPatternForeignCompanies">
+        <link:definition>[100344] Shareholding pattern - Foreign companies</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternBodiesCorporate" id="ShareholdingPatternBodiesCorporate">
+        <link:definition>[100345] Shareholding pattern - Bodies corporate</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternAdditionalInformation" id="ShareholdingPatternAdditionalInformation">
+        <link:definition>[100400] Shareholding pattern - Additional information</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternAdditionalInformation1" id="ShareholdingPatternAdditionalInformation1">
+        <link:definition>[100401] Shareholding pattern - Additional information1</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternAdditionalInformation2" id="ShareholdingPatternAdditionalInformation2">
+        <link:definition>[100402] Shareholding pattern - Additional information2</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/ShareholdingPatternAdditionalInformation3" id="ShareholdingPatternAdditionalInformation3">
+        <link:definition>[100403] Shareholding pattern - Additional information3</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/StatementShowingShareholdingPattern1" id="StatementShowingShareholdingPattern1">
+        <link:definition>[100500] Statement showing shareholding pattern</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/StatementShowingShareholdingPattern2" id="StatementShowingShareholdingPattern2">
+        <link:definition>[100501] Statement showing shareholding pattern II</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/StatementShowingShareholdingPattern3" id="StatementShowingShareholdingPattern3">
+        <link:definition>[100502] Statement showing shareholding pattern III</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/StatementShowingDetailsOfSignificantBeneficialOwners" id="StatementShowingDetailsOfSignificantBeneficialOwners">
+        <link:definition>[100600] Statement showing details of significant beneficial owners</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/shp/2025-10-31/in-bse-shp-roles/AnnexureB" id="AnnexureB">
+        <link:definition>[100700] Annexure B</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+</xsd:schema>

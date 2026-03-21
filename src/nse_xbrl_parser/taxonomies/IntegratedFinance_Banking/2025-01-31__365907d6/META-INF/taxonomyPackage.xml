@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Updated by Microvista Technologies Pvt. Ltd. -->
+<tp:taxonomyPackage xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="en" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+	<tp:identifier lang="en">http://www.sebi.gov.in/xbrl/2025-01-31</tp:identifier>
+	<tp:name lang="en">Integrated Filing Finance Taxonomy</tp:name>
+	<tp:description lang="en">Integrated Filing Finance Taxonomy for Disclosure of Related Party Transactions ( Regulations 23(9)), Quarterly disclosure of outstanding default on loans / debt securities (Regulations 30 r/w section V-B of the Master Circular), Statement of Deviation and Variation (Regulations 32(1)),Financial results (Banking) (Regulations 33(3)) </tp:description>
+	<tp:version>1.0</tp:version>
+	<tp:publisher lang="en">Securities and Exchange Board of India</tp:publisher>
+	<tp:publisherURL>http://www.sebi.gov.in</tp:publisherURL>
+	<tp:publisherCountry>IN</tp:publisherCountry>
+	<tp:publicationDate>2025-01-31</tp:publicationDate>
+	<tp:entryPoints>
+		<tp:entryPoint>
+			<tp:name lang="en">Integrated Filing Finance Taxonomy</tp:name>
+			<tp:entryPointDocument href="http://www.sebi.gov.in/xbrl/2025-01-31/IntegratedFinance_Banking/in-capmkt-ent-2025-01-31.xsd" />
+		</tp:entryPoint>
+	</tp:entryPoints>
+</tp:taxonomyPackage>
