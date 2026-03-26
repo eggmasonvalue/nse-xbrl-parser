@@ -13,6 +13,7 @@
 - **Append-Only Taxonomy Updates**: `scripts/update_taxonomies.py` now downloads each NSE ZIP in isolation, discovers family release units, fingerprints `family + core + contents`, and appends only genuinely new releases instead of overwriting flattened folders.
 - **Versioned-First Parsing**: `parse_xbrl_file` now searches versioned family releases before the flat taxonomy tree and requires all local relative imports to exist and namespace-match before a candidate schema is considered compatible.
 - **Workflow Verification**: The taxonomy update GitHub workflow now syncs the project environment and runs `pytest` after refreshing taxonomies, preventing scheduled commits from publishing a broken bundle.
+- **Regex Fallback Testing**: Added `tests/test_fallbacks.py` to specifically test the regex fallback logic in `_find_schema_ref` and `_get_instance_namespaces` when XML parsing fails due to malformed input.
 ### Fixed
 - **Python 3.12 Compatibility**: Updated `arelle-release` to `>=2.39.1` to fix a `MutableSet` import error in `arelle/PythonUtil.py` that occurred on Python 3.10+.
 - **Removed Raw XML Fallback**: `parse_xbrl_file` again fails fast when Arelle resolves zero facts. This keeps the parser taxonomy-driven and makes broken bundled schema dependencies visible instead of masking them with a sweep fallback.
