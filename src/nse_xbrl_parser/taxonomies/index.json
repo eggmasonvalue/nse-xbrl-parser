@@ -564,6 +564,40 @@
     },
     {
       "entry_points": [
+        "BRSR/in-capmkt-ent-2026-02-28.xsd"
+      ],
+      "family": "BRSR",
+      "files": [
+        "BRSR/in-capmkt-cal-2026-02-28.xml",
+        "BRSR/in-capmkt-def-2026-02-28.xml",
+        "BRSR/in-capmkt-ent-2026-02-28.xsd",
+        "BRSR/in-capmkt-pre-2026-02-28.xml",
+        "BRSR/in-capmkt-ref-2026-02-28.xml",
+        "BRSR/in-capmkt-roles-2026-02-28.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "f3004d23abddd02054488276d74394180e547ff194e3bc26d5da23b29e98d484",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2026-02-28/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2026-02-28/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/BRSR/2026-02-28/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_BRSR_20260330194931",
+      "release_id": "2026-02-28__f3004d23",
+      "source_path": "/tmp/tmpuvs3ob8k/Taxonomy_BRSR_20260330194931",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-03/Taxonomy_BRSR_20260330194931.zip",
+      "stored_path": "BRSR/2026-02-28__f3004d23",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/BRSR/2026-02-28/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-02-28"
+    },
+    {
+      "entry_points": [
         "Buyback_Open_Market/in-capmkt-ent-2023-03-31.xsd"
       ],
       "family": "Buyback_Open_Market",
