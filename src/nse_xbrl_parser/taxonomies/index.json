@@ -1268,6 +1268,40 @@
     },
     {
       "entry_points": [
+        "Financial_Results_REITs_InvITs/in-capmkt-ent-2026-01-31.xsd"
+      ],
+      "family": "Financial_Results_REITs_InvITs",
+      "files": [
+        "Financial_Results_REITs_InvITs/in-capmkt-cal-2026-01-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-def-2026-01-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-ent-2026-01-31.xsd",
+        "Financial_Results_REITs_InvITs/in-capmkt-pre-2026-01-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-ref-2026-01-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-roles-2026-01-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "72c53a465d5311ca9bc3cc2069138c53ef4a62b4e918bdbb231c3b8f40bda2be",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-01-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-01-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Financial_Results_REITs_InvITs/2026-01-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Financial_Results_REITs_InvITs_20260407112448",
+      "release_id": "2026-01-31__72c53a46",
+      "source_path": "/tmp/tmpkuli8n2o/Taxonomy_Financial_Results_REITs_InvITs_20260407112448",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-04/Taxonomy_Financial_Results_REITs_InvITs_20260407112448.zip",
+      "stored_path": "Financial_Results_REITs_InvITs/2026-01-31__72c53a46",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Financial_Results_REITs_InvITs/2026-01-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-01-31"
+    },
+    {
+      "entry_points": [
         "General_Insurance/in-capmkt-ent-2020-03-31.xsd"
       ],
       "family": "General_Insurance",
