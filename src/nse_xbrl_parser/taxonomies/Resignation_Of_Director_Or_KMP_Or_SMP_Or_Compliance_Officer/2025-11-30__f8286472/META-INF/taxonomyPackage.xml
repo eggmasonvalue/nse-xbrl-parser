@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Updated by Microvista Technologies Pvt. Ltd. -->
+<tp:taxonomyPackage xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="en" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+	<tp:identifier lang="en">https://www.sebi.gov.in/xbrl/2025-11-30</tp:identifier>
+	<tp:name lang="en">Resignation Of Director Or Key Managerial Personnel Or Senior Management Personnel Or Compliance Officer Taxonomy</tp:name>
+	<tp:description lang="en">Resignation Of Director, KMP, SMP Or Compliance Officer Taxonomy for Resignation Of Director, KMP, SMP Or Compliance Officer as per SEBI circular CIR/CFD/CMD/4/2015 under [Para A (7B &amp; 7C) of Part A of Schedule III] Regulation 30</tp:description>
+	<tp:version>1.0</tp:version>
+	<tp:publisher lang="en">Securities and Exchange Board of India</tp:publisher>
+	<tp:publisherURL>https://www.sebi.gov.in</tp:publisherURL>
+	<tp:publisherCountry>IN</tp:publisherCountry>
+	<tp:publicationDate>2025-11-30</tp:publicationDate>
+	<tp:entryPoints>
+		<tp:entryPoint>
+			<tp:name lang="en">Resignation Of Director Or Key Managerial Personnel Or Senior Management Personnel Or Compliance Officer Taxonomy</tp:name>
+			<tp:entryPointDocument href="https://www.sebi.gov.in/xbrl/2025-11-30/Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/in-capmkt-ent-2025-11-30.xsd" />
+		</tp:entryPoint>
+	</tp:entryPoints>
+</tp:taxonomyPackage>

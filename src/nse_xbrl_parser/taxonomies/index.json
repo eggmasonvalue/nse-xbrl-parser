@@ -686,6 +686,38 @@
     },
     {
       "entry_points": [
+        "Changes_In_Management/in-capmkt-ent-2025-11-30.xsd"
+      ],
+      "family": "Changes_In_Management",
+      "files": [
+        "Changes_In_Management/in-capmkt-def-2025-11-30.xml",
+        "Changes_In_Management/in-capmkt-ent-2025-11-30.xsd",
+        "Changes_In_Management/in-capmkt-pre-2025-11-30.xml",
+        "Changes_In_Management/in-capmkt-roles-2025-11-30.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "c1952548be90878dce023917033a98291a303d5f3272fee9b7e5c60972a2bca0",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-11-30/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-11-30/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Changes_In_Management/2025-11-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Changes_In_Management_20260421161224",
+      "release_id": "2025-11-30__c1952548",
+      "source_path": "/tmp/tmpdndbuxdw/Taxonomy_Changes_In_Management_20260421161224",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-04/Taxonomy_Changes_In_Management_20260421161224.zip",
+      "stored_path": "Changes_In_Management/2025-11-30__c1952548",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Changes_In_Management/2025-11-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-11-30"
+    },
+    {
+      "entry_points": [
         "Changes_In_Management_Resignation_Of_Independent_Director/in-capmkt-ent-2022-04-30.xsd"
       ],
       "family": "Changes_In_Management_Resignation_Of_Independent_Director",
@@ -2946,6 +2978,39 @@
     },
     {
       "entry_points": [
+        "Regulation_30_Restructuring/in-capmkt-ent-2025-08-31.xsd"
+      ],
+      "family": "Regulation_30_Restructuring",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Regulation_30_Restructuring/in-capmkt-cal-2025-08-31.xml",
+        "Regulation_30_Restructuring/in-capmkt-def-2025-08-31.xml",
+        "Regulation_30_Restructuring/in-capmkt-ent-2025-08-31.xsd",
+        "Regulation_30_Restructuring/in-capmkt-pre-2025-08-31.xml",
+        "Regulation_30_Restructuring/in-capmkt-roles-2025-08-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "1d989b15adb530e6502a58341232eb592c665a1781500f1c1b840c7bcd26ec4b",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-08-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-08-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Regulation_30_Restructuring/2025-08-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Regulation_30_Restructuring_31-08-2025_20260420194545",
+      "release_id": "2025-08-31__1d989b15",
+      "source_path": "/tmp/tmpdndbuxdw/Taxonomy_Regulation_30_Restructuring_31-08-2025_20260420194545",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-04/Taxonomy_Regulation_30_Restructuring_31-08-2025_20260420194545.zip",
+      "stored_path": "Regulation_30_Restructuring/2025-08-31__1d989b15",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Regulation_30_Restructuring/2025-08-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-08-31"
+    },
+    {
+      "entry_points": [
         "Regulation_50_Prior_Intimation_Of_Board_Meeting/in-capmkt-ent-2025-03-31.xsd"
       ],
       "family": "Regulation_50_Prior_Intimation_Of_Board_Meeting",
@@ -3069,6 +3134,70 @@
         "https://www.sebi.gov.in/xbrl/RelatedPartyTransactions/2024-03-31/in-capmkt/in-capmkt-ent"
       ],
       "version": "2024-03-31"
+    },
+    {
+      "entry_points": [
+        "Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/in-capmkt-ent-2025-11-30.xsd"
+      ],
+      "family": "Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/in-capmkt-def-2025-11-30.xml",
+        "Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/in-capmkt-ent-2025-11-30.xsd",
+        "Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/in-capmkt-pre-2025-11-30.xml",
+        "Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/in-capmkt-roles-2025-11-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "f8286472d8e16f0c92d9fa7d618209d0d7553411456c6218f9e89fae5ba955f8",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2025-11-30/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2025-11-30/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/2025-11-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer_20260420194028",
+      "release_id": "2025-11-30__f8286472",
+      "source_path": "/tmp/tmpdndbuxdw/Taxonomy_Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer_20260420194028",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-04/Taxonomy_Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer_20260420194028.zip",
+      "stored_path": "Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/2025-11-30__f8286472",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Resignation_Of_Director_Or_KMP_Or_SMP_Or_Compliance_Officer/2025-11-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2025-11-30"
+    },
+    {
+      "entry_points": [
+        "Resignation_Of_Statutory_Auditor/in-capmkt-ent-2024-05-31.xsd"
+      ],
+      "family": "Resignation_Of_Statutory_Auditor",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Resignation_Of_Statutory_Auditor/in-capmkt-def-2024-05-31.xml",
+        "Resignation_Of_Statutory_Auditor/in-capmkt-ent-2024-05-31.xsd",
+        "Resignation_Of_Statutory_Auditor/in-capmkt-pre-2024-05-31.xml",
+        "Resignation_Of_Statutory_Auditor/in-capmkt-roles-2024-05-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "1ffd261d7d314c78974713202b97bc2e31f75a0d8baf1d10956f958ab71cc5d0",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-05-31/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Resignation_Of_Statutory_Auditor/2024-05-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Resignation_Of_Statutory_Auditor_20260420193919",
+      "release_id": "2024-05-31__1ffd261d",
+      "source_path": "/tmp/tmpdndbuxdw/Taxonomy_Resignation_Of_Statutory_Auditor_20260420193919/Taxonomy_Resignation_Of_Statutory_Auditor",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-04/Taxonomy_Resignation_Of_Statutory_Auditor_20260420193919.zip",
+      "stored_path": "Resignation_Of_Statutory_Auditor/2024-05-31__1ffd261d",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Resignation_Of_Statutory_Auditor/2024-05-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-05-31"
     },
     {
       "entry_points": [
