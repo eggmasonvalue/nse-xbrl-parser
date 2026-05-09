@@ -310,6 +310,37 @@
     },
     {
       "entry_points": [
+        "Announcement_For_Agreements/in-capmkt-ent-2024-04-30.xsd"
+      ],
+      "family": "Announcement_For_Agreements",
+      "files": [
+        "Announcement_For_Agreements/in-capmkt-def-2024-04-30.xml",
+        "Announcement_For_Agreements/in-capmkt-ent-2024-04-30.xsd",
+        "Announcement_For_Agreements/in-capmkt-pre-2024-04-30.xml",
+        "Announcement_For_Agreements/in-capmkt-roles-2024-04-30.xsd",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "fa1ee574be9041d634990604401b8c6f50c21f0e5f4d4f37e7113b58e68fdbea",
+      "imported_core_namespaces": [
+        "https://www.sebi.gov.in/xbrl/2024-04-30/in-capmkt",
+        "https://www.sebi.gov.in/xbrl/2024-04-30/in-capmkt-types",
+        "https://www.sebi.gov.in/xbrl/Announcement_For_Agreements/2024-04-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Announcement_For_Agreements_20260505171944",
+      "release_id": "2024-04-30__fa1ee574",
+      "source_path": "/tmp/tmp56zh7noz/Taxonomy_Announcement_For_Agreements_20260505171944",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-05/Taxonomy_Announcement_For_Agreements_20260505171944.zip",
+      "stored_path": "Announcement_For_Agreements/2024-04-30__fa1ee574",
+      "target_namespaces": [
+        "https://www.sebi.gov.in/xbrl/Announcement_For_Agreements/2024-04-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2024-04-30"
+    },
+    {
+      "entry_points": [
         "Announcement_For_Fraud_Or_Default/in-capmkt-ent-2024-02-29.xsd"
       ],
       "family": "Announcement_For_Fraud_Or_Default",
@@ -1331,6 +1362,37 @@
         "http://www.sebi.gov.in/xbrl/Financial_Results_REITs_InvITs/2026-01-31/in-capmkt/in-capmkt-ent"
       ],
       "version": "2026-01-31"
+    },
+    {
+      "entry_points": [
+        "Forensic_Audit/in-capmkt-ent-2026-02-28.xsd"
+      ],
+      "family": "Forensic_Audit",
+      "files": [
+        "Forensic_Audit/in-capmkt-ent-2026-02-28.xsd",
+        "Forensic_Audit/in-capmkt-pre-2026-02-28.xml",
+        "Forensic_Audit/in-capmkt-roles-2026-02-28.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "0eebc73b90f5d5bd64e28cc53ecf1deab8679c337d11e0ec3c8459eef1da7745",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-02-28/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-02-28/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Forensic_Audit/2026-02-28/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Forensic_Audit_20260505172506",
+      "release_id": "2026-02-28__0eebc73b",
+      "source_path": "/tmp/tmp56zh7noz/Taxonomy_Forensic_Audit_20260505172506",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-05/Taxonomy_Forensic_Audit_20260505172506.zip",
+      "stored_path": "Forensic_Audit/2026-02-28__0eebc73b",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Forensic_Audit/2026-02-28/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-02-28"
     },
     {
       "entry_points": [
