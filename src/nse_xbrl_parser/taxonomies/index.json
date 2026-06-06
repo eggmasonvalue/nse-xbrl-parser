@@ -218,6 +218,38 @@
     },
     {
       "entry_points": [
+        "Action_Initiation_Or_Action_Taken_Or_Order_Passed/in-capmkt-ent-2026-03-31.xsd"
+      ],
+      "family": "Action_Initiation_Or_Action_Taken_Or_Order_Passed",
+      "files": [
+        "Action_Initiation_Or_Action_Taken_Or_Order_Passed/in-capmkt-def-2026-03-31.xml",
+        "Action_Initiation_Or_Action_Taken_Or_Order_Passed/in-capmkt-ent-2026-03-31.xsd",
+        "Action_Initiation_Or_Action_Taken_Or_Order_Passed/in-capmkt-pre-2026-03-31.xml",
+        "Action_Initiation_Or_Action_Taken_Or_Order_Passed/in-capmkt-roles-2026-03-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "9cb9240cd7c3d4c494e05bb5809dbf8b40ec5690a6a2f3c773a939977a9b95c2",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-03-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-03-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Action_Initiation_Or_Action_Taken_Or_Order_Passed/2026-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Action_Initiation_Or_Action_Taken_Or_Order_Passed_20260601185024",
+      "release_id": "2026-03-31__9cb9240c",
+      "source_path": "/tmp/tmpmr39l890/Taxonomy_Action_Initiation_Or_Action_Taken_Or_Order_Passed_20260601185024",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-06/Taxonomy_Action_Initiation_Or_Action_Taken_Or_Order_Passed_20260601185024.zip",
+      "stored_path": "Action_Initiation_Or_Action_Taken_Or_Order_Passed/2026-03-31__9cb9240c",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Action_Initiation_Or_Action_Taken_Or_Order_Passed/2026-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-03-31"
+    },
+    {
+      "entry_points": [
         "Alteration_Of_Capital_And_Fund_Raising/in-capmkt-ent-2023-12-31.xsd"
       ],
       "family": "Alteration_Of_Capital_And_Fund_Raising",
@@ -3447,6 +3479,38 @@
     },
     {
       "entry_points": [
+        "Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/in-capmkt-ent-2026-03-31.xsd"
+      ],
+      "family": "Schedule_Of_Analysts_Or_Institutional_Investors_Meeting",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/in-capmkt-def-2026-03-31.xml",
+        "Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/in-capmkt-ent-2026-03-31.xsd",
+        "Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/in-capmkt-pre-2026-03-31.xml",
+        "Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/in-capmkt-roles-2026-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "278cf757d5949c3986b74f24e2d776dce915ffc4e87f989842526145ac934ba6",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-03-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-03-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/2026-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Schedule_Of_Analysts_Or_Institutional_Investors_Meeting_20260601185113",
+      "release_id": "2026-03-31__278cf757",
+      "source_path": "/tmp/tmpmr39l890/Taxonomy_Schedule_Of_Analysts_Or_Institutional_Investors_Meeting_20260601185113",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-06/Taxonomy_Schedule_Of_Analysts_Or_Institutional_Investors_Meeting_20260601185113.zip",
+      "stored_path": "Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/2026-03-31__278cf757",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Schedule_Of_Analysts_Or_Institutional_Investors_Meeting/2026-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-03-31"
+    },
+    {
+      "entry_points": [
         "ShareCapitalAudit/in-bse-aud-2025-01-31.xsd"
       ],
       "family": "ShareCapitalAudit",
@@ -3694,6 +3758,38 @@
         "https://www.sebi.gov.in/xbrl/UHP_REIT_INVIT/2022-03-31/in-capmkt/in-capmkt-ent"
       ],
       "version": "2022-03-31"
+    },
+    {
+      "entry_points": [
+        "Violation_Related_To_Code_of_Conduct(CoC)/in-capmkt-ent-2026-03-31.xsd"
+      ],
+      "family": "Violation_Related_To_Code_of_Conduct(CoC)",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Violation_Related_To_Code_of_Conduct(CoC)/in-capmkt-def-2026-03-31.xml",
+        "Violation_Related_To_Code_of_Conduct(CoC)/in-capmkt-ent-2026-03-31.xsd",
+        "Violation_Related_To_Code_of_Conduct(CoC)/in-capmkt-pre-2026-03-31.xml",
+        "Violation_Related_To_Code_of_Conduct(CoC)/in-capmkt-roles-2026-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "e33d525a0a350d5964fc666cba7723da2f87d37cd5b825edb57e65d17b6ce78f",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-03-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-03-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Violation_Related_To_Code_of_Conduct(CoC)/2026-03-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Violation_Related_To_Code_of_ConductCoC_20260603180612",
+      "release_id": "2026-03-31__e33d525a",
+      "source_path": "/tmp/tmpmr39l890/Taxonomy_Violation_Related_To_Code_of_ConductCoC_20260603180612",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-06/Taxonomy_Violation_Related_To_Code_of_ConductCoC_20260603180612.zip",
+      "stored_path": "Violation_Related_To_Code_of_Conduct(CoC)/2026-03-31__e33d525a",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Violation_Related_To_Code_of_Conduct(CoC)/2026-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-03-31"
     },
     {
       "entry_points": [
