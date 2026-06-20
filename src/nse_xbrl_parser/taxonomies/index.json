@@ -3070,6 +3070,38 @@
     },
     {
       "entry_points": [
+        "Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/in-capmkt-ent-2026-04-30.xsd"
+      ],
+      "family": "Regulation_30_Para_B_Of_Part_A_Of_Schedule_III",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/in-capmkt-def-2026-04-30.xml",
+        "Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/in-capmkt-ent-2026-04-30.xsd",
+        "Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/in-capmkt-pre-2026-04-30.xml",
+        "Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/in-capmkt-roles-2026-04-30.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "cc4e5cdda7515044b8443fbefdc09de3360a1733dfc9d2d5374357b29f482ae3",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-04-30/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-04-30/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/2026-04-30/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Regulation_30_Para_B_Of_Part_A_Of_Schedule_III_1_20260619193843",
+      "release_id": "2026-04-30__cc4e5cdd",
+      "source_path": "/tmp/tmp045p87t4/Taxonomy_Regulation_30_Para_B_Of_Part_A_Of_Schedule_III_1_20260619193843",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-06/Taxonomy_Regulation_30_Para_B_Of_Part_A_Of_Schedule_III_1_20260619193843.zip",
+      "stored_path": "Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/2026-04-30__cc4e5cdd",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Regulation_30_Para_B_Of_Part_A_Of_Schedule_III/2026-04-30/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-04-30"
+    },
+    {
+      "entry_points": [
         "Regulation_30_Restructuring/in-capmkt-ent-2023-01-31.xsd"
       ],
       "family": "Regulation_30_Restructuring",
