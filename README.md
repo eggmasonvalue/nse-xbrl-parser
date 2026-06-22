@@ -2,49 +2,49 @@
 
 [![Built with uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://docs.astral.sh/uv/)
 
-An open-source Python library to robustly parse National Stock Exchange (NSE) XBRL corporate announcements and automatically convert them into clean, human-readable JSON facts.
+`nse-xbrl-parser` is an offline-taxonomy NSE XBRL parser library for Python.
 
-`nse-xbrl-parser` elegantly solves the infamous **"Missing Schema" / "Missing XSD"** problem. NSE XBRL filings often reference ancient taxonomy templates that have been wiped from their servers, or they `import` core schemas that are inexplicably omitted from the category-specific ZIP downloads.
+It is built for the common NSE failure mode where filings reference historical or incomplete taxonomy dependencies. The package ships a bundled taxonomy archive and resolves schemas locally, so Arelle validation and fact extraction do not depend on live taxonomy hosting.
 
-This library acts as a 100% offline parsing engine. It resolves all these references against an internal, hierarchical `taxonomies` archive. By temporarily locating the XML filing alongside the schema, it allows native relative resolution of all sub-dependencies, ensuring your production Docker containers remain completely clean and data is resolved with zero internet access.
-
-## 🚀 Features
-- **Offline Resolution:** Comprehensive, hierarchical NSE taxonomies bundled. No internet required during the `Arelle` schema validation phase.
-- **Robust Resolution Engine:** Automatically handles complex `import` paths (e.g., `../core/types.xsd`) by enforcing local filesystem resolution.
-- **Read-Only Safe:** Performs temporary operations in a sandbox; perfectly compliant with locked-down Python package installations.
-- **Human-Readable Labels:** Preferentially maps obtuse XBRL QNames (e.g. `ns:Management`) back directly into their English equivalents (e.g. "Change in Management"). 
-- **Agent/LLM Optimized:** Strictly typed, fully documented, and absolutely silent (suppresses noisy stdout warnings emitted by processing engines). Output JSON is perfect for fundamental analysis bots.
-- **Smart Versioning** CI/CD pipleine to constantly check for new taxonomies and add the new versions only if the actual schemas have been updated for any family/if new families are added
-
-## 🛠️ Usage
-
-Install using standard Python package managers:
+## Install
 
 ```bash
 uv add git+https://github.com/eggmasonvalue/nse-xbrl-parser.git
 ```
 
-And parse a downloaded `*.xml` filing in Python:
+## Public API
+
+- `parse_xbrl_file(path)`
+  - Returns a flat announcement-oriented dictionary: `{label: value | [values]}`.
+- `parse_xbrl_facts(path)`
+  - Returns a context-preserving fact table (`list[dict]`) with one row per concept/value/context/unit/decimals/period/basis/dimensions.
+
+Both APIs reuse the same schema resolution + Arelle loading pipeline.
+
+## Usage
 
 ```python
-from nse_xbrl_parser import parse_xbrl_file
 from pathlib import Path
+from nse_xbrl_parser import parse_xbrl_file, parse_xbrl_facts
 
-# Provide the absolute path to your downloaded instance
-filing_path = Path("SWIGGY_announcement_1.xml")
+xml_path = Path("filing.xml")
 
-# The parser automatically detects the required schemas, performs validation,
-# pulls the labels, and emits a clean JSON Dictionary
-facts = parse_xbrl_file(filing_path)
-
-print(facts)
-# Example Out:
-# {
-#   "Reason for change": "Resignation",
-#   "Date of appointment/cessation": "2024-05-15",
-#   "Brief profile": "Jane Doe was leading..."
-# }
+announcement_facts = parse_xbrl_file(xml_path)
+financial_facts = parse_xbrl_facts(xml_path)
 ```
 
-## 🏗️ Architecture
-Refer to the `.context/` living documentation directory for architectural specifics and design patterns enforcing this modular approach.
+## Development
+
+```bash
+uv sync
+uv run ruff check .
+uv run pytest -q
+npx --yes markdownlint-cli2 AGENTS.md README.md context/**/*.md
+```
+
+## Project docs
+
+- Agent entrypoint: `AGENTS.md`
+- Code map: `context/MAP.md`
+- Durable tradeoffs: `context/DECISIONS.md`
+- Imperative coding rules: `context/CONVENTIONS.md`
