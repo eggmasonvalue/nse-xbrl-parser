@@ -1,8 +1,9 @@
 import logging
 import re
 import shutil
+from datetime import date, datetime
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Iterator, Optional
 
 # Arelle session management
 from arelle.api.Session import Session
@@ -60,6 +61,7 @@ def _schema_has_matching_local_imports(schema_path: Path) -> bool:
         logger.debug(f"Unable to inspect local imports for {schema_path}: {e}")
         return False
 
+
 def _find_schema_ref(xbrl_content: bytes) -> Optional[str]:
     """Find the schemaRef href inside the raw XBRL instance bytes."""
     try:
@@ -85,6 +87,7 @@ def _find_schema_ref(xbrl_content: bytes) -> Optional[str]:
             pass
     return None
 
+
 def _get_instance_namespaces(xbrl_content: bytes) -> set[str]:
     """Extract all unique namespaces from the XBRL instance document."""
     namespaces = set()
@@ -94,7 +97,7 @@ def _get_instance_namespaces(xbrl_content: bytes) -> set[str]:
 
         # We need to capture all namespace declarations
         # iterparse with "start-ns" is perfect for this
-        for event, (prefix, uri) in ET.iterparse(BytesIO(xbrl_content), events=["start-ns"]):
+        for _event, (_prefix, uri) in ET.iterparse(BytesIO(xbrl_content), events=["start-ns"]):
             namespaces.add(uri)
     except Exception as e:
         logger.debug(f"Namespace extraction failed: {e}. Falling back to regex.")
@@ -102,31 +105,15 @@ def _get_instance_namespaces(xbrl_content: bytes) -> set[str]:
             content_str = xbrl_content.decode("utf-8", errors="ignore")
             # Simple regex to find xmlns:prefix="uri" or xmlns="uri"
             matches = re.findall(r'xmlns(?::\w+)?=["\']([^"\']+)["\']', content_str)
-            for m in matches:
-                namespaces.add(m)
+            for match in matches:
+                namespaces.add(match)
         except Exception:
             pass
     return namespaces
 
-def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
-    """Parse an NSE XBRL XML document and yield a dictionary of human-readable facts.
 
-    This function utilizes the `arelle` engine to validate and extract facts.
-    It searches bundled versioned taxonomy releases first, falls back to the
-    current flat taxonomy tree when necessary, and then copies the instance XML
-    into the selected schema directory so Arelle can resolve relative imports locally.
-
-    Args:
-        xml_path (Path | str): Absolute or relative path to the XBRL instance document.
-
-    Returns:
-        Dict[str, Any]: A dictionary where keys are the human-readable concept labels
-                        (or QNames backoffs) and values are the corresponding facts.
-
-    Raises:
-        FileNotFoundError: If the source XML or required taxonomy schema does not exist.
-        ValueError: If the schemaRef cannot be detected or validation yields zero facts.
-    """
+def _resolve_schema_candidates(xml_path: Path | str) -> tuple[Path, list[Path]]:
+    """Resolve candidate local entrypoint schemas for an instance file."""
     final_xbrl_path = Path(xml_path).absolute()
     if not final_xbrl_path.exists():
         raise FileNotFoundError(f"XBRL file not found: {final_xbrl_path}")
@@ -157,11 +144,12 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
     # Disambiguation based on namespaces to avoid expensive multiple Arelle evaluations
     if len(matching_schemas) > 1:
         from .taxonomy_store import load_index
+
         index = load_index()
-        
+
         target_namespace_matches = []
         imported_namespace_matches = []
-        
+
         for schema_path in matching_schemas:
             # Find the release this schema belongs to
             # A versioned schema path is like .../family/release_id/schema_ref
@@ -171,41 +159,58 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
                 if len(rel_parts) >= 2:
                     family = rel_parts[0]
                     release_id = rel_parts[1]
-                    
+
                     for release in index.get("releases", []):
-                        if release["family"] == family and release["release_id"] == release_id:
+                        if (
+                            release["family"] == family
+                            and release["release_id"] == release_id
+                        ):
                             # Primary match: target namespaces
-                            if any(ns in instance_namespaces for ns in release.get("target_namespaces", [])):
+                            if any(
+                                ns in instance_namespaces
+                                for ns in release.get("target_namespaces", [])
+                            ):
                                 target_namespace_matches.append(schema_path)
                                 break
                             # Secondary match: imported namespaces
-                            if any(ns in instance_namespaces for ns in release.get("imported_core_namespaces", [])):
+                            if any(
+                                ns in instance_namespaces
+                                for ns in release.get("imported_core_namespaces", [])
+                            ):
                                 imported_namespace_matches.append(schema_path)
                                 break
             except ValueError:
                 # Not in TAXONOMY_DIR (maybe it's a flat schema candidate)
                 continue
-        
+
         if target_namespace_matches:
-            logger.debug(f"Filtered {len(matching_schemas)} schemas down to {len(target_namespace_matches)} based on target_namespaces.")
+            logger.debug(
+                "Filtered %s schemas down to %s based on target_namespaces.",
+                len(matching_schemas),
+                len(target_namespace_matches),
+            )
             matching_schemas = target_namespace_matches
         elif imported_namespace_matches:
-            logger.debug(f"Filtered {len(matching_schemas)} schemas down to {len(imported_namespace_matches)} based on imported_core_namespaces.")
+            logger.debug(
+                "Filtered %s schemas down to %s based on imported_core_namespaces.",
+                len(matching_schemas),
+                len(imported_namespace_matches),
+            )
             matching_schemas = imported_namespace_matches
 
-    compatible_schemas = [path for path in matching_schemas if _schema_has_matching_local_imports(path)]
+    compatible_schemas = [
+        path for path in matching_schemas if _schema_has_matching_local_imports(path)
+    ]
     if compatible_schemas:
         matching_schemas = compatible_schemas
 
-    # We will aggregate all facts across every matching schema definition
-    parsed_data: Dict[str, Any] = {}
+    return final_xbrl_path, matching_schemas
 
-    # Track unique facts to avoid duplication across multiple schema evaluations
-    # Key: (label, contextID, value)
-    unique_facts = set()
 
-    found_facts = False
-
+def _iter_loaded_models(
+    final_xbrl_path: Path, matching_schemas: list[Path]
+) -> Iterator[Any]:
+    """Yield successfully loaded Arelle models for the provided schema candidates."""
     with Session() as session:
         for target_schema_path in matching_schemas:
             target_schema_path = target_schema_path.absolute()
@@ -233,51 +238,337 @@ def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
                 if model_xbrl is None or len(model_xbrl.facts) == 0:
                     try:
                         arelle_logs = session.get_logs("text")
-                        logger.error(f"Arelle loaded model for {target_schema_path} but found 0 facts. Logs: {arelle_logs}")
+                        logger.error(
+                            "Arelle loaded model for %s but found 0 facts. Logs: %s",
+                            target_schema_path,
+                            arelle_logs,
+                        )
                     except Exception:
-                        logger.error(f"Arelle loaded model for {target_schema_path} but found 0 facts.")      
+                        logger.error(
+                            "Arelle loaded model for %s but found 0 facts.",
+                            target_schema_path,
+                        )
                     continue
 
-                found_facts = True
-                for fact in model_xbrl.facts:
-                    label = str(fact.qname)
-
-                    if fact.concept is not None:
-                        # Prefer the standard en label, fallback to verbose
-                        lbl = fact.concept.label(lang="en")
-                        if not lbl:
-                            lbl = fact.concept.label(
-                                lang="en",
-                                labelrole="http://www.xbrl.org/2003/role/verboseLabel",
-                            )
-                        if lbl:
-                            label = lbl
-
-                    val = fact.value
-                    context_id = fact.contextID if hasattr(fact, "contextID") else None
-
-                    fact_key = (label, context_id, val)
-
-                    if fact_key not in unique_facts:
-                        unique_facts.add(fact_key)
-
-                        if label in parsed_data:
-                            existing = parsed_data[label]
-                            if isinstance(existing, list):
-                                existing.append(val)
-                            else:
-                                parsed_data[label] = [existing, val]
-                        else:
-                            parsed_data[label] = val
+                yield model_xbrl
 
             except Exception as e:
                 logger.debug(f"Validation failed for schema {target_schema_path}: {e}")
 
-            finally:                # Cleanup the temporary copy in the taxonomy directory
+            finally:
+                # Cleanup the temporary copy in the taxonomy directory
                 if temp_xml_path.exists():
                     temp_xml_path.unlink()
 
+
+def _normalize_atomic_value(value: Any) -> Any:
+    if value is None:
+        return None
+    if isinstance(value, (str, int, float, bool)):
+        return value
+    if isinstance(value, date):
+        return value.isoformat()
+    if isinstance(value, datetime):
+        return value.isoformat()
+    return str(value)
+
+
+def _extract_period(context: Any) -> Dict[str, Any]:
+    if context is None:
+        return {}
+
+    if getattr(context, "isInstantPeriod", False):
+        instant_value = (
+            getattr(context, "instantDate", None)
+            or getattr(context, "instantDatetime", None)
+            or getattr(context, "instantValue", None)
+        )
+        return {"instant": _normalize_atomic_value(instant_value)}
+
+    if getattr(context, "isStartEndPeriod", False):
+        start_value = (
+            getattr(context, "startDate", None)
+            or getattr(context, "startDatetime", None)
+            or getattr(context, "startValue", None)
+        )
+        end_value = (
+            getattr(context, "endDate", None)
+            or getattr(context, "endDatetime", None)
+            or getattr(context, "endValue", None)
+        )
+        return {
+            "start": _normalize_atomic_value(start_value),
+            "end": _normalize_atomic_value(end_value),
+        }
+
+    if getattr(context, "isForeverPeriod", False):
+        return {"forever": True}
+
+    return {}
+
+
+def _extract_dimension_member(dimension_value: Any) -> str:
+    if dimension_value is None:
+        return ""
+
+    if getattr(dimension_value, "isExplicit", False):
+        member_qname = getattr(dimension_value, "memberQname", None)
+        if member_qname is not None:
+            return str(member_qname)
+
+    typed_member = getattr(dimension_value, "typedMember", None)
+    if typed_member is not None:
+        try:
+            if hasattr(typed_member, "itertext"):
+                text_parts = [part.strip() for part in typed_member.itertext() if part.strip()]
+                if text_parts:
+                    return " ".join(text_parts)
+        except Exception:
+            pass
+        return str(typed_member)
+
+    member_qname = getattr(dimension_value, "memberQname", None)
+    if member_qname is not None:
+        return str(member_qname)
+
+    return str(dimension_value)
+
+
+def _dimension_axis_key(axis_candidate: Any, dimension_value: Any) -> str:
+    axis_qname = getattr(axis_candidate, "qname", None)
+    if axis_qname is not None:
+        return str(axis_qname)
+
+    dim_qname = getattr(dimension_value, "dimensionQname", None)
+    if dim_qname is not None:
+        return str(dim_qname)
+
+    return str(axis_candidate)
+
+
+def _extract_dimensions(context: Any) -> Dict[str, str]:
+    if context is None:
+        return {}
+
+    dimensions: Dict[str, str] = {}
+    qname_dims = getattr(context, "qnameDims", None)
+
+    if isinstance(qname_dims, dict):
+        for axis_qname in sorted(qname_dims.keys(), key=lambda item: str(item)):
+            dimensions[str(axis_qname)] = _extract_dimension_member(qname_dims[axis_qname])
+
+    for dim_attr in ("segDimValues", "scenDimValues"):
+        dim_values = getattr(context, dim_attr, None)
+        if isinstance(dim_values, dict):
+            for axis_candidate in sorted(dim_values.keys(), key=lambda item: str(item)):
+                dimension_value = dim_values[axis_candidate]
+                axis_key = _dimension_axis_key(axis_candidate, dimension_value)
+                dimensions.setdefault(axis_key, _extract_dimension_member(dimension_value))
+
+    return dimensions
+
+
+def _extract_unit(fact: Any) -> Optional[str]:
+    unit = getattr(fact, "unit", None)
+    if unit is None:
+        unit_id = getattr(fact, "unitID", None)
+        return str(unit_id) if unit_id else None
+
+    measures = getattr(unit, "measures", None)
+    if isinstance(measures, (tuple, list)) and len(measures) == 2:
+        numerators, denominators = measures
+        numerator_str = "*".join(sorted(str(item) for item in numerators))
+        denominator_str = "*".join(sorted(str(item) for item in denominators))
+        if denominator_str:
+            return f"{numerator_str}/{denominator_str}" if numerator_str else f"1/{denominator_str}"
+        if numerator_str:
+            return numerator_str
+
+    unit_id = getattr(fact, "unitID", None) or getattr(unit, "id", None)
+    if unit_id:
+        return str(unit_id)
+
+    return str(unit)
+
+
+def _extract_entity(context: Any) -> Optional[Dict[str, Optional[str]]]:
+    if context is None:
+        return None
+
+    entity_identifier = getattr(context, "entityIdentifier", None)
+    if isinstance(entity_identifier, tuple) and len(entity_identifier) >= 2:
+        scheme, identifier = entity_identifier[0], entity_identifier[1]
+        return {
+            "scheme": str(scheme) if scheme is not None else None,
+            "identifier": str(identifier) if identifier is not None else None,
+        }
+
+    return None
+
+
+def _infer_basis(context_id: Optional[str], dimensions: Dict[str, str]) -> Optional[str]:
+    for axis, member in dimensions.items():
+        axis_lower = axis.lower()
+        member_lower = member.lower()
+
+        if "consolidated" in member_lower or "consolidated" in axis_lower:
+            return "consolidated"
+        if "standalone" in member_lower or "standalone" in axis_lower:
+            return "standalone"
+        if "basis" in axis_lower:
+            return member
+
+    if context_id:
+        context_lower = context_id.lower()
+        if "consolidated" in context_lower:
+            return "consolidated"
+        if "standalone" in context_lower:
+            return "standalone"
+
+    return None
+
+
+def _fact_to_row(fact: Any) -> dict[str, Any]:
+    fact_qname = getattr(fact, "qname", None)
+    concept = {
+        "qname": str(fact_qname) if fact_qname is not None else None,
+        "local_name": getattr(fact_qname, "localName", None),
+        "namespace": getattr(fact_qname, "namespaceURI", None),
+    }
+
+    context = getattr(fact, "context", None)
+    context_id = getattr(fact, "contextID", None) or getattr(context, "id", None)
+    dimensions = _extract_dimensions(context)
+
+    is_nil = bool(getattr(fact, "isNil", False))
+    is_tuple = bool(getattr(fact, "isTuple", False))
+
+    value: Any
+    if is_nil:
+        value = None
+    else:
+        x_value = getattr(fact, "xValue", None)
+        value = _normalize_atomic_value(x_value)
+        if value is None:
+            value = _normalize_atomic_value(getattr(fact, "value", None))
+
+    return {
+        "concept": concept,
+        "value": value,
+        "unit": _extract_unit(fact),
+        "decimals": getattr(fact, "decimals", None),
+        "period": _extract_period(context),
+        "context_id": context_id,
+        "dimensions": dimensions,
+        "basis": _infer_basis(context_id, dimensions),
+        "entity": _extract_entity(context),
+        "is_nil": is_nil,
+        "is_tuple": is_tuple,
+    }
+
+
+def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
+    """Parse an NSE XBRL XML document and yield a dictionary of human-readable facts.
+
+    This function utilizes the `arelle` engine to validate and extract facts.
+    It searches bundled versioned taxonomy releases first, falls back to the
+    current flat taxonomy tree when necessary, and then copies the instance XML
+    into the selected schema directory so Arelle can resolve relative imports locally.
+
+    Args:
+        xml_path (Path | str): Absolute or relative path to the XBRL instance document.
+
+    Returns:
+        Dict[str, Any]: A dictionary where keys are the human-readable concept labels
+                        (or QNames backoffs) and values are the corresponding facts.
+
+    Raises:
+        FileNotFoundError: If the source XML or required taxonomy schema does not exist.
+        ValueError: If the schemaRef cannot be detected or validation yields zero facts.
+    """
+    final_xbrl_path, matching_schemas = _resolve_schema_candidates(xml_path)
+
+    # We will aggregate all facts across every matching schema definition
+    parsed_data: Dict[str, Any] = {}
+
+    # Track unique facts to avoid duplication across multiple schema evaluations
+    # Key: (label, contextID, value)
+    unique_facts = set()
+
+    found_facts = False
+
+    for model_xbrl in _iter_loaded_models(final_xbrl_path, matching_schemas):
+        found_facts = True
+        for fact in model_xbrl.facts:
+            label = str(fact.qname)
+
+            if fact.concept is not None:
+                # Prefer the standard en label, fallback to verbose
+                lbl = fact.concept.label(lang="en")
+                if not lbl:
+                    lbl = fact.concept.label(
+                        lang="en",
+                        labelrole="http://www.xbrl.org/2003/role/verboseLabel",
+                    )
+                if lbl:
+                    label = lbl
+
+            val = fact.value
+            context_id = fact.contextID if hasattr(fact, "contextID") else None
+
+            fact_key = (label, context_id, val)
+
+            if fact_key not in unique_facts:
+                unique_facts.add(fact_key)
+
+                if label in parsed_data:
+                    existing = parsed_data[label]
+                    if isinstance(existing, list):
+                        existing.append(val)
+                    else:
+                        parsed_data[label] = [existing, val]
+                else:
+                    parsed_data[label] = val
+
     if not found_facts:
-        raise ValueError("Arelle loaded model but found 0 facts. Schema resolution or validation failed.")
+        raise ValueError(
+            "Arelle loaded model but found 0 facts. Schema resolution or validation failed."
+        )
 
     return parsed_data
+
+
+def parse_xbrl_facts(xml_path: Path | str) -> list[dict[str, Any]]:
+    """Parse an NSE XBRL XML document and return a context-preserving fact table.
+
+    Each row preserves context-level detail for one fact, including period,
+    dimensions, and entity metadata.
+    """
+    final_xbrl_path, matching_schemas = _resolve_schema_candidates(xml_path)
+
+    rows: list[dict[str, Any]] = []
+    unique_facts: set[tuple[Any, ...]] = set()
+    found_facts = False
+
+    for model_xbrl in _iter_loaded_models(final_xbrl_path, matching_schemas):
+        found_facts = True
+        for fact in model_xbrl.facts:
+            fact_key = (
+                str(getattr(fact, "qname", None)),
+                getattr(fact, "contextID", None),
+                getattr(fact, "value", None),
+                getattr(fact, "unitID", None),
+                getattr(fact, "decimals", None),
+            )
+            if fact_key in unique_facts:
+                continue
+
+            unique_facts.add(fact_key)
+            rows.append(_fact_to_row(fact))
+
+    if not found_facts:
+        raise ValueError(
+            "Arelle loaded model but found 0 facts. Schema resolution or validation failed."
+        )
+
+    return rows

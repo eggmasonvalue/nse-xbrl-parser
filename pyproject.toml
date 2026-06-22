@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nse-xbrl-parser"
-version = "0.1.0"
+version = "0.2.0"
 description = "High-performance NSE XBRL taxonomy resolution and parsing engine."
 readme = "README.md"
 requires-python = ">=3.12"
