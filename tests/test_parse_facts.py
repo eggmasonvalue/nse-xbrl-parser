@@ -105,9 +105,7 @@ def test_parse_xbrl_facts_preserves_context_dimensions_and_periods(tmp_path):
     }.issubset(first_row.keys())
 
     shares_rows = [
-        row
-        for row in rows
-        if row["concept"]["local_name"] == "NumberOfSharesAllotted"
+        row for row in rows if row["concept"]["local_name"] == "NumberOfSharesAllotted"
     ]
     assert len(shares_rows) == 3
     assert {row["context_id"] for row in shares_rows} == {
@@ -141,9 +139,7 @@ def test_parse_xbrl_facts_preserves_context_dimensions_and_periods(tmp_path):
     assert consolidated_row["basis"] == "consolidated"
 
     duration_row = next(
-        row
-        for row in rows
-        if row["concept"]["local_name"] == "FinalAmountOfIssueSize"
+        row for row in rows if row["concept"]["local_name"] == "FinalAmountOfIssueSize"
     )
     assert str(duration_row["period"]["start"]).startswith("2026-01-01")
     assert str(duration_row["period"]["end"]).startswith("2026-03-31")
@@ -158,3 +154,45 @@ def test_parse_xbrl_facts_preserves_context_dimensions_and_periods(tmp_path):
     )
     assert nil_row["is_nil"] is True
     assert nil_row["value"] is None
+
+
+def test_parse_xbrl_facts_supports_rpt_2022_http_taxonomy_namespace(tmp_path):
+    fixture = tmp_path / "rpt_2022_http_namespace.xml"
+    fixture.write_text(
+        """<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:in-capmkt="http://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt"
+  xmlns:in-capmkt-roles="http://www.sebi.gov.in/xbrl/RelatedPartyTransactions/2022-03-31/in-capmkt/in-capmkt-ent"
+  xmlns:in-capmkt-types="https://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt-types"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <link:schemaRef xlink:href="in-capmkt-ent-2022-03-31.xsd" xlink:type="simple"/>
+
+  <xbrli:context id="MainI">
+    <xbrli:entity>
+      <xbrli:identifier scheme="https://www.sebi.gov.in/in-capmkt/ScripCode">500325</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2022-09-30</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+
+  <in-capmkt:NameOfTheCompany contextRef="MainI">Reliance Industries Limited</in-capmkt:NameOfTheCompany>
+</xbrli:xbrl>
+""",
+        encoding="utf-8",
+    )
+
+    rows = parse_xbrl_facts(fixture)
+
+    assert rows
+    company_row = next(
+        row for row in rows if row["concept"]["local_name"] == "NameOfTheCompany"
+    )
+    assert company_row["value"] == "Reliance Industries Limited"
+    assert (
+        company_row["concept"]["namespace"]
+        == "http://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt"
+    )
