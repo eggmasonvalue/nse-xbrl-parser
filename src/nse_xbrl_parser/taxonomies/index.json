@@ -3263,6 +3263,37 @@
     },
     {
       "entry_points": [
+        "RelatedPartyTransactions/in-capmkt-ent-2022-03-31.xsd"
+      ],
+      "family": "RelatedPartyTransactions",
+      "files": [
+        "META-INF/taxonomyPackage.xml",
+        "RelatedPartyTransactions/in-capmkt-def-2022-03-31.xml",
+        "RelatedPartyTransactions/in-capmkt-ent-2022-03-31.xsd",
+        "RelatedPartyTransactions/in-capmkt-pre-2022-03-31.xml",
+        "RelatedPartyTransactions/in-capmkt-roles-2022-03-31.xsd",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "3ac243918e75d1a5839e7ed1c52538228f1ea96719a7854acd02dfe85126240d",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/RelatedPartyTransactions/2022-03-31/in-capmkt-roles",
+        "https://www.sebi.gov.in/xbrl/2022-03-31/in-capmkt-types"
+      ],
+      "provenance_name": "synthetic-from-2024-for-rpt-2022",
+      "release_id": "2022-03-31__3ac24391",
+      "source_path": "_tmp_rpt_2022_bundle",
+      "source_url": null,
+      "stored_path": "RelatedPartyTransactions/2022-03-31__3ac24391",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/RelatedPartyTransactions/2022-03-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2022-03-31"
+    },
+    {
+      "entry_points": [
         "RelatedPartyTransactions/in-capmkt-ent-2024-03-31.xsd"
       ],
       "family": "RelatedPartyTransactions",

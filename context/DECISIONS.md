@@ -27,3 +27,10 @@ Context: `pyproject.toml` and `src/nse_xbrl_parser/__init__.py` declare `0.2.0`,
 Decision: Record this as an active owner issue; do not retag or repin consumers in this housekeeping change.
 Tradeoff: Release metadata remains temporarily inconsistent, but avoids accidental historical rewrite or publishing a misleading release from this docs-only PR.
 Status: active (owner action required before next clean release tag including `parse_xbrl_facts`)
+
+## 2026-06-24 — Backfill 2022 RPT taxonomy as an in-repo release derived from 2024 package
+
+Context: Legacy standalone RPT filings (e.g., 30-SEP-2022 to 31-MAR-2024) reference `in-capmkt-ent-2022-03-31.xsd` with `http://` namespace URIs. The bundled taxonomy store had no `RelatedPartyTransactions` 2022 release, so schema candidate selection fell onto unrelated 2022 families and Arelle produced zero facts.
+Decision: Add a dedicated `RelatedPartyTransactions/2022-03-31` release to the bundled taxonomy archive, derived from the known-good 2024 RPT package and rewritten to the 2022 entrypoint filename/date plus the legacy `http://.../in-capmkt` and `http://.../RelatedPartyTransactions/...` namespace URIs used by old filings.
+Tradeoff: This is a compatibility backfill rather than a pristine upstream SEBI package mirror, but it restores deterministic offline parsing for old RPT instances without introducing network fetches or parser-side special cases.
+Status: active
