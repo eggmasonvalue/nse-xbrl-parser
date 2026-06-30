@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import unicodedata
 from collections import Counter, OrderedDict
 from collections.abc import Mapping, Sequence
 from copy import deepcopy
@@ -1037,51 +1036,12 @@ def _format_markdown_value(value: Any) -> str:
         return "—"
     if isinstance(value, list):
         return "; ".join(_format_markdown_value(item) for item in value)
-    return _normalize_markdown_text(str(value))
+    return str(value)
 
 
 def _escape_table_cell(value: Any) -> str:
-    return (
-        _normalize_markdown_text(str(value)).replace("|", "\\|").replace("\n", " ")
-    )
+    return str(value).replace("|", "\\|").replace("\n", " ")
 
 
 def _escape_markdown_text(value: str) -> str:
-    return _normalize_markdown_text(value).replace("|", "\\|")
-
-
-# Whitespace-like code points that NSE source text embeds and that render as
-# garbled characters for markdown consumers. Map them to a plain ASCII space.
-_SPACE_TRANSLATION = {
-    0x00A0: " ",  # NO-BREAK SPACE
-    0x202F: " ",  # NARROW NO-BREAK SPACE
-    0x2007: " ",  # FIGURE SPACE
-    0x2009: " ",  # THIN SPACE
-    0x200A: " ",  # HAIR SPACE
-    0x3000: " ",  # IDEOGRAPHIC SPACE
-}
-
-# Zero-width / invisible code points that should be dropped entirely.
-_ZERO_WIDTH = {
-    0x200B,  # ZERO WIDTH SPACE
-    0x200C,  # ZERO WIDTH NON-JOINER
-    0x200D,  # ZERO WIDTH JOINER
-    0x2060,  # WORD JOINER
-    0xFEFF,  # ZERO WIDTH NO-BREAK SPACE / BOM
-}
-
-_TEXT_TRANSLATION = {**_SPACE_TRANSLATION, **dict.fromkeys(_ZERO_WIDTH, None)}
-
-
-def _normalize_markdown_text(value: str) -> str:
-    """Normalize source-derived text for safe markdown output.
-
-    NSE XBRL text values and taxonomy labels frequently contain non-breaking
-    spaces and zero-width characters. Left untouched these surface as garbled
-    glyphs (e.g. "Â ") for downstream markdown consumers, so collapse the
-    whitespace variants to plain spaces and strip invisible code points.
-    """
-    if not value:
-        return value
-    normalized = unicodedata.normalize("NFC", value)
-    return normalized.translate(_TEXT_TRANSLATION)
+    return value.replace("|", "\\|")

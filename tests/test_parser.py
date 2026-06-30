@@ -201,18 +201,19 @@ def test_render_xbrl_markdown_renders_nested_rows():
     assert "1 passed, 0 failed, 0 unavailable" in markdown
 
 
-def test_render_xbrl_markdown_normalizes_invisible_characters():
+def test_render_xbrl_markdown_indents_without_html_entities():
     view = {
-        "title": "Statement\u00a0of Profit",
+        "title": "T",
         "unit": "INR",
-        "columns": ["Year\u00a0ended"],
+        "columns": ["Y"],
         "sections": [
             {
                 "heading": "H",
                 "rows": [
                     {
-                        "label": "Revenue\u00a0from\u200boperations",
-                        "values": ["1\u00a0234"],
+                        "label": "Total income",
+                        "values": [100],
+                        "rows": [{"label": "Revenue", "values": [90]}],
                     }
                 ],
             }
@@ -221,12 +222,10 @@ def test_render_xbrl_markdown_normalizes_invisible_characters():
 
     markdown = render_xbrl_markdown(view)
 
-    assert "\u00a0" not in markdown
-    assert "\u200b" not in markdown
-    assert "Revenue fromoperations" in markdown
-    assert "1 234" in markdown
-    # Deliberate indentation entity must be preserved (it is ASCII, not U+00A0).
-    assert "&nbsp;" not in markdown  # no indentation depth here
+    # Nested rows must indent with plain ASCII spaces, never `&nbsp;` markup,
+    # which leaks as a literal token for LLM/RAG/plaintext consumers.
+    assert "&nbsp;" not in markdown
+    assert "|   Revenue" in markdown
 
 
 def test_public_api_does_not_export_flat_parser():
