@@ -1,10 +1,12 @@
 import shutil
 import subprocess
 from pathlib import Path
+from unittest.mock import patch
 
 import pytest
 
 from nse_xbrl_parser import build_xbrl_view, render_xbrl_markdown
+from nse_xbrl_parser import view as view_module
 
 
 PREFERENTIAL_ISSUE_LISTING_URL = (
@@ -151,6 +153,7 @@ def test_build_xbrl_view_with_archive_scoped_fraud_taxonomy(tmp_path):
         encoding="utf-8",
     )
 
+    view_module._VIEW_CACHE.clear()
     view = build_xbrl_view(filing)
 
     facts = _project_label_values(view)
@@ -160,6 +163,13 @@ def test_build_xbrl_view_with_archive_scoped_fraud_taxonomy(tmp_path):
         facts.get("NSE symbol", facts.get("NSE Symbol", facts.get("Nsesymbol")))
         == "FINOPB"
     )
+
+    view["title"] = "mutated by caller"
+    with patch("nse_xbrl_parser.view.load_xbrl_model") as load_mock:
+        cached_view = build_xbrl_view(filing)
+
+    load_mock.assert_not_called()
+    assert cached_view["title"] != "mutated by caller"
 
 
 def test_render_xbrl_markdown_renders_nested_rows():

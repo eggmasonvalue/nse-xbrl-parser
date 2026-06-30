@@ -52,6 +52,7 @@ graph TD
   - Filters ambiguous candidates using instance namespaces and local import checks.
 - `load_xbrl_model` in `parser.py`
   - Resolves schema candidates and yields the first Arelle model with facts inside a context manager.
+  - Filters ambiguous candidates by entrypoint target namespace before Arelle retries.
   - Keeps the Arelle session open only for the caller's extraction block.
 - `_iter_loaded_models` in `parser.py`
   - Runs Arelle for each candidate schema.
@@ -60,6 +61,7 @@ graph TD
 - `parse_xbrl_facts` in `parser.py`
   - Produces a tidy fact table with concept/context/unit/period/basis/dimensions.
 - `build_xbrl_view` in `view.py`
+  - Memoizes built views in-process by file path, mtime, size, and output options.
   - Loads the model once and extracts facts, presentation structure, and calculation checks from that shared model.
   - Emits human-facing `title`, `unit`, `columns`, `sections`, and `checks` by default.
   - Adds DTS plumbing and diagnostics only under `trace` when `include_trace=True`.

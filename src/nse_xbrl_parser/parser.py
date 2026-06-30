@@ -142,6 +142,21 @@ def _resolve_schema_candidates(xml_path: Path | str) -> tuple[Path, list[Path]]:
             "The NSE may have published an unsupported taxonomy version."
         )
 
+    if len(matching_schemas) > 1:
+        exact_namespace_matches = []
+        for schema_path in matching_schemas:
+            target_namespace = _read_target_namespace(schema_path)
+            if target_namespace and target_namespace in instance_namespaces:
+                exact_namespace_matches.append(schema_path)
+
+        if exact_namespace_matches:
+            logger.debug(
+                "Filtered %s schemas down to %s based on entrypoint targetNamespace.",
+                len(matching_schemas),
+                len(exact_namespace_matches),
+            )
+            matching_schemas = exact_namespace_matches
+
     # Disambiguation based on namespaces to avoid expensive multiple Arelle evaluations
     if len(matching_schemas) > 1:
         from .taxonomy_store import load_index

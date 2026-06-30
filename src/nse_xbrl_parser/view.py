@@ -20,6 +20,10 @@ Fact = Mapping[str, Any]
 Cell = dict[str, Any]
 DimensionSignature = tuple[tuple[str, str], ...]
 ColumnKey = tuple[str, str]
+ViewCacheKey = tuple[str, int, int, bool, bool, bool]
+
+_VIEW_CACHE_MAXSIZE = 32
+_VIEW_CACHE: OrderedDict[ViewCacheKey, dict[str, Any]] = OrderedDict()
 
 
 def build_xbrl_view(
@@ -35,6 +39,16 @@ def build_xbrl_view(
     DTS plumbing such as concept QNames, context IDs, decimals, dimensions, and
     linkbase diagnostics is attached only when ``include_trace`` is true.
     """
+
+    cache_key = _view_cache_key(
+        xml_path,
+        include_trace=include_trace,
+        include_validations=include_validations,
+        validate=validate,
+    )
+    if cache_key is not None and cache_key in _VIEW_CACHE:
+        _VIEW_CACHE.move_to_end(cache_key)
+        return deepcopy(_VIEW_CACHE[cache_key])
 
     with load_xbrl_model(xml_path, validate=validate) as model_xbrl:
         facts = _facts_from_model(model_xbrl)
@@ -87,6 +101,12 @@ def build_xbrl_view(
         if calculation.get("validations"):
             view["checks"]["validations"] = calculation["validations"]
 
+    if cache_key is not None:
+        _VIEW_CACHE[cache_key] = deepcopy(view)
+        _VIEW_CACHE.move_to_end(cache_key)
+        while len(_VIEW_CACHE) > _VIEW_CACHE_MAXSIZE:
+            _VIEW_CACHE.popitem(last=False)
+
     return view
 
 
@@ -119,6 +139,28 @@ def render_xbrl_markdown(view: Mapping[str, Any]) -> str:
             lines.extend(["## Checks", "", _escape_markdown_text(str(summary)), ""])
 
     return "\n".join(lines).rstrip() + "\n"
+
+
+def _view_cache_key(
+    xml_path: Path | str,
+    *,
+    include_trace: bool,
+    include_validations: bool,
+    validate: bool,
+) -> ViewCacheKey | None:
+    path = Path(xml_path).absolute()
+    try:
+        stat = path.stat()
+    except OSError:
+        return None
+    return (
+        str(path),
+        stat.st_mtime_ns,
+        stat.st_size,
+        include_trace,
+        include_validations,
+        validate,
+    )
 
 
 def _facts_from_model(model_xbrl: Any) -> list[dict[str, Any]]:

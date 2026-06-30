@@ -48,3 +48,10 @@ Context: Legacy standalone RPT filings (e.g., 30-SEP-2022 to 31-MAR-2024) refere
 Decision: Add a dedicated `RelatedPartyTransactions/2022-03-31` release to the bundled taxonomy archive, derived from the known-good 2024 RPT package and rewritten to the 2022 entrypoint filename/date plus the legacy `http://.../in-capmkt` and `http://.../RelatedPartyTransactions/...` namespace URIs used by old filings.
 Tradeoff: This is a compatibility backfill rather than a pristine upstream SEBI package mirror, but it restores deterministic offline parsing for old RPT instances without introducing network fetches or parser-side special cases.
 Status: active
+
+## 2026-06-30 — Cache built views and keep validation conservative
+
+Context: Arelle loading and DTS validation dominate runtime. The new human view needs facts, presentation, and calculation from one model, and batch consumers may request the same instance repeatedly.
+Decision: Use `load_xbrl_model()` as the shared single-load path for view construction, keep `validate=True` as the default until fixture coverage proves a safe flip, tighten candidate selection with entrypoint target-namespace matching before Arelle retries, and cache built view dictionaries by file path, mtime, size, and view options. Cache view payloads, not live Arelle models.
+Tradeoff: View caching returns defensive copies and uses bounded memory, which is less aggressive than model caching but avoids leaking large Arelle DTS/session objects. Keeping validation on leaves some speed on the table, but preserves current schema-selection and malformed-instance behavior.
+Status: active
