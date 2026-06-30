@@ -196,7 +196,8 @@ def test_render_xbrl_markdown_renders_nested_rows():
 
     assert "# Statement of Profit and Loss" in markdown
     assert "| Line item | Year ended 31 Mar 2025 |" in markdown
-    assert "&nbsp;&nbsp;Revenue" in markdown
+    assert "&nbsp;" not in markdown
+    assert "|   Revenue" in markdown
     assert "1 passed, 0 failed, 0 unavailable" in markdown
 
 

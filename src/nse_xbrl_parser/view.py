@@ -998,6 +998,13 @@ def _snake(value: str) -> str:
     return "".join(chars)
 
 
+# Per-depth indentation for nested table rows. Plain ASCII spaces keep the
+# output portable across rendered and raw (LLM/RAG/plaintext) markdown
+# consumers; HTML entities like `&nbsp;` leak as literal "weird characters"
+# for consumers that do not process inline HTML.
+INDENT_UNIT = "  "
+
+
 def _append_markdown_table(
     lines: list[str], rows: Sequence[Mapping[str, Any]], columns: Sequence[str]
 ) -> None:
@@ -1005,7 +1012,10 @@ def _append_markdown_table(
     lines.append("| " + " | ".join(_escape_table_cell(item) for item in header) + " |")
     lines.append("| " + " | ".join("---" for _item in header) + " |")
     for row, depth in _flatten_rows(rows):
-        label = f"{'&nbsp;&nbsp;' * depth}{row.get('label', '')}"
+        # Indent nested rows with plain ASCII spaces. HTML entities such as
+        # `&nbsp;` survive only in full HTML-aware renderers; LLM/RAG and
+        # plaintext consumers see the literal entity as a "weird character".
+        label = f"{INDENT_UNIT * depth}{row.get('label', '')}"
         values = list(row.get("values") or [])
         padded_values = values + [None] * max(0, len(columns) - len(values))
         table_row = [label, *[_format_markdown_value(value) for value in padded_values]]
