@@ -1,6 +1,7 @@
 import logging
 import re
 import shutil
+from contextlib import contextmanager
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Dict, Iterator, Optional
@@ -208,7 +209,7 @@ def _resolve_schema_candidates(xml_path: Path | str) -> tuple[Path, list[Path]]:
 
 
 def _iter_loaded_models(
-    final_xbrl_path: Path, matching_schemas: list[Path]
+    final_xbrl_path: Path, matching_schemas: list[Path], *, validate: bool = True
 ) -> Iterator[Any]:
     """Yield successfully loaded Arelle models for the provided schema candidates."""
     with Session() as session:
@@ -228,7 +229,7 @@ def _iter_loaded_models(
                     entrypointFile=str(temp_xml_path),
                     logFile="logToBuffer",
                     keepOpen=True,
-                    validate=True,
+                    validate=validate,
                 )
 
                 session.run(options)
@@ -467,75 +468,33 @@ def _fact_to_row(fact: Any) -> dict[str, Any]:
     }
 
 
-def parse_xbrl_file(xml_path: Path | str) -> Dict[str, Any]:
-    """Parse an NSE XBRL XML document and yield a dictionary of human-readable facts.
+@contextmanager
+def load_xbrl_model(xml_path: Path | str, *, validate: bool = True) -> Iterator[Any]:
+    """Load an NSE XBRL document once and yield the first model with facts.
 
-    This function utilizes the `arelle` engine to validate and extract facts.
-    It searches bundled versioned taxonomy releases first, falls back to the
-    current flat taxonomy tree when necessary, and then copies the instance XML
-    into the selected schema directory so Arelle can resolve relative imports locally.
-
-    Args:
-        xml_path (Path | str): Absolute or relative path to the XBRL instance document.
-
-    Returns:
-        Dict[str, Any]: A dictionary where keys are the human-readable concept labels
-                        (or QNames backoffs) and values are the corresponding facts.
-
-    Raises:
-        FileNotFoundError: If the source XML or required taxonomy schema does not exist.
-        ValueError: If the schemaRef cannot be detected or validation yields zero facts.
+    The yielded Arelle model is only valid inside the context manager. Complete
+    fact, presentation, and calculation extraction before leaving the ``with``
+    block so the backing Arelle session can be closed promptly.
     """
+
     final_xbrl_path, matching_schemas = _resolve_schema_candidates(xml_path)
+    model_iterator = _iter_loaded_models(
+        final_xbrl_path,
+        matching_schemas,
+        validate=validate,
+    )
 
-    # We will aggregate all facts across every matching schema definition
-    parsed_data: Dict[str, Any] = {}
-
-    # Track unique facts to avoid duplication across multiple schema evaluations
-    # Key: (label, contextID, value)
-    unique_facts = set()
-
-    found_facts = False
-
-    for model_xbrl in _iter_loaded_models(final_xbrl_path, matching_schemas):
-        found_facts = True
-        for fact in model_xbrl.facts:
-            label = str(fact.qname)
-
-            if fact.concept is not None:
-                # Prefer the standard en label, fallback to verbose
-                lbl = fact.concept.label(lang="en")
-                if not lbl:
-                    lbl = fact.concept.label(
-                        lang="en",
-                        labelrole="http://www.xbrl.org/2003/role/verboseLabel",
-                    )
-                if lbl:
-                    label = lbl
-
-            val = fact.value
-            context_id = fact.contextID if hasattr(fact, "contextID") else None
-
-            fact_key = (label, context_id, val)
-
-            if fact_key not in unique_facts:
-                unique_facts.add(fact_key)
-
-                if label in parsed_data:
-                    existing = parsed_data[label]
-                    if isinstance(existing, list):
-                        existing.append(val)
-                    else:
-                        parsed_data[label] = [existing, val]
-                else:
-                    parsed_data[label] = val
-
-    if not found_facts:
+    try:
+        model_xbrl = next(model_iterator)
+    except StopIteration:
         raise ValueError(
             "Arelle loaded model but found 0 facts. Schema resolution or validation failed."
-        )
+        ) from None
 
-    return parsed_data
+    try:
+        yield model_xbrl
+    finally:
+        model_iterator.close()
 
 
 def parse_xbrl_facts(xml_path: Path | str) -> list[dict[str, Any]]:

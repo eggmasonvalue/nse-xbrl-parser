@@ -14,24 +14,34 @@ uv add git+https://github.com/eggmasonvalue/nse-xbrl-parser.git
 
 ## Public API
 
-- `parse_xbrl_file(path)`
-  - Returns a flat announcement-oriented dictionary: `{label: value | [values]}`.
 - `parse_xbrl_facts(path)`
   - Returns a context-preserving fact table (`list[dict]`) with one row per concept/value/context/unit/decimals/period/basis/dimensions.
+  - Use this for programmatic analytics and any workflow that must preserve every XBRL context.
+- `build_xbrl_view(path, *, include_trace=False, include_validations=True)`
+  - Returns a taxonomy-backed, JSON-serializable human view with `title`, `unit`, `columns`, `sections`, and `checks`.
+  - Uses presentation and calculation linkbases when available, and falls back to safe period/basis/dimension grouping when presentation linkbases are absent.
+- `render_xbrl_markdown(view)`
+  - Pure renderer from a `build_xbrl_view` dictionary to a readable markdown document.
+  - Use this for human review, document stores, and doc-RAG/NotebookLM ingestion.
+- `load_xbrl_model(path)`
+  - Low-level context manager for advanced callers that need one shared Arelle model load.
 
-Both APIs reuse the same schema resolution + Arelle loading pipeline.
+The library intentionally does not expose a flat `{label: value}` parser. Any label-to-column flattening is an application-level projection built locally from the structured view or the fact table.
 
 ## Usage
 
 ```python
 from pathlib import Path
-from nse_xbrl_parser import parse_xbrl_file, parse_xbrl_facts
+from nse_xbrl_parser import build_xbrl_view, parse_xbrl_facts, render_xbrl_markdown
 
 xml_path = Path("filing.xml")
 
-announcement_facts = parse_xbrl_file(xml_path)
-financial_facts = parse_xbrl_facts(xml_path)
+facts = parse_xbrl_facts(xml_path)
+view = build_xbrl_view(xml_path)
+markdown = render_xbrl_markdown(view)
 ```
+
+For an application-local label projection, walk `view["sections"][*]["rows"]` and copy the labels and values you explicitly want. Keep that flattening in the application so context-collapsing choices remain visible.
 
 ## Development
 

@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from nse_xbrl_parser import parse_xbrl_file
+from nse_xbrl_parser import build_xbrl_view, render_xbrl_markdown
 
 
 PREFERENTIAL_ISSUE_LISTING_URL = (
@@ -70,27 +70,67 @@ def _fetch_live_filing(tmp_path, filename, url):
     _download_with_curl(path, url)
     return path
 
-def test_parse_xbrl_file_not_found():
-    with pytest.raises(FileNotFoundError):
-        parse_xbrl_file("does_not_exist.xml")
 
-def test_parse_xbrl_file_invalid_schema_ref(tmp_path):
+def _project_label_values(view):
+    """Application-local label projection used only by these legacy assertions."""
+
+    projected = {}
+
+    def add_value(label, value):
+        if value is None:
+            return
+        if isinstance(value, list):
+            for item in value:
+                add_value(label, item)
+            return
+        if label in projected:
+            existing = projected[label]
+            if isinstance(existing, list):
+                existing.append(value)
+            else:
+                projected[label] = [existing, value]
+        else:
+            projected[label] = value
+
+    def walk(rows):
+        for row in rows:
+            label = row.get("label")
+            if label:
+                for value in row.get("values") or []:
+                    add_value(label, value)
+            walk(row.get("rows") or [])
+
+    for section in view.get("sections") or []:
+        walk(section.get("rows") or [])
+    return projected
+
+
+def test_build_xbrl_view_not_found():
+    with pytest.raises(FileNotFoundError):
+        build_xbrl_view("does_not_exist.xml")
+
+
+def test_build_xbrl_view_invalid_schema_ref(tmp_path):
     # Create a dummy XML with no schemaRef
     dummy_xml = tmp_path / "dummy.xml"
     dummy_xml.write_text("<xbrl></xbrl>")
-    
-    with pytest.raises(ValueError, match="Could not detect schemaRef"):
-        parse_xbrl_file(dummy_xml)
 
-def test_parse_xbrl_file_unsupported_schema(tmp_path):
+    with pytest.raises(ValueError, match="Could not detect schemaRef"):
+        build_xbrl_view(dummy_xml)
+
+
+def test_build_xbrl_view_unsupported_schema(tmp_path):
     # XML with a fake schemaRef
     dummy_xml = tmp_path / "dummy.xml"
-    dummy_xml.write_text('<xbrl><link:schemaRef href="fake-schema-2099-01-01.xsd"/></xbrl>')
-    
-    with pytest.raises(FileNotFoundError, match="found in the bundled taxonomy archive"):
-        parse_xbrl_file(dummy_xml)
+    dummy_xml.write_text(
+        '<xbrl><link:schemaRef href="fake-schema-2099-01-01.xsd"/></xbrl>'
+    )
 
-def test_parse_xbrl_file_with_archive_scoped_fraud_taxonomy(tmp_path):
+    with pytest.raises(FileNotFoundError, match="found in the bundled taxonomy archive"):
+        build_xbrl_view(dummy_xml)
+
+
+def test_build_xbrl_view_with_archive_scoped_fraud_taxonomy(tmp_path):
     filing = tmp_path / "fraud_case.xml"
     filing.write_text(
         """<?xml version="1.0" encoding="UTF-8"?>
@@ -111,10 +151,50 @@ def test_parse_xbrl_file_with_archive_scoped_fraud_taxonomy(tmp_path):
         encoding="utf-8",
     )
 
-    facts = parse_xbrl_file(filing)
+    view = build_xbrl_view(filing)
+
+    facts = _project_label_values(view)
 
     assert facts["Name of the company"] == "Fino Payments Bank Limited"
-    assert facts.get("NSE symbol", facts.get("NSE Symbol", facts.get("Nsesymbol"))) == "FINOPB"
+    assert (
+        facts.get("NSE symbol", facts.get("NSE Symbol", facts.get("Nsesymbol")))
+        == "FINOPB"
+    )
+
+
+def test_render_xbrl_markdown_renders_nested_rows():
+    view = {
+        "title": "Statement of Profit and Loss",
+        "unit": "INR",
+        "columns": ["Year ended 31 Mar 2025"],
+        "sections": [
+            {
+                "heading": "Statement of Profit and Loss",
+                "rows": [
+                    {
+                        "label": "Total income",
+                        "values": [100],
+                        "rows": [{"label": "Revenue", "values": [90]}],
+                    }
+                ],
+            }
+        ],
+        "checks": {"status": "ok", "summary": "1 passed, 0 failed, 0 unavailable"},
+    }
+
+    markdown = render_xbrl_markdown(view)
+
+    assert "# Statement of Profit and Loss" in markdown
+    assert "| Line item | Year ended 31 Mar 2025 |" in markdown
+    assert "&nbsp;&nbsp;Revenue" in markdown
+    assert "1 passed, 0 failed, 0 unavailable" in markdown
+
+
+def test_public_api_does_not_export_flat_parser():
+    import nse_xbrl_parser
+
+    assert not hasattr(nse_xbrl_parser, "parse_xbrl_file")
+
 
 def test_parse_qip_listing_includes_allottee_category_fields(tmp_path):
     filing = tmp_path / "qip_case.xml"
@@ -170,7 +250,9 @@ def test_parse_qip_listing_includes_allottee_category_fields(tmp_path):
         encoding="utf-8",
     )
 
-    facts = parse_xbrl_file(filing)
+    view = build_xbrl_view(filing)
+
+    facts = _project_label_values(view)
 
     assert facts["Category of allotees"] == "Foreign Portfolio Investor"
     assert facts["Percentage of total issue size"] == "0.2332"
@@ -181,7 +263,9 @@ def test_parse_qip_listing_includes_allottee_category_fields(tmp_path):
 def test_parse_live_fraud_disclosure_from_nse_url(tmp_path):
     filing = _fetch_live_filing(tmp_path, "fraud_disclosure.xml", FRAUD_DISCLOSURE_URL)
 
-    facts = parse_xbrl_file(filing)
+    view = build_xbrl_view(filing)
+
+    facts = _project_label_values(view)
 
     assert facts["Name of the company"] == "Fino Payments Bank Limited"
     assert facts["NSE symbol"] == "FINOPB"
@@ -196,7 +280,9 @@ def test_parse_live_notice_of_shareholders_meeting(tmp_path):
         NOTICE_OF_SHAREHOLDERS_URL,
     )
 
-    facts = parse_xbrl_file(filing)
+    view = build_xbrl_view(filing)
+
+    facts = _project_label_values(view)
 
     assert facts["Name of the company"] == "Fino Payments Bank Limited"
     assert facts["NSE symbol"] == "FINOPB"
@@ -210,7 +296,9 @@ def test_parse_live_notice_of_shareholders_meeting(tmp_path):
 def test_parse_live_cim_appointment_details(tmp_path):
     filing = _fetch_live_filing(tmp_path, "cim_appointment.xml", CIM_APPOINTMENT_URL)
 
-    facts = parse_xbrl_file(filing)
+    view = build_xbrl_view(filing)
+
+    facts = _project_label_values(view)
 
     assert facts["Name of the company"] == "FINO PAYMENTS BANK LIMITED"
     assert facts["NSE symbol"] == "FINOPB"
@@ -229,7 +317,9 @@ def test_parse_live_alteration_of_capital_and_fund_raising(tmp_path):
         ALTERATION_OF_CAPITAL_URL,
     )
 
-    facts = parse_xbrl_file(filing)
+    view = build_xbrl_view(filing)
+
+    facts = _project_label_values(view)
 
     assert facts["Name of the company"] == "FINO PAYMENTS BANK LIMITED"
     assert facts["NSE symbol"] == "FINOPB"
@@ -244,7 +334,9 @@ def test_parse_live_preferential_issue_listing_from_nse_url(tmp_path):
         PREFERENTIAL_ISSUE_LISTING_URL,
     )
 
-    facts = parse_xbrl_file(filing)
+    view = build_xbrl_view(filing)
+
+    facts = _project_label_values(view)
 
     assert facts["Name of the company"] == "Grill Splendour Services Limited"
     assert facts["NSE symbol"] == "BIRDYS"

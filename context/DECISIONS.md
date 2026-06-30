@@ -5,6 +5,20 @@
 Context: This library serves both announcement-style filings (single context, label-first usage) and financial statement filings (same concept repeated across periods, basis, and dimensions). A single output shape caused information loss for financial extraction.
 Decision: Keep `parse_xbrl_file()` as a flat `{label: value | [values]}` API for announcement workloads, and keep `parse_xbrl_facts()` as the context-preserving fact-table API for financial workloads. Both paths share the same schema-resolution/Arelle loader (`_resolve_schema_candidates` + `_iter_loaded_models`) to stay DRY without changing behavior.
 Tradeoff: Maintaining two public outputs increases API surface and tests, but avoids forcing breaking changes on announcement consumers while preserving complete context for financial analytics.
+Status: superseded by 2026-06-30 — Replace flat parser with taxonomy-backed human view
+
+## 2026-06-30 — Replace flat parser with taxonomy-backed human view
+
+Context: The flat announcement parser collapsed repeated labels across contexts and made context loss the easiest public path. Consumers still need a readable human surface, including document-oriented markdown for RAG ingestion, but flattening labels into application columns is a consumer-specific collapse.
+Decision: Delete the flat parser public surface. Expose `parse_xbrl_facts()` for lossless programmatic extraction, `build_xbrl_view()` for taxonomy/linkbase-backed structured human JSON, `render_xbrl_markdown()` for generic document rendering of that safe view, and `load_xbrl_model()` for one shared Arelle model load. Keep label-to-column flattening out of the library.
+Tradeoff: Existing announcement consumers must migrate and own their local projection code, but the library no longer blesses context-collapsed dictionaries and still provides a generic human-readable path.
+Status: active
+
+## 2026-06-30 — Human view preserves context and avoids value transformation
+
+Context: A readable XBRL view can accidentally reintroduce the same lossiness as a flat parser if it invents fiscal-year labels, merges standalone/consolidated or dimensional cells, rescales reported values, or returns nothing when presentation linkbases are absent.
+Decision: Build the human view from taxonomy labels and linkbase relationships when present; derive period/basis columns from actual contexts; keep dimensional facts separated by explicit dimension sections; preserve reported values without rescaling; and fall back to period/basis/dimension grouping when presentation or calculation linkbases are unavailable.
+Tradeoff: The default view is more structured than a one-row-per-label dictionary and may require callers to walk nested rows, but it remains readable while keeping context boundaries explicit.
 Status: active
 
 ## 2026-06-22 — Standardize on bundled offline taxonomy resolution

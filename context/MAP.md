@@ -3,10 +3,12 @@
 ## Repository layout
 
 - `src/nse_xbrl_parser/__init__.py`
-  - Public API exports: `parse_xbrl_file`, `parse_xbrl_facts`, and `__version__`.
+  - Public API exports: `parse_xbrl_facts`, `build_xbrl_view`, `render_xbrl_markdown`, `load_xbrl_model`, and `__version__`.
 - `src/nse_xbrl_parser/parser.py`
-  - Core parse pipeline shared by both parser entry points.
-  - Builds Arelle models, resolves schemas, and extracts fact outputs.
+  - Core parse pipeline for schema resolution, shared Arelle loading, and context-preserving fact extraction.
+- `src/nse_xbrl_parser/view.py`
+  - Taxonomy-backed human view builder and markdown renderer.
+  - Extracts presentation trees, calculation validations, and safe no-linkbase fallback sections from a single loaded model.
 - `src/nse_xbrl_parser/taxonomy_store.py`
   - Taxonomy release/index model and schema candidate discovery helpers.
 - `src/nse_xbrl_parser/taxonomies/`
@@ -14,9 +16,11 @@
 - `scripts/update_taxonomies.py`
   - Updater that appends newly discovered taxonomy releases.
 - `tests/test_parser.py`
-  - Integration tests against live NSE XML downloads.
+  - Integration tests for `build_xbrl_view`, markdown rendering, and live NSE XML downloads.
+- `tests/test_parse_facts.py`
+  - Integration tests for context-preserving `parse_xbrl_facts` output.
 
-## Parser flow
+## Parser and view flow
 
 ```mermaid
 graph TD
@@ -28,12 +32,16 @@ graph TD
     E -- yes --> G[namespace disambiguation via index.json]
     F --> H[local import compatibility filter]
     G --> H
-    H --> I[_iter_loaded_models]
-    I --> J[copy xml beside candidate schema]
-    J --> K[Arelle Session + RuntimeOptions]
-    K --> L{entrypoint}
-    L --> M[parse_xbrl_file: flat label=>value/list]
-    L --> N[parse_xbrl_facts: context-preserving rows]
+    H --> I[load_xbrl_model]
+    I --> J[_iter_loaded_models]
+    J --> K[copy xml beside candidate schema]
+    K --> L[Arelle Session + RuntimeOptions]
+    L --> M{entrypoint}
+    M --> N[parse_xbrl_facts: context-preserving rows]
+    M --> O[build_xbrl_view: same loaded model]
+    O --> P[presentation tree sections or flat fallback]
+    O --> Q[calculation checks]
+    O --> R[render_xbrl_markdown: pure view renderer]
 ```
 
 ## Data responsibilities
@@ -42,15 +50,22 @@ graph TD
   - Extracts `schemaRef` from instance XML.
   - Prefers versioned release candidates from taxonomy index.
   - Filters ambiguous candidates using instance namespaces and local import checks.
+- `load_xbrl_model` in `parser.py`
+  - Resolves schema candidates and yields the first Arelle model with facts inside a context manager.
+  - Keeps the Arelle session open only for the caller's extraction block.
 - `_iter_loaded_models` in `parser.py`
   - Runs Arelle for each candidate schema.
   - Rejects models with zero facts.
   - Cleans temporary copied XML files.
-- `parse_xbrl_file` in `parser.py`
-  - Produces announcement-oriented flat dictionary keyed by human labels.
-  - Collapses repeated labels into arrays.
 - `parse_xbrl_facts` in `parser.py`
   - Produces a tidy fact table with concept/context/unit/period/basis/dimensions.
+- `build_xbrl_view` in `view.py`
+  - Loads the model once and extracts facts, presentation structure, and calculation checks from that shared model.
+  - Emits human-facing `title`, `unit`, `columns`, `sections`, and `checks` by default.
+  - Adds DTS plumbing and diagnostics only under `trace` when `include_trace=True`.
+  - Falls back to explicit period/basis/dimension grouping when presentation linkbases are unavailable or do not match reported facts.
+- `render_xbrl_markdown` in `view.py`
+  - Renders a view dictionary into markdown without reading files or mutating input.
 - `taxonomy_store.py`
   - Stores releases under `taxonomies/<family>/<release_id>/...`.
   - Maintains `index.json` used for fast candidate lookup.
