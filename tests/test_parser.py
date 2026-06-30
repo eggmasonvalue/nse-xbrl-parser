@@ -200,6 +200,34 @@ def test_render_xbrl_markdown_renders_nested_rows():
     assert "1 passed, 0 failed, 0 unavailable" in markdown
 
 
+def test_render_xbrl_markdown_normalizes_invisible_characters():
+    view = {
+        "title": "Statement\u00a0of Profit",
+        "unit": "INR",
+        "columns": ["Year\u00a0ended"],
+        "sections": [
+            {
+                "heading": "H",
+                "rows": [
+                    {
+                        "label": "Revenue\u00a0from\u200boperations",
+                        "values": ["1\u00a0234"],
+                    }
+                ],
+            }
+        ],
+    }
+
+    markdown = render_xbrl_markdown(view)
+
+    assert "\u00a0" not in markdown
+    assert "\u200b" not in markdown
+    assert "Revenue fromoperations" in markdown
+    assert "1 234" in markdown
+    # Deliberate indentation entity must be preserved (it is ASCII, not U+00A0).
+    assert "&nbsp;" not in markdown  # no indentation depth here
+
+
 def test_public_api_does_not_export_flat_parser():
     import nse_xbrl_parser
 

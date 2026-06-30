@@ -55,3 +55,10 @@ Context: Arelle loading and DTS validation dominate runtime. The new human view 
 Decision: Use `load_xbrl_model()` as the shared single-load path for view construction, keep `validate=True` as the default until fixture coverage proves a safe flip, tighten candidate selection with entrypoint target-namespace matching before Arelle retries, and cache built view dictionaries by file path, mtime, size, and view options. Cache view payloads, not live Arelle models.
 Tradeoff: View caching returns defensive copies and uses bounded memory, which is less aggressive than model caching but avoids leaking large Arelle DTS/session objects. Keeping validation on leaves some speed on the table, but preserves current schema-selection and malformed-instance behavior.
 Status: active
+
+## 2026-07-01 — Normalize invisible/whitespace code points at the markdown render boundary
+
+Context: NSE XBRL fact values and taxonomy labels frequently embed non-breaking spaces (U+00A0, U+202F, etc.) and zero-width characters (U+200B/200C/200D/2060/FEFF). These flowed verbatim through `render_xbrl_markdown`, surfacing as garbled glyphs (e.g. "Â ") for downstream markdown consumers.
+Decision: Sanitize source-derived text in the markdown render helpers (`_format_markdown_value`, `_escape_table_cell`, `_escape_markdown_text`): NFC-normalize, map no-break/exotic spaces to a plain ASCII space, and drop zero-width code points. The deliberate `&nbsp;` indentation markup is unaffected because it is ASCII entity text, not U+00A0.
+Tradeoff: Collapsing no-break spaces to plain spaces can alter the exact source text (e.g. a thousands separator written as U+00A0 between digits becomes a normal space), but it produces portable, correctly-rendering markdown for all consumers, which is the intended output contract. Raw fidelity remains available through the structured fact/view data, not the markdown rendering.
+Status: active
