@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import threading
 from collections import Counter, OrderedDict
 from collections.abc import Mapping, Sequence
 from copy import deepcopy
@@ -24,6 +25,22 @@ ViewCacheKey = tuple[str, int, int, bool, bool, bool]
 
 _VIEW_CACHE_MAXSIZE = 32
 _VIEW_CACHE: OrderedDict[ViewCacheKey, dict[str, Any]] = OrderedDict()
+# Guards every read/mutation of ``_VIEW_CACHE``. The cache is a process-global
+# mutable structure and batch consumers (e.g. ingestion harvesters) may call
+# ``build_xbrl_view`` from multiple threads, so all access is serialized.
+_VIEW_CACHE_LOCK = threading.Lock()
+
+
+def clear_view_cache() -> None:
+    """Clear the in-process ``build_xbrl_view`` result cache.
+
+    Intended for long-lived processes that must reclaim memory, for tests that
+    need deterministic cache state, and for callers that have refreshed bundled
+    taxonomy data within the same process lifetime.
+    """
+
+    with _VIEW_CACHE_LOCK:
+        _VIEW_CACHE.clear()
 
 
 def build_xbrl_view(
@@ -32,23 +49,35 @@ def build_xbrl_view(
     include_trace: bool = False,
     include_validations: bool = True,
     validate: bool = True,
+    use_cache: bool = True,
 ) -> dict[str, Any]:
     """Build a taxonomy-backed, JSON-serializable human view for an XBRL filing.
 
     The public view keeps human-facing rows and columns in the default payload.
     DTS plumbing such as concept QNames, context IDs, decimals, dimensions, and
     linkbase diagnostics is attached only when ``include_trace`` is true.
+
+    Results are memoized in-process keyed by file identity and view options.
+    Pass ``use_cache=False`` to force a fresh load and bypass the cache, or call
+    :func:`clear_view_cache` to reset it.
     """
 
-    cache_key = _view_cache_key(
-        xml_path,
-        include_trace=include_trace,
-        include_validations=include_validations,
-        validate=validate,
+    cache_key = (
+        _view_cache_key(
+            xml_path,
+            include_trace=include_trace,
+            include_validations=include_validations,
+            validate=validate,
+        )
+        if use_cache
+        else None
     )
-    if cache_key is not None and cache_key in _VIEW_CACHE:
-        _VIEW_CACHE.move_to_end(cache_key)
-        return deepcopy(_VIEW_CACHE[cache_key])
+    if cache_key is not None:
+        with _VIEW_CACHE_LOCK:
+            cached = _VIEW_CACHE.get(cache_key)
+            if cached is not None:
+                _VIEW_CACHE.move_to_end(cache_key)
+                return deepcopy(cached)
 
     with load_xbrl_model(xml_path, validate=validate) as model_xbrl:
         facts = _facts_from_model(model_xbrl)
@@ -102,10 +131,11 @@ def build_xbrl_view(
             view["checks"]["validations"] = calculation["validations"]
 
     if cache_key is not None:
-        _VIEW_CACHE[cache_key] = deepcopy(view)
-        _VIEW_CACHE.move_to_end(cache_key)
-        while len(_VIEW_CACHE) > _VIEW_CACHE_MAXSIZE:
-            _VIEW_CACHE.popitem(last=False)
+        with _VIEW_CACHE_LOCK:
+            _VIEW_CACHE[cache_key] = deepcopy(view)
+            _VIEW_CACHE.move_to_end(cache_key)
+            while len(_VIEW_CACHE) > _VIEW_CACHE_MAXSIZE:
+                _VIEW_CACHE.popitem(last=False)
 
     return view
 

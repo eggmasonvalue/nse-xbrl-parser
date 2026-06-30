@@ -5,7 +5,7 @@ from unittest.mock import patch
 
 import pytest
 
-from nse_xbrl_parser import build_xbrl_view, render_xbrl_markdown
+from nse_xbrl_parser import build_xbrl_view, clear_view_cache, render_xbrl_markdown
 from nse_xbrl_parser import view as view_module
 
 
@@ -153,7 +153,7 @@ def test_build_xbrl_view_with_archive_scoped_fraud_taxonomy(tmp_path):
         encoding="utf-8",
     )
 
-    view_module._VIEW_CACHE.clear()
+    clear_view_cache()
     view = build_xbrl_view(filing)
 
     facts = _project_label_values(view)
@@ -170,6 +170,155 @@ def test_build_xbrl_view_with_archive_scoped_fraud_taxonomy(tmp_path):
 
     load_mock.assert_not_called()
     assert cached_view["title"] != "mutated by caller"
+
+
+def test_build_xbrl_view_use_cache_false_bypasses_cache(tmp_path):
+    filing = tmp_path / "fraud_case.xml"
+    filing.write_text(
+        """<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:in-capmkt="https://www.sebi.gov.in/xbrl/2024-02-29/in-capmkt" xmlns:in-capmkt-ent="https://www.sebi.gov.in/xbrl/Announcement_For_Fraud_Or_Default/2024-02-29/in-capmkt/in-capmkt-ent" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:schemaRef xlink:type="simple" xlink:href="in-capmkt-ent-2024-02-29.xsd"/>
+  <xbrli:context id="MainI">
+    <xbrli:entity>
+      <xbrli:identifier scheme="https://www.sebi.gov.in/in-capmkt/ScripCode">543386</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-02</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <in-capmkt:NameOfTheCompany contextRef="MainI">Fino Payments Bank Limited</in-capmkt:NameOfTheCompany>
+</xbrli:xbrl>
+""",
+        encoding="utf-8",
+    )
+
+    clear_view_cache()
+    build_xbrl_view(filing)
+
+    # Priming the cache must not let a bypassed call skip the real load.
+    with patch(
+        "nse_xbrl_parser.view.load_xbrl_model", wraps=view_module.load_xbrl_model
+    ) as load_mock:
+        build_xbrl_view(filing, use_cache=False)
+
+    load_mock.assert_called_once()
+
+
+def test_view_cache_is_concurrency_safe(tmp_path):
+    """Concurrent builds must not corrupt the lock-guarded global cache."""
+
+    import threading
+
+    filing = tmp_path / "fraud_case.xml"
+    filing.write_text(
+        """<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:in-capmkt="https://www.sebi.gov.in/xbrl/2024-02-29/in-capmkt" xmlns:in-capmkt-ent="https://www.sebi.gov.in/xbrl/Announcement_For_Fraud_Or_Default/2024-02-29/in-capmkt/in-capmkt-ent" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:schemaRef xlink:type="simple" xlink:href="in-capmkt-ent-2024-02-29.xsd"/>
+  <xbrli:context id="MainI">
+    <xbrli:entity>
+      <xbrli:identifier scheme="https://www.sebi.gov.in/in-capmkt/ScripCode">543386</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-02</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <in-capmkt:NameOfTheCompany contextRef="MainI">Fino Payments Bank Limited</in-capmkt:NameOfTheCompany>
+</xbrli:xbrl>
+""",
+        encoding="utf-8",
+    )
+
+    clear_view_cache()
+    build_xbrl_view(filing)  # prime once so threads exercise cache hits
+
+    results: list[str] = []
+    errors: list[BaseException] = []
+
+    def worker() -> None:
+        try:
+            view = build_xbrl_view(filing)
+            results.append(view["title"])
+        except BaseException as exc:  # noqa: BLE001 - surfaced via assertion below
+            errors.append(exc)
+
+    threads = [threading.Thread(target=worker) for _ in range(16)]
+    for thread in threads:
+        thread.start()
+    for thread in threads:
+        thread.join()
+
+    assert not errors
+    assert len(results) == 16
+    assert len(set(results)) == 1
+    assert len(view_module._VIEW_CACHE) <= view_module._VIEW_CACHE_MAXSIZE
+
+
+def test_clear_view_cache_forces_reload(tmp_path):
+    filing = tmp_path / "fraud_case.xml"
+    filing.write_text(
+        """<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:in-capmkt="https://www.sebi.gov.in/xbrl/2024-02-29/in-capmkt" xmlns:in-capmkt-ent="https://www.sebi.gov.in/xbrl/Announcement_For_Fraud_Or_Default/2024-02-29/in-capmkt/in-capmkt-ent" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:schemaRef xlink:type="simple" xlink:href="in-capmkt-ent-2024-02-29.xsd"/>
+  <xbrli:context id="MainI">
+    <xbrli:entity>
+      <xbrli:identifier scheme="https://www.sebi.gov.in/in-capmkt/ScripCode">543386</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-02</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <in-capmkt:NameOfTheCompany contextRef="MainI">Fino Payments Bank Limited</in-capmkt:NameOfTheCompany>
+</xbrli:xbrl>
+""",
+        encoding="utf-8",
+    )
+
+    clear_view_cache()
+    build_xbrl_view(filing)
+    clear_view_cache()
+
+    with patch(
+        "nse_xbrl_parser.view.load_xbrl_model", wraps=view_module.load_xbrl_model
+    ) as load_mock:
+        build_xbrl_view(filing)
+
+    load_mock.assert_called_once()
+
+
+def test_validate_modes_produce_equivalent_human_view(tmp_path):
+    """Parity guard for perf lever #2 (validate default).
+
+    The essential human-facing output (title, columns, projected label/value
+    pairs) must be identical with ``validate=True`` and ``validate=False`` so a
+    future default flip is provably behavior-preserving on covered fixtures.
+    """
+
+    filing = tmp_path / "fraud_case.xml"
+    filing.write_text(
+        """<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:in-capmkt="https://www.sebi.gov.in/xbrl/2024-02-29/in-capmkt" xmlns:in-capmkt-ent="https://www.sebi.gov.in/xbrl/Announcement_For_Fraud_Or_Default/2024-02-29/in-capmkt/in-capmkt-ent" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <link:schemaRef xlink:type="simple" xlink:href="in-capmkt-ent-2024-02-29.xsd"/>
+  <xbrli:context id="MainI">
+    <xbrli:entity>
+      <xbrli:identifier scheme="https://www.sebi.gov.in/in-capmkt/ScripCode">543386</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2026-03-02</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <in-capmkt:NameOfTheCompany contextRef="MainI">Fino Payments Bank Limited</in-capmkt:NameOfTheCompany>
+  <in-capmkt:NSESymbol contextRef="MainI">FINOPB</in-capmkt:NSESymbol>
+</xbrli:xbrl>
+""",
+        encoding="utf-8",
+    )
+
+    validated = build_xbrl_view(filing, validate=True, use_cache=False)
+    unvalidated = build_xbrl_view(filing, validate=False, use_cache=False)
+
+    assert validated["title"] == unvalidated["title"]
+    assert validated["columns"] == unvalidated["columns"]
+    assert _project_label_values(validated) == _project_label_values(unvalidated)
 
 
 def test_render_xbrl_markdown_renders_nested_rows():

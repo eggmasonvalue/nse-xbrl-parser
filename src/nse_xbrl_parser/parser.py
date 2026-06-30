@@ -490,6 +490,16 @@ def load_xbrl_model(xml_path: Path | str, *, validate: bool = True) -> Iterator[
     The yielded Arelle model is only valid inside the context manager. Complete
     fact, presentation, and calculation extraction before leaving the ``with``
     block so the backing Arelle session can be closed promptly.
+
+    Single-model semantics: when schema resolution leaves more than one viable
+    candidate, this yields only the *first* candidate that loads with facts so
+    presentation/calculation linkbases stay internally consistent with a single
+    DTS. This differs deliberately from :func:`parse_xbrl_facts`, which merges
+    (and de-duplicates) facts across *every* candidate that loads. After
+    candidate tightening the common case resolves to exactly one candidate, so
+    the two paths agree; they can only diverge on genuinely ambiguous filings,
+    where the structured view favors a coherent single model over a merged
+    superset.
     """
 
     final_xbrl_path, matching_schemas = _resolve_schema_candidates(xml_path)
@@ -517,6 +527,12 @@ def parse_xbrl_facts(xml_path: Path | str) -> list[dict[str, Any]]:
 
     Each row preserves context-level detail for one fact, including period,
     dimensions, and entity metadata.
+
+    Multi-model semantics: this merges and de-duplicates facts across *every*
+    candidate schema that loads with facts. The structured view path
+    (:func:`load_xbrl_model` / :func:`build_xbrl_view`) instead binds to the
+    single first viable candidate; see :func:`load_xbrl_model` for why the two
+    surfaces differ on genuinely ambiguous filings.
     """
     final_xbrl_path, matching_schemas = _resolve_schema_candidates(xml_path)
 
