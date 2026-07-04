@@ -1,5 +1,7 @@
 # DECISIONS
 
+This is a curated ADR file for durable, non-obvious project-level choices. It is not a changelog or implementation worklog.
+
 ## 2026-06-22 — Keep two parser outputs with a shared loader pipeline
 
 Context: This library serves both announcement-style filings (single context, label-first usage) and financial statement filings (same concept repeated across periods, basis, and dimensions). A single output shape caused information loss for financial extraction.
@@ -35,13 +37,6 @@ Decision: Keep that lightweight parser app-local in IndiaInc-today; do not fold 
 Tradeoff: Similar parsing logic exists in two codebases, but this library remains focused on Arelle-backed taxonomy-aware parsing and avoids coupling to app-specific shortcuts.
 Status: active
 
-## 2026-06-22 — Owner reconciliation required for version/tag drift (open)
-
-Context: `pyproject.toml` and `src/nse_xbrl_parser/__init__.py` declare `0.2.0`, but tag `v1.0.0` exists and points to commit `61ca9b365ad1ef6b971f34711c72bb62a8822dbb`, which predates `parse_xbrl_facts`.
-Decision: Record this as an active owner issue; do not retag or repin consumers in this housekeeping change.
-Tradeoff: Release metadata remains temporarily inconsistent, but avoids accidental historical rewrite or publishing a misleading release from this docs-only PR.
-Status: active (owner action required before next clean release tag including `parse_xbrl_facts`)
-
 ## 2026-06-24 — Backfill 2022 RPT taxonomy as an in-repo release derived from 2024 package
 
 Context: Legacy standalone RPT filings (e.g., 30-SEP-2022 to 31-MAR-2024) reference `in-capmkt-ent-2022-03-31.xsd` with `http://` namespace URIs. The bundled taxonomy store had no `RelatedPartyTransactions` 2022 release, so schema candidate selection fell onto unrelated 2022 families and Arelle produced zero facts.
@@ -55,13 +50,6 @@ Context: Arelle loading and DTS validation dominate runtime. The new human view 
 Decision: Use `load_xbrl_model()` as the shared single-load path for view construction, keep `validate=True` as the default until fixture coverage proves a safe flip, tighten candidate selection with entrypoint target-namespace matching before Arelle retries, and cache built view dictionaries by file path, mtime, size, and view options. Cache view payloads, not live Arelle models.
 Tradeoff: View caching returns defensive copies and uses bounded memory, which is less aggressive than model caching but avoids leaking large Arelle DTS/session objects. Keeping validation on leaves some speed on the table, but preserves current schema-selection and malformed-instance behavior.
 Status: superseded by 2026-07-01 — Harden the view cache and keep a measured validation default
-
-## 2026-07-01 — Indent nested markdown rows with ASCII spaces, not `&nbsp;`
-
-Context: Consumers reported "nbsp/weird characters" in rendered markdown. Testing real filings (HDFCBANK, ESTER via the KnowledgeLM CLI) showed the source text was clean; the only `&nbsp;` reaching consumers was our own nested-row indentation markup (`&nbsp;&nbsp;` x depth) in `_append_markdown_table`. Full HTML-aware renderers show it as spaces, but the actual consumers (LLM/RAG and plaintext pipelines) surface the literal `&nbsp;` token as noise.
-Decision: Indent nested table rows with plain ASCII spaces via `INDENT_UNIT`. Do not add speculative Unicode normalization for hypothetical dirty source text — real NSE data did not exhibit raw no-break/zero-width characters, so that layer was reverted as unnecessary maintenance surface.
-Tradeoff: ASCII-space indentation may collapse visually in some HTML table renderers, but the primary consumers are LLM/RAG/plaintext pipelines where leading spaces are preserved and `&nbsp;` was surfacing as noise.
-Status: active
 
 ## 2026-07-01 — Harden the view cache and keep a measured validation default
 

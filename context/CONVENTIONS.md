@@ -7,3 +7,4 @@
 - Keep parser changes in `src/nse_xbrl_parser/parser.py` behavior-tested in `tests/test_parser.py`.
 - Add new public API exports only through `src/nse_xbrl_parser/__init__.py`.
 - Keep taxonomy index and stored release paths consistent with `src/nse_xbrl_parser/taxonomy_store.py`.
+- Append to `context/DECISIONS.md` only when the choice crosses the decision-log bar in `AGENTS.md`.
