@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Updated by Microvista Technologies Pvt. Ltd. -->
+<taxonomyPackage xmlns="http://xbrl.org/2018/taxonomy-package" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.xbrl.org/2018/taxonomy-package.xsd">
+	<identifier lang="en">Taxonomy-2021-09-30</identifier>
+	<name lang="en">Corporate Governance Taxonomy</name>
+	<description lang="en">Corporate Governance Taxonomy</description>
+	<version>1.0</version>
+	<publisher lang="en">Bombay Stock Exchange of India</publisher>
+	<publisherURL>https://www.bseindia.com</publisherURL>
+	<entryPoints>
+		<entryPoint>
+			<name lang="en">in-bse-cg</name>
+			<version>1.0</version>
+			<entryPointDocument href="../in-bse-cg-2021-09-30.xsd" />
+		</entryPoint>
+	</entryPoints>
+</taxonomyPackage>
+
+
+

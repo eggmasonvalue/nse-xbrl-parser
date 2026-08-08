@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:in-bse-cg-roles="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/GeneralInformationAboutTheCompany" id="GeneralInformationAboutTheCompany">
+        <link:definition>[100100] General Information about the company</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/QuarterlyFormatsForComplianceReportOnCorporateGovernance" id="QuarterlyFormatsForComplianceReportOnCorporateGovernance">
+        <link:definition>[100200] Quarterly formats for compliance report on corporate governance</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/HalfYearlyFormatForComplianceReportOnCorporateGovernance" id="HalfYearlyFormatForComplianceReportOnCorporateGovernance">
+        <link:definition>[100300] Half yearly format for compliance report on corporate governance</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/AnnualFormatForComplianceReportOnCorporateGovernance" id="AnnualFormatForComplianceReportOnCorporateGovernance">
+        <link:definition>[100400] Annual format for compliance report on corporate governance</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/SignatoryDetails" id="SignatoryDetails">
+        <link:definition>[100500] Signatory Details</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/QuarterlyFormatsForComplianceReportOnCorporateGovernance1" id="QuarterlyFormatsForComplianceReportOnCorporateGovernance1">
+        <link:definition>[100201] Quarterly formats for compliance report on corporate governance</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/QuarterlyFormatsForComplianceReportOnCorporateGovernance2" id="QuarterlyFormatsForComplianceReportOnCorporateGovernance2">
+        <link:definition>[100202] Quarterly formats for compliance report on corporate governance</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/QuarterlyFormatsForComplianceReportOnCorporateGovernance3" id="QuarterlyFormatsForComplianceReportOnCorporateGovernance3">
+        <link:definition>[100203] Quarterly formats for compliance report on corporate governance</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.bseindia.com/xbrl/cg/2021-09-30/in-bse-cg-roles/AdditionalHalfYearlyDisclosure" id="AdditionalHalfYearlyDisclosure">
+        <link:definition>[100600] Additional half yearly disclosure</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:referenceLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+</xsd:schema>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Updated by Microvista Technologies Pvt. Ltd. -->
+<tp:taxonomyPackage xmlns:tp="http://xbrl.org/2016/taxonomy-package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="en" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+	<tp:identifier lang="en">Taxonomy-2025-05-31</tp:identifier>
+	<tp:name lang="en">Shareholding Pattern Exchange Specific Taxonomy</tp:name>
+	<tp:description lang="en"> Taxonomy for Shareholding Pattern Exchange Specific as per listing regulation 31</tp:description>
+	<tp:version>1.0</tp:version>
+	<tp:publisher lang="en">Securities and Exchange Board of India</tp:publisher>
+	<tp:publisherURL>https://www.sebi.gov.in</tp:publisherURL>
+	<tp:publisherCountry>IN</tp:publisherCountry>
+	<tp:publicationDate>2025-05-31</tp:publicationDate>
+	<tp:entryPoints>
+		<tp:entryPoint>
+			<tp:name lang="en">in-capmkt</tp:name>
+			<tp:entryPointDocument href="../in-capmkt-2025-05-31.xsd"/>
+		</tp:entryPoint>
+	</tp:entryPoints>
+</tp:taxonomyPackage>

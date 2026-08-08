@@ -1,0 +1,1778 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--                     
+             ***************Developed By : Microvista Technologies************          
+     
+ -->
+
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2006/ref http://www.xbrl.org/2006/ref-2006-02-27.xsd" xmlns="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <referenceLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_GeneralInformationAbstract" xlink:label="GeneralInformationAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_GeneralInformationAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GeneralInformationAbstract" xlink:to="reference_GeneralInformationAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ScripCode" xlink:label="ScripCode" />
+    <reference xlink:type="resource" xlink:label="reference_ScripCode" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ScripCode" xlink:to="reference_ScripCode" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NameOfTheCompany" xlink:label="NameOfTheCompany" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheCompany" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheCompany" xlink:to="reference_NameOfTheCompany" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ClassOfSecurity" xlink:label="ClassOfSecurity" />
+    <reference xlink:type="resource" xlink:label="reference_ClassOfSecurity" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ClassOfSecurity" xlink:to="reference_ClassOfSecurity" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_TypeOfReport" xlink:label="TypeOfReport" />
+    <reference xlink:type="resource" xlink:label="reference_TypeOfReport" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TypeOfReport" xlink:to="reference_TypeOfReport" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DateOfAllotment" xlink:label="DateOfAllotment" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfAllotment" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfAllotment" xlink:to="reference_DateOfAllotment" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DateOfListing" xlink:label="DateOfListing" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfListing" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfListing" xlink:to="reference_DateOfListing" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ShareholdingPatternFiledUnder" xlink:label="ShareholdingPatternFiledUnder" />
+    <reference xlink:type="resource" xlink:label="reference_ShareholdingPatternFiledUnder" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdingPatternFiledUnder" xlink:to="reference_ShareholdingPatternFiledUnder" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherCompanyHasEquitySharesWithDifferentialVotingRights" xlink:label="WhetherCompanyHasEquitySharesWithDifferentialVotingRights" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherCompanyHasEquitySharesWithDifferentialVotingRights" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherCompanyHasEquitySharesWithDifferentialVotingRights" xlink:to="reference_WhetherCompanyHasEquitySharesWithDifferentialVotingRights" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DateOfReport" xlink:label="DateOfReport" />
+    <reference xlink:type="resource" xlink:label="reference_DateOfReport" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DateOfReport" xlink:to="reference_DateOfReport" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherTheListedEntityHasIssuedAnyPartlyPaidUpShares" xlink:label="WhetherTheListedEntityHasIssuedAnyPartlyPaidUpShares" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherTheListedEntityHasIssuedAnyPartlyPaidUpShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherTheListedEntityHasIssuedAnyPartlyPaidUpShares" xlink:to="reference_WhetherTheListedEntityHasIssuedAnyPartlyPaidUpShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherTheListedEntityHasIssuedAnyConvertibleSecurities" xlink:label="WhetherTheListedEntityHasIssuedAnyConvertibleSecurities" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherTheListedEntityHasIssuedAnyConvertibleSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherTheListedEntityHasIssuedAnyConvertibleSecurities" xlink:to="reference_WhetherTheListedEntityHasIssuedAnyConvertibleSecurities" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherTheListedEntityHasIssuedAnyWarrants" xlink:label="WhetherTheListedEntityHasIssuedAnyWarrants" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherTheListedEntityHasIssuedAnyWarrants" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherTheListedEntityHasIssuedAnyWarrants" xlink:to="reference_WhetherTheListedEntityHasIssuedAnyWarrants" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherTheListedEntityHasAnySharesAgainstWhichDepositoryReceiptsAreIssued" xlink:label="WhetherTheListedEntityHasAnySharesAgainstWhichDepositoryReceiptsAreIssued" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherTheListedEntityHasAnySharesAgainstWhichDepositoryReceiptsAreIssued" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherTheListedEntityHasAnySharesAgainstWhichDepositoryReceiptsAreIssued" xlink:to="reference_WhetherTheListedEntityHasAnySharesAgainstWhichDepositoryReceiptsAreIssued" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherTheListedEntityHasAnySharesInLockedIn" xlink:label="WhetherTheListedEntityHasAnySharesInLockedIn" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherTheListedEntityHasAnySharesInLockedIn" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherTheListedEntityHasAnySharesInLockedIn" xlink:to="reference_WhetherTheListedEntityHasAnySharesInLockedIn" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherAnySharesHeldByPromotersArePledgeOrOtherwiseEncumbered" xlink:label="WhetherAnySharesHeldByPromotersArePledgeOrOtherwiseEncumbered" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherAnySharesHeldByPromotersArePledgeOrOtherwiseEncumbered" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherAnySharesHeldByPromotersArePledgeOrOtherwiseEncumbered" xlink:to="reference_WhetherAnySharesHeldByPromotersArePledgeOrOtherwiseEncumbered" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfShareholdingPatternAbstract" xlink:label="DetailsOfShareholdingPatternAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfShareholdingPatternAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfShareholdingPatternAbstract" xlink:to="reference_DetailsOfShareholdingPatternAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfShareholdingPatternTable" xlink:label="DetailsOfShareholdingPatternTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfShareholdingPatternTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfShareholdingPatternTable" xlink:to="reference_DetailsOfShareholdingPatternTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CategoryOfShareholdersAxis" xlink:label="CategoryOfShareholdersAxis" />
+    <reference xlink:type="resource" xlink:label="reference_CategoryOfShareholdersAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CategoryOfShareholdersAxis" xlink:to="reference_CategoryOfShareholdersAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ShareholdingPatternMember" xlink:label="ShareholdingPatternMember" />
+    <reference xlink:type="resource" xlink:label="reference_ShareholdingPatternMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdingPatternMember" xlink:to="reference_ShareholdingPatternMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ShareholdingOfPromoterAndPromoterGroupMember" xlink:label="ShareholdingOfPromoterAndPromoterGroupMember" />
+    <reference xlink:type="resource" xlink:label="reference_ShareholdingOfPromoterAndPromoterGroupMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdingOfPromoterAndPromoterGroupMember" xlink:to="reference_ShareholdingOfPromoterAndPromoterGroupMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_IndianMember" xlink:label="IndianMember" />
+    <reference xlink:type="resource" xlink:label="reference_IndianMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IndianMember" xlink:to="reference_IndianMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_IndividualsOrHinduUndividedFamilyMember" xlink:label="IndividualsOrHinduUndividedFamilyMember" />
+    <reference xlink:type="resource" xlink:label="reference_IndividualsOrHinduUndividedFamilyMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IndividualsOrHinduUndividedFamilyMember" xlink:to="reference_IndividualsOrHinduUndividedFamilyMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CentralGovernmentOrStateGovernmentSMember" xlink:label="CentralGovernmentOrStateGovernmentSMember" />
+    <reference xlink:type="resource" xlink:label="reference_CentralGovernmentOrStateGovernmentSMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CentralGovernmentOrStateGovernmentSMember" xlink:to="reference_CentralGovernmentOrStateGovernmentSMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_IndianFinancialInstitutionsOrBanksMember" xlink:label="IndianFinancialInstitutionsOrBanksMember" />
+    <reference xlink:type="resource" xlink:label="reference_IndianFinancialInstitutionsOrBanksMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IndianFinancialInstitutionsOrBanksMember" xlink:to="reference_IndianFinancialInstitutionsOrBanksMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_OtherIndianShareholdersMember" xlink:label="OtherIndianShareholdersMember" />
+    <reference xlink:type="resource" xlink:label="reference_OtherIndianShareholdersMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherIndianShareholdersMember" xlink:to="reference_OtherIndianShareholdersMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ForeignMember" xlink:label="ForeignMember" />
+    <reference xlink:type="resource" xlink:label="reference_ForeignMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignMember" xlink:to="reference_ForeignMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NonResidentIndividualsOrForeignIndividualsMember" xlink:label="NonResidentIndividualsOrForeignIndividualsMember" />
+    <reference xlink:type="resource" xlink:label="reference_NonResidentIndividualsOrForeignIndividualsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonResidentIndividualsOrForeignIndividualsMember" xlink:to="reference_NonResidentIndividualsOrForeignIndividualsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ForeignGovernmentMember" xlink:label="ForeignGovernmentMember" />
+    <reference xlink:type="resource" xlink:label="reference_ForeignGovernmentMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignGovernmentMember" xlink:to="reference_ForeignGovernmentMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ForeignPortfolioInvestorMember" xlink:label="ForeignPortfolioInvestorMember" />
+    <reference xlink:type="resource" xlink:label="reference_ForeignPortfolioInvestorMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignPortfolioInvestorMember" xlink:to="reference_ForeignPortfolioInvestorMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_OtherForeignShareholdersMember" xlink:label="OtherForeignShareholdersMember" />
+    <reference xlink:type="resource" xlink:label="reference_OtherForeignShareholdersMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherForeignShareholdersMember" xlink:to="reference_OtherForeignShareholdersMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_PublicShareholdingMember" xlink:label="PublicShareholdingMember" />
+    <reference xlink:type="resource" xlink:label="reference_PublicShareholdingMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PublicShareholdingMember" xlink:to="reference_PublicShareholdingMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_InstitutionsMember" xlink:label="InstitutionsMember" />
+    <reference xlink:type="resource" xlink:label="reference_InstitutionsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InstitutionsMember" xlink:to="reference_InstitutionsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_MutualFundsOrUtiMember" xlink:label="MutualFundsOrUtiMember" />
+    <reference xlink:type="resource" xlink:label="reference_MutualFundsOrUtiMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="MutualFundsOrUtiMember" xlink:to="reference_MutualFundsOrUtiMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_VentureCapitalFundsMember" xlink:label="VentureCapitalFundsMember" />
+    <reference xlink:type="resource" xlink:label="reference_VentureCapitalFundsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VentureCapitalFundsMember" xlink:to="reference_VentureCapitalFundsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_AlternativeInvestmentFundsMember" xlink:label="AlternativeInvestmentFundsMember" />
+    <reference xlink:type="resource" xlink:label="reference_AlternativeInvestmentFundsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="AlternativeInvestmentFundsMember" xlink:to="reference_AlternativeInvestmentFundsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ForeignVentureCapitalInvestorsMember" xlink:label="ForeignVentureCapitalInvestorsMember" />
+    <reference xlink:type="resource" xlink:label="reference_ForeignVentureCapitalInvestorsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignVentureCapitalInvestorsMember" xlink:to="reference_ForeignVentureCapitalInvestorsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_InstitutionsForeignPortfolioInvestorMember" xlink:label="InstitutionsForeignPortfolioInvestorMember" />
+    <reference xlink:type="resource" xlink:label="reference_InstitutionsForeignPortfolioInvestorMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InstitutionsForeignPortfolioInvestorMember" xlink:to="reference_InstitutionsForeignPortfolioInvestorMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_FinancialInstitutionOrBanksMember" xlink:label="FinancialInstitutionOrBanksMember" />
+    <reference xlink:type="resource" xlink:label="reference_FinancialInstitutionOrBanksMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="FinancialInstitutionOrBanksMember" xlink:to="reference_FinancialInstitutionOrBanksMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_InsuranceCompaniesMember" xlink:label="InsuranceCompaniesMember" />
+    <reference xlink:type="resource" xlink:label="reference_InsuranceCompaniesMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="InsuranceCompaniesMember" xlink:to="reference_InsuranceCompaniesMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ProvidentFundsOrPensionFundsMember" xlink:label="ProvidentFundsOrPensionFundsMember" />
+    <reference xlink:type="resource" xlink:label="reference_ProvidentFundsOrPensionFundsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ProvidentFundsOrPensionFundsMember" xlink:to="reference_ProvidentFundsOrPensionFundsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_OtherInstitutionsMember" xlink:label="OtherInstitutionsMember" />
+    <reference xlink:type="resource" xlink:label="reference_OtherInstitutionsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherInstitutionsMember" xlink:to="reference_OtherInstitutionsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CentralGovernmentOrStateGovernmentSOrPresidentOfIndiaMember" xlink:label="CentralGovernmentOrStateGovernmentSOrPresidentOfIndiaMember" />
+    <reference xlink:type="resource" xlink:label="reference_CentralGovernmentOrStateGovernmentSOrPresidentOfIndiaMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CentralGovernmentOrStateGovernmentSOrPresidentOfIndiaMember" xlink:to="reference_CentralGovernmentOrStateGovernmentSOrPresidentOfIndiaMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_GovermentsMember" xlink:label="GovermentsMember" />
+    <reference xlink:type="resource" xlink:label="reference_GovermentsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="GovermentsMember" xlink:to="reference_GovermentsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NonInstitutionsMember" xlink:label="NonInstitutionsMember" />
+    <reference xlink:type="resource" xlink:label="reference_NonInstitutionsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NonInstitutionsMember" xlink:to="reference_NonInstitutionsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_IndividualsMember" xlink:label="IndividualsMember" />
+    <reference xlink:type="resource" xlink:label="reference_IndividualsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IndividualsMember" xlink:to="reference_IndividualsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_IndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhMember" xlink:label="IndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhMember" />
+    <reference xlink:type="resource" xlink:label="reference_IndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhMember" xlink:to="reference_IndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_IndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhMember" xlink:label="IndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhMember" />
+    <reference xlink:type="resource" xlink:label="reference_IndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="IndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhMember" xlink:to="reference_IndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NBFCsRegisteredWithRbiMember" xlink:label="NBFCsRegisteredWithRbiMember" />
+    <reference xlink:type="resource" xlink:label="reference_NBFCsRegisteredWithRbiMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NBFCsRegisteredWithRbiMember" xlink:to="reference_NBFCsRegisteredWithRbiMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_EmployeeTrustsMember" xlink:label="EmployeeTrustsMember" />
+    <reference xlink:type="resource" xlink:label="reference_EmployeeTrustsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EmployeeTrustsMember" xlink:to="reference_EmployeeTrustsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_OverseasDepositoriesMember" xlink:label="OverseasDepositoriesMember" />
+    <reference xlink:type="resource" xlink:label="reference_OverseasDepositoriesMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OverseasDepositoriesMember" xlink:to="reference_OverseasDepositoriesMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_OtherNonInstitutionsMember" xlink:label="OtherNonInstitutionsMember" />
+    <reference xlink:type="resource" xlink:label="reference_OtherNonInstitutionsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OtherNonInstitutionsMember" xlink:to="reference_OtherNonInstitutionsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_SharesHeldByNonPromoterNonPublicShareholdersMember" xlink:label="SharesHeldByNonPromoterNonPublicShareholdersMember" />
+    <reference xlink:type="resource" xlink:label="reference_SharesHeldByNonPromoterNonPublicShareholdersMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="SharesHeldByNonPromoterNonPublicShareholdersMember" xlink:to="reference_SharesHeldByNonPromoterNonPublicShareholdersMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CustodianOrDRHolderMember" xlink:label="CustodianOrDRHolderMember" />
+    <reference xlink:type="resource" xlink:label="reference_CustodianOrDRHolderMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CustodianOrDRHolderMember" xlink:to="reference_CustodianOrDRHolderMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_EmployeeBenefitsTrustsMember" xlink:label="EmployeeBenefitsTrustsMember" />
+    <reference xlink:type="resource" xlink:label="reference_EmployeeBenefitsTrustsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="EmployeeBenefitsTrustsMember" xlink:to="reference_EmployeeBenefitsTrustsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfShareholdingPatternLineItems" xlink:label="DetailsOfShareholdingPatternLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfShareholdingPatternLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfShareholdingPatternLineItems" xlink:to="reference_DetailsOfShareholdingPatternLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfShareholders" xlink:label="NumberOfShareholders" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfShareholders" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfShareholders" xlink:to="reference_NumberOfShareholders" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfFullyPaidUpEquityShares" xlink:label="NumberOfFullyPaidUpEquityShares" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfFullyPaidUpEquityShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfFullyPaidUpEquityShares" xlink:to="reference_NumberOfFullyPaidUpEquityShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfPartlyPaidUpEquityShares" xlink:label="NumberOfPartlyPaidUpEquityShares" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfPartlyPaidUpEquityShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfPartlyPaidUpEquityShares" xlink:to="reference_NumberOfPartlyPaidUpEquityShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfSharesUnderlyingOutstandingDepositoryReceipts" xlink:label="NumberOfSharesUnderlyingOutstandingDepositoryReceipts" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesUnderlyingOutstandingDepositoryReceipts" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesUnderlyingOutstandingDepositoryReceipts" xlink:to="reference_NumberOfSharesUnderlyingOutstandingDepositoryReceipts" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfShares" xlink:label="NumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfShares" xlink:to="reference_NumberOfShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfSharesUnderlyingOutstandingConvertibleSecurities" xlink:label="NumberOfSharesUnderlyingOutstandingConvertibleSecurities" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesUnderlyingOutstandingConvertibleSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesUnderlyingOutstandingConvertibleSecurities" xlink:to="reference_NumberOfSharesUnderlyingOutstandingConvertibleSecurities" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfWarrants" xlink:label="NumberOfWarrants" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfWarrants" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfWarrants" xlink:to="reference_NumberOfWarrants" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfConvertibleSecuritiesAndWarrants" xlink:label="NumberOfConvertibleSecuritiesAndWarrants" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfConvertibleSecuritiesAndWarrants" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfConvertibleSecuritiesAndWarrants" xlink:to="reference_NumberOfConvertibleSecuritiesAndWarrants" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ShareholdingAsAPercentageAssumingFullConversionOfConvertibleSecuritiesAndWarrants" xlink:label="ShareholdingAsAPercentageAssumingFullConversionOfConvertibleSecuritiesAndWarrants" />
+    <reference xlink:type="resource" xlink:label="reference_ShareholdingAsAPercentageAssumingFullConversionOfConvertibleSecuritiesAndWarrants" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdingAsAPercentageAssumingFullConversionOfConvertibleSecuritiesAndWarrants" xlink:to="reference_ShareholdingAsAPercentageAssumingFullConversionOfConvertibleSecuritiesAndWarrants" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfTheLockedInSharesAbstract" xlink:label="DetailsOfTheLockedInSharesAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfTheLockedInSharesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfTheLockedInSharesAbstract" xlink:to="reference_DetailsOfTheLockedInSharesAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfTheLockedInShares" xlink:label="NumberOfTheLockedInShares" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfTheLockedInShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfTheLockedInShares" xlink:to="reference_NumberOfTheLockedInShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_LockedInSharesAsAPercentageOfTotalNumberOfShares" xlink:label="LockedInSharesAsAPercentageOfTotalNumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_LockedInSharesAsAPercentageOfTotalNumberOfShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="LockedInSharesAsAPercentageOfTotalNumberOfShares" xlink:to="reference_LockedInSharesAsAPercentageOfTotalNumberOfShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfSharesPledgedOrOtherwiseEncumberedAbstract" xlink:label="NumberOfSharesPledgedOrOtherwiseEncumberedAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfSharesPledgedOrOtherwiseEncumberedAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfSharesPledgedOrOtherwiseEncumberedAbstract" xlink:to="reference_NumberOfSharesPledgedOrOtherwiseEncumberedAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_PledgedOrEncumberedNumberOfShares" xlink:label="PledgedOrEncumberedNumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_PledgedOrEncumberedNumberOfShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PledgedOrEncumberedNumberOfShares" xlink:to="reference_PledgedOrEncumberedNumberOfShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_PledgedOrEncumberedSharesHeldAsPercentageOfTotalNumberOfShares" xlink:label="PledgedOrEncumberedSharesHeldAsPercentageOfTotalNumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_PledgedOrEncumberedSharesHeldAsPercentageOfTotalNumberOfShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PledgedOrEncumberedSharesHeldAsPercentageOfTotalNumberOfShares" xlink:to="reference_PledgedOrEncumberedSharesHeldAsPercentageOfTotalNumberOfShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfEquitySharesHeldInDematerializedForm" xlink:label="NumberOfEquitySharesHeldInDematerializedForm" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfEquitySharesHeldInDematerializedForm" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfEquitySharesHeldInDematerializedForm" xlink:to="reference_NumberOfEquitySharesHeldInDematerializedForm" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DisclosureOfNotesOnShareholdingPatternExplanatoryTextBlock" xlink:label="DisclosureOfNotesOnShareholdingPatternExplanatoryTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNotesOnShareholdingPatternExplanatoryTextBlock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNotesOnShareholdingPatternExplanatoryTextBlock" xlink:to="reference_DisclosureOfNotesOnShareholdingPatternExplanatoryTextBlock" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ShareholdingAsAPercentageOfTotalNumberOfShares" xlink:label="ShareholdingAsAPercentageOfTotalNumberOfShares" />
+    <reference xlink:type="resource" xlink:label="reference_ShareholdingAsAPercentageOfTotalNumberOfShares" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ShareholdingAsAPercentageOfTotalNumberOfShares" xlink:to="reference_ShareholdingAsAPercentageOfTotalNumberOfShares" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfVotingRightsHeldInEachClassOfSecuritiesAbstract" xlink:label="NumberOfVotingRightsHeldInEachClassOfSecuritiesAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfVotingRightsHeldInEachClassOfSecuritiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfVotingRightsHeldInEachClassOfSecuritiesAbstract" xlink:to="reference_NumberOfVotingRightsHeldInEachClassOfSecuritiesAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfVotingRightsHeldBySameClassOfSecurities" xlink:label="NumberOfVotingRightsHeldBySameClassOfSecurities" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfVotingRightsHeldBySameClassOfSecurities" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfVotingRightsHeldBySameClassOfSecurities" xlink:to="reference_NumberOfVotingRightsHeldBySameClassOfSecurities" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfVotingRightsHeldByDifferentialVotingRights" xlink:label="NumberOfVotingRightsHeldByDifferentialVotingRights" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfVotingRightsHeldByDifferentialVotingRights" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfVotingRightsHeldByDifferentialVotingRights" xlink:to="reference_NumberOfVotingRightsHeldByDifferentialVotingRights" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualsOrHUFAbstract" xlink:label="DetailsOfSharesHeldByIndividualsOrHUFAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualsOrHUFAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualsOrHUFAbstract" xlink:to="reference_DetailsOfSharesHeldByIndividualsOrHUFAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualsOrHUFTable" xlink:label="DetailsOfSharesHeldByIndividualsOrHUFTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualsOrHUFTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualsOrHUFTable" xlink:to="reference_DetailsOfSharesHeldByIndividualsOrHUFTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsSharesHeldByIndividualsOrHUFAxis" xlink:label="DetailsSharesHeldByIndividualsOrHUFAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsSharesHeldByIndividualsOrHUFAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsSharesHeldByIndividualsOrHUFAxis" xlink:to="reference_DetailsSharesHeldByIndividualsOrHUFAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualsOrHUFLineItems" xlink:label="DetailsOfSharesHeldByIndividualsOrHUFLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualsOrHUFLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualsOrHUFLineItems" xlink:to="reference_DetailsOfSharesHeldByIndividualsOrHUFLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NameOfTheShareholder" xlink:label="NameOfTheShareholder" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheShareholder" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheShareholder" xlink:to="reference_NameOfTheShareholder" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_PermanentAccountNumberOfShareholder" xlink:label="PermanentAccountNumberOfShareholder" />
+    <reference xlink:type="resource" xlink:label="reference_PermanentAccountNumberOfShareholder" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PermanentAccountNumberOfShareholder" xlink:to="reference_PermanentAccountNumberOfShareholder" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_ForeignInstitutionsMember" xlink:label="ForeignInstitutionsMember" />
+    <reference xlink:type="resource" xlink:label="reference_ForeignInstitutionsMember" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="ForeignInstitutionsMember" xlink:to="reference_ForeignInstitutionsMember" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAbstract" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAbstract" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsTable" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsTable" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAxis" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAxis" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsLineItems" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsLineItems" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAbstract" xlink:label="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAbstract" xlink:to="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksTable" xlink:label="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksTable" xlink:to="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAxis" xlink:label="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAxis" xlink:to="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksLineItems" xlink:label="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksLineItems" xlink:to="reference_DetailsOfSharesHeldByIndianFinancialInstitutionsOrBanksLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAbstract" xlink:label="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAbstract" xlink:to="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsTable" xlink:label="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsTable" xlink:to="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAxis" xlink:label="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAxis" xlink:to="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsLineItems" xlink:label="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsLineItems" xlink:to="reference_DetailsOfSharesHeldByNonResidentIndividualsOrForeignIndividualsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignGovernmentAbstract" xlink:label="DetailsOfSharesHeldByForeignGovernmentAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignGovernmentAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignGovernmentAbstract" xlink:to="reference_DetailsOfSharesHeldByForeignGovernmentAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignGovernmentTable" xlink:label="DetailsOfSharesHeldByForeignGovernmentTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignGovernmentTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignGovernmentTable" xlink:to="reference_DetailsOfSharesHeldByForeignGovernmentTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignGovernmentAxis" xlink:label="DetailsOfSharesHeldByForeignGovernmentAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignGovernmentAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignGovernmentAxis" xlink:to="reference_DetailsOfSharesHeldByForeignGovernmentAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignGovernmentLineItems" xlink:label="DetailsOfSharesHeldByForeignGovernmentLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignGovernmentLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignGovernmentLineItems" xlink:to="reference_DetailsOfSharesHeldByForeignGovernmentLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignPortfolioInvestorAbstract" xlink:label="DetailsOfSharesHeldByForeignPortfolioInvestorAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignPortfolioInvestorAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignPortfolioInvestorAbstract" xlink:to="reference_DetailsOfSharesHeldByForeignPortfolioInvestorAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignPortfolioInvestorTable" xlink:label="DetailsOfSharesHeldByForeignPortfolioInvestorTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignPortfolioInvestorTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignPortfolioInvestorTable" xlink:to="reference_DetailsOfSharesHeldByForeignPortfolioInvestorTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignPortfolioInvestorAxis" xlink:label="DetailsOfSharesHeldByForeignPortfolioInvestorAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignPortfolioInvestorAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignPortfolioInvestorAxis" xlink:to="reference_DetailsOfSharesHeldByForeignPortfolioInvestorAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignPortfolioInvestorLineItems" xlink:label="DetailsOfSharesHeldByForeignPortfolioInvestorLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignPortfolioInvestorLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignPortfolioInvestorLineItems" xlink:to="reference_DetailsOfSharesHeldByForeignPortfolioInvestorLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByVentureCapitalFundsAbstract" xlink:label="DetailsOfSharesHeldByVentureCapitalFundsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByVentureCapitalFundsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByVentureCapitalFundsAbstract" xlink:to="reference_DetailsOfSharesHeldByVentureCapitalFundsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByVentureCapitalFundsTable" xlink:label="DetailsOfSharesHeldByVentureCapitalFundsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByVentureCapitalFundsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByVentureCapitalFundsTable" xlink:to="reference_DetailsOfSharesHeldByVentureCapitalFundsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByVentureCapitalFundsAxis" xlink:label="DetailsOfSharesHeldByVentureCapitalFundsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByVentureCapitalFundsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByVentureCapitalFundsAxis" xlink:to="reference_DetailsOfSharesHeldByVentureCapitalFundsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByVentureCapitalFundsLineItems" xlink:label="DetailsOfSharesHeldByVentureCapitalFundsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByVentureCapitalFundsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByVentureCapitalFundsLineItems" xlink:to="reference_DetailsOfSharesHeldByVentureCapitalFundsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByAlternativeInvestmentFundsAbstract" xlink:label="DetailsOfSharesHeldByAlternativeInvestmentFundsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByAlternativeInvestmentFundsAbstract" xlink:to="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByAlternativeInvestmentFundsTable" xlink:label="DetailsOfSharesHeldByAlternativeInvestmentFundsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByAlternativeInvestmentFundsTable" xlink:to="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByAlternativeInvestmentFundsAxis" xlink:label="DetailsOfSharesHeldByAlternativeInvestmentFundsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByAlternativeInvestmentFundsAxis" xlink:to="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByAlternativeInvestmentFundsLineItems" xlink:label="DetailsOfSharesHeldByAlternativeInvestmentFundsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByAlternativeInvestmentFundsLineItems" xlink:to="reference_DetailsOfSharesHeldByAlternativeInvestmentFundsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignVentureCapitalInvestorsAbstract" xlink:label="DetailsOfSharesHeldByForeignVentureCapitalInvestorsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignVentureCapitalInvestorsAbstract" xlink:to="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignVentureCapitalInvestorsTable" xlink:label="DetailsOfSharesHeldByForeignVentureCapitalInvestorsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignVentureCapitalInvestorsTable" xlink:to="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignVentureCapitalInvestorsAxis" xlink:label="DetailsOfSharesHeldByForeignVentureCapitalInvestorsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignVentureCapitalInvestorsAxis" xlink:to="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignVentureCapitalInvestorsLineItems" xlink:label="DetailsOfSharesHeldByForeignVentureCapitalInvestorsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignVentureCapitalInvestorsLineItems" xlink:to="reference_DetailsOfSharesHeldByForeignVentureCapitalInvestorsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAbstract" xlink:label="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAbstract" xlink:to="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorTable" xlink:label="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorTable" xlink:to="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAxis" xlink:label="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAxis" xlink:to="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorLineItems" xlink:label="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorLineItems" xlink:to="reference_DetailsOfSharesHeldByInstitutionsForeignPortfolioInvestorLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByFinancialInstitutionOrBanksAbstract" xlink:label="DetailsOfSharesHeldByFinancialInstitutionOrBanksAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByFinancialInstitutionOrBanksAbstract" xlink:to="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByFinancialInstitutionOrBanksTable" xlink:label="DetailsOfSharesHeldByFinancialInstitutionOrBanksTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByFinancialInstitutionOrBanksTable" xlink:to="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByFinancialInstitutionOrBanksAxis" xlink:label="DetailsOfSharesHeldByFinancialInstitutionOrBanksAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByFinancialInstitutionOrBanksAxis" xlink:to="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByFinancialInstitutionOrBanksLineItems" xlink:label="DetailsOfSharesHeldByFinancialInstitutionOrBanksLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByFinancialInstitutionOrBanksLineItems" xlink:to="reference_DetailsOfSharesHeldByFinancialInstitutionOrBanksLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInsuranceCompaniesAbstract" xlink:label="DetailsOfSharesHeldByInsuranceCompaniesAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInsuranceCompaniesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInsuranceCompaniesAbstract" xlink:to="reference_DetailsOfSharesHeldByInsuranceCompaniesAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInsuranceCompaniesTable" xlink:label="DetailsOfSharesHeldByInsuranceCompaniesTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInsuranceCompaniesTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInsuranceCompaniesTable" xlink:to="reference_DetailsOfSharesHeldByInsuranceCompaniesTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInsuranceCompaniesAxis" xlink:label="DetailsOfSharesHeldByInsuranceCompaniesAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInsuranceCompaniesAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInsuranceCompaniesAxis" xlink:to="reference_DetailsOfSharesHeldByInsuranceCompaniesAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByInsuranceCompaniesLineItems" xlink:label="DetailsOfSharesHeldByInsuranceCompaniesLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByInsuranceCompaniesLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByInsuranceCompaniesLineItems" xlink:to="reference_DetailsOfSharesHeldByInsuranceCompaniesLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByProvidentFundsOrPensionFundsAbstract" xlink:label="DetailsOfSharesHeldByProvidentFundsOrPensionFundsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByProvidentFundsOrPensionFundsAbstract" xlink:to="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByProvidentFundsOrPensionFundsTable" xlink:label="DetailsOfSharesHeldByProvidentFundsOrPensionFundsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByProvidentFundsOrPensionFundsTable" xlink:to="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByProvidentFundsOrPensionFundsAxis" xlink:label="DetailsOfSharesHeldByProvidentFundsOrPensionFundsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByProvidentFundsOrPensionFundsAxis" xlink:to="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByProvidentFundsOrPensionFundsLineItems" xlink:label="DetailsOfSharesHeldByProvidentFundsOrPensionFundsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByProvidentFundsOrPensionFundsLineItems" xlink:to="reference_DetailsOfSharesHeldByProvidentFundsOrPensionFundsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAbstract" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAbstract" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaTable" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaTable" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAxis" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAxis" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaLineItems" xlink:label="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaLineItems" xlink:to="reference_DetailsOfSharesHeldByCentralGovernmentOrStateGovernmentSOrPresidentOfIndiaLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAbstract" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAbstract" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhTable" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhTable" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAxis" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAxis" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhLineItems" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhLineItems" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalUpToRsTwoLakhLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAbstract" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAbstract" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhTable" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhTable" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAxis" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAxis" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhLineItems" xlink:label="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhLineItems" xlink:to="reference_DetailsOfSharesHeldByIndividualShareholdersHoldingNominalShareCapitalInExcessOfRsTwoLakhLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNbfcsRegisteredWithRbiAbstract" xlink:label="DetailsOfSharesHeldByNbfcsRegisteredWithRbiAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNbfcsRegisteredWithRbiAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNbfcsRegisteredWithRbiAbstract" xlink:to="reference_DetailsOfSharesHeldByNbfcsRegisteredWithRbiAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNbfcsRegisteredWithRbiTable" xlink:label="DetailsOfSharesHeldByNbfcsRegisteredWithRbiTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNbfcsRegisteredWithRbiTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNbfcsRegisteredWithRbiTable" xlink:to="reference_DetailsOfSharesHeldByNbfcsRegisteredWithRbiTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNBFCsRegisteredWithRbiAxis" xlink:label="DetailsOfSharesHeldByNBFCsRegisteredWithRbiAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNBFCsRegisteredWithRbiAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNBFCsRegisteredWithRbiAxis" xlink:to="reference_DetailsOfSharesHeldByNBFCsRegisteredWithRbiAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByNbfcsRegisteredWithRbiLineItems" xlink:label="DetailsOfSharesHeldByNbfcsRegisteredWithRbiLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByNbfcsRegisteredWithRbiLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByNbfcsRegisteredWithRbiLineItems" xlink:to="reference_DetailsOfSharesHeldByNbfcsRegisteredWithRbiLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeTrustsAbstract" xlink:label="DetailsOfSharesHeldByEmployeeTrustsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeTrustsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeTrustsAbstract" xlink:to="reference_DetailsOfSharesHeldByEmployeeTrustsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeTrustsTable" xlink:label="DetailsOfSharesHeldByEmployeeTrustsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeTrustsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeTrustsTable" xlink:to="reference_DetailsOfSharesHeldByEmployeeTrustsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeTrustsAxis" xlink:label="DetailsOfSharesHeldByEmployeeTrustsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeTrustsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeTrustsAxis" xlink:to="reference_DetailsOfSharesHeldByEmployeeTrustsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeTrustsLineItems" xlink:label="DetailsOfSharesHeldByEmployeeTrustsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeTrustsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeTrustsLineItems" xlink:to="reference_DetailsOfSharesHeldByEmployeeTrustsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOthersIndianShareholdersAbstract" xlink:label="DetailsOfSharesHeldByOthersIndianShareholdersAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOthersIndianShareholdersAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOthersIndianShareholdersAbstract" xlink:to="reference_DetailsOfSharesHeldByOthersIndianShareholdersAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOthersIndianShareholdersTable" xlink:label="DetailsOfSharesHeldByOthersIndianShareholdersTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOthersIndianShareholdersTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOthersIndianShareholdersTable" xlink:to="reference_DetailsOfSharesHeldByOthersIndianShareholdersTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOthersIndianShareholdersAxis" xlink:label="DetailsOfSharesHeldByOthersIndianShareholdersAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOthersIndianShareholdersAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOthersIndianShareholdersAxis" xlink:to="reference_DetailsOfSharesHeldByOthersIndianShareholdersAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOthersIndianShareholdersLineItems" xlink:label="DetailsOfSharesHeldByOthersIndianShareholdersLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOthersIndianShareholdersLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOthersIndianShareholdersLineItems" xlink:to="reference_DetailsOfSharesHeldByOthersIndianShareholdersLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignInstitutionsAbstract" xlink:label="DetailsOfSharesHeldByForeignInstitutionsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignInstitutionsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignInstitutionsAbstract" xlink:to="reference_DetailsOfSharesHeldByForeignInstitutionsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignInstitutionsTable" xlink:label="DetailsOfSharesHeldByForeignInstitutionsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignInstitutionsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignInstitutionsTable" xlink:to="reference_DetailsOfSharesHeldByForeignInstitutionsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignInstitutionsAxis" xlink:label="DetailsOfSharesHeldByForeignInstitutionsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignInstitutionsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignInstitutionsAxis" xlink:to="reference_DetailsOfSharesHeldByForeignInstitutionsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByForeignInstitutionsLineItems" xlink:label="DetailsOfSharesHeldByForeignInstitutionsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByForeignInstitutionsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByForeignInstitutionsLineItems" xlink:to="reference_DetailsOfSharesHeldByForeignInstitutionsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherForeignShareholdersAbstract" xlink:label="DetailsOfSharesHeldByOtherForeignShareholdersAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherForeignShareholdersAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherForeignShareholdersAbstract" xlink:to="reference_DetailsOfSharesHeldByOtherForeignShareholdersAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherForeignShareholdersTable" xlink:label="DetailsOfSharesHeldByOtherForeignShareholdersTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherForeignShareholdersTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherForeignShareholdersTable" xlink:to="reference_DetailsOfSharesHeldByOtherForeignShareholdersTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherForeignShareholdersAxis" xlink:label="DetailsOfSharesHeldByOtherForeignShareholdersAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherForeignShareholdersAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherForeignShareholdersAxis" xlink:to="reference_DetailsOfSharesHeldByOtherForeignShareholdersAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherForeignShareholdersLineItems" xlink:label="DetailsOfSharesHeldByOtherForeignShareholdersLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherForeignShareholdersLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherForeignShareholdersLineItems" xlink:to="reference_DetailsOfSharesHeldByOtherForeignShareholdersLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByMutualFundsOrUtiAbstract" xlink:label="DetailsOfSharesHeldByMutualFundsOrUtiAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByMutualFundsOrUtiAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByMutualFundsOrUtiAbstract" xlink:to="reference_DetailsOfSharesHeldByMutualFundsOrUtiAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByMutualFundsOrUtiTable" xlink:label="DetailsOfSharesHeldByMutualFundsOrUtiTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByMutualFundsOrUtiTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByMutualFundsOrUtiTable" xlink:to="reference_DetailsOfSharesHeldByMutualFundsOrUtiTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByMutualFundsOrUtiAxis" xlink:label="DetailsOfSharesHeldByMutualFundsOrUtiAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByMutualFundsOrUtiAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByMutualFundsOrUtiAxis" xlink:to="reference_DetailsOfSharesHeldByMutualFundsOrUtiAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByMutualFundsOrUtiLineItems" xlink:label="DetailsOfSharesHeldByMutualFundsOrUtiLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByMutualFundsOrUtiLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByMutualFundsOrUtiLineItems" xlink:to="reference_DetailsOfSharesHeldByMutualFundsOrUtiLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherInstitutionsAbstract" xlink:label="DetailsOfSharesHeldByOtherInstitutionsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherInstitutionsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherInstitutionsAbstract" xlink:to="reference_DetailsOfSharesHeldByOtherInstitutionsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherInstitutionsTable" xlink:label="DetailsOfSharesHeldByOtherInstitutionsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherInstitutionsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherInstitutionsTable" xlink:to="reference_DetailsOfSharesHeldByOtherInstitutionsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherInstitutionsAxis" xlink:label="DetailsOfSharesHeldByOtherInstitutionsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherInstitutionsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherInstitutionsAxis" xlink:to="reference_DetailsOfSharesHeldByOtherInstitutionsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherInstitutionsLineItems" xlink:label="DetailsOfSharesHeldByOtherInstitutionsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherInstitutionsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherInstitutionsLineItems" xlink:to="reference_DetailsOfSharesHeldByOtherInstitutionsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOverseasDepositoriesAbstract" xlink:label="DetailsOfSharesHeldByOverseasDepositoriesAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOverseasDepositoriesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOverseasDepositoriesAbstract" xlink:to="reference_DetailsOfSharesHeldByOverseasDepositoriesAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOverseasDepositoriesTable" xlink:label="DetailsOfSharesHeldByOverseasDepositoriesTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOverseasDepositoriesTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOverseasDepositoriesTable" xlink:to="reference_DetailsOfSharesHeldByOverseasDepositoriesTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOverseasDepositoriesAxis" xlink:label="DetailsOfSharesHeldByOverseasDepositoriesAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOverseasDepositoriesAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOverseasDepositoriesAxis" xlink:to="reference_DetailsOfSharesHeldByOverseasDepositoriesAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOverseasDepositoriesLineItems" xlink:label="DetailsOfSharesHeldByOverseasDepositoriesLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOverseasDepositoriesLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOverseasDepositoriesLineItems" xlink:to="reference_DetailsOfSharesHeldByOverseasDepositoriesLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherNonInstitutionsAbstract" xlink:label="DetailsOfSharesHeldByOtherNonInstitutionsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherNonInstitutionsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherNonInstitutionsAbstract" xlink:to="reference_DetailsOfSharesHeldByOtherNonInstitutionsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherNonInstitutionsTable" xlink:label="DetailsOfSharesHeldByOtherNonInstitutionsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherNonInstitutionsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherNonInstitutionsTable" xlink:to="reference_DetailsOfSharesHeldByOtherNonInstitutionsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherNonInstitutionsAxis" xlink:label="DetailsOfSharesHeldByOtherNonInstitutionsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherNonInstitutionsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherNonInstitutionsAxis" xlink:to="reference_DetailsOfSharesHeldByOtherNonInstitutionsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByOtherNonInstitutionsLineItems" xlink:label="DetailsOfSharesHeldByOtherNonInstitutionsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByOtherNonInstitutionsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByOtherNonInstitutionsLineItems" xlink:to="reference_DetailsOfSharesHeldByOtherNonInstitutionsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCustodianOrDRHolderAbstract" xlink:label="DetailsOfSharesHeldByCustodianOrDRHolderAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCustodianOrDRHolderAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCustodianOrDRHolderAbstract" xlink:to="reference_DetailsOfSharesHeldByCustodianOrDRHolderAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCustodianOrDRHolderTable" xlink:label="DetailsOfSharesHeldByCustodianOrDRHolderTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCustodianOrDRHolderTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCustodianOrDRHolderTable" xlink:to="reference_DetailsOfSharesHeldByCustodianOrDRHolderTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCustodianOrDRHolderAxis" xlink:label="DetailsOfSharesHeldByCustodianOrDRHolderAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCustodianOrDRHolderAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCustodianOrDRHolderAxis" xlink:to="reference_DetailsOfSharesHeldByCustodianOrDRHolderAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByCustodianOrDRHolderLineItems" xlink:label="DetailsOfSharesHeldByCustodianOrDRHolderLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByCustodianOrDRHolderLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByCustodianOrDRHolderLineItems" xlink:to="reference_DetailsOfSharesHeldByCustodianOrDRHolderLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeBenefitsTrustsAbstract" xlink:label="DetailsOfSharesHeldByEmployeeBenefitsTrustsAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeBenefitsTrustsAbstract" xlink:to="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeBenefitsTrustsTable" xlink:label="DetailsOfSharesHeldByEmployeeBenefitsTrustsTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeBenefitsTrustsTable" xlink:to="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeBenefitsTrustsAxis" xlink:label="DetailsOfSharesHeldByEmployeeBenefitsTrustsAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeBenefitsTrustsAxis" xlink:to="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesHeldByEmployeeBenefitsTrustsLineItems" xlink:label="DetailsOfSharesHeldByEmployeeBenefitsTrustsLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesHeldByEmployeeBenefitsTrustsLineItems" xlink:to="reference_DetailsOfSharesHeldByEmployeeBenefitsTrustsLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CategoryOfOtherForeignShareholders" xlink:label="CategoryOfOtherForeignShareholders" />
+    <reference xlink:type="resource" xlink:label="reference_CategoryOfOtherForeignShareholders" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CategoryOfOtherForeignShareholders" xlink:to="reference_CategoryOfOtherForeignShareholders" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CategoryOfOtherIndianShareholders" xlink:label="CategoryOfOtherIndianShareholders" />
+    <reference xlink:type="resource" xlink:label="reference_CategoryOfOtherIndianShareholders" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CategoryOfOtherIndianShareholders" xlink:to="reference_CategoryOfOtherIndianShareholders" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CategoryOfOtherInstitutions" xlink:label="CategoryOfOtherInstitutions" />
+    <reference xlink:type="resource" xlink:label="reference_CategoryOfOtherInstitutions" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CategoryOfOtherInstitutions" xlink:to="reference_CategoryOfOtherInstitutions" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_CategoryOfOtherNonInstitutions" xlink:label="CategoryOfOtherNonInstitutions" />
+    <reference xlink:type="resource" xlink:label="reference_CategoryOfOtherNonInstitutions" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="CategoryOfOtherNonInstitutions" xlink:to="reference_CategoryOfOtherNonInstitutions" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_TypeOfDepositoryReceipts" xlink:label="TypeOfDepositoryReceipts" />
+    <reference xlink:type="resource" xlink:label="reference_TypeOfDepositoryReceipts" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="TypeOfDepositoryReceipts" xlink:to="reference_TypeOfDepositoryReceipts" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NameOfTheBank" xlink:label="NameOfTheBank" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfTheBank" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfTheBank" xlink:to="reference_NameOfTheBank" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupAbstract" xlink:label="DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupAbstract" xlink:to="reference_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupTable" xlink:label="DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupTable" xlink:to="reference_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfPromoterAndPromoterGroupAxis" xlink:label="DetailsOfPromoterAndPromoterGroupAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfPromoterAndPromoterGroupAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfPromoterAndPromoterGroupAxis" xlink:to="reference_DetailsOfPromoterAndPromoterGroupAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupLineItems" xlink:label="DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupLineItems" xlink:to="reference_DetailsOfSharesWhichRemainUnclaimedForPromoterAndPromoterGroupLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DisclosureOfNotesOnSharesWhichRemainUnclaimedForPromoterAndPromoterGroupExplanatoryTextBlock" xlink:label="DisclosureOfNotesOnSharesWhichRemainUnclaimedForPromoterAndPromoterGroupExplanatoryTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNotesOnSharesWhichRemainUnclaimedForPromoterAndPromoterGroupExplanatoryTextBlock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNotesOnSharesWhichRemainUnclaimedForPromoterAndPromoterGroupExplanatoryTextBlock" xlink:to="reference_DisclosureOfNotesOnSharesWhichRemainUnclaimedForPromoterAndPromoterGroupExplanatoryTextBlock" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAbstact" xlink:label="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAbstact" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAbstact" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAbstact" xlink:to="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAbstact" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicTable" xlink:label="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicTable" xlink:to="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAxis" xlink:label="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAxis" xlink:to="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicLineItems" xlink:label="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfTheShareholdersActingAsPersonsInConcertForPublicLineItems" xlink:to="reference_DetailsOfTheShareholdersActingAsPersonsInConcertForPublicLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NameOfThePAC" xlink:label="NameOfThePAC" />
+    <reference xlink:type="resource" xlink:label="reference_NameOfThePAC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NameOfThePAC" xlink:to="reference_NameOfThePAC" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_PercentageOfShareholdingByPAC" xlink:label="PercentageOfShareholdingByPAC" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfShareholdingByPAC" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfShareholdingByPAC" xlink:to="reference_PercentageOfShareholdingByPAC" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAbstract" xlink:label="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAbstract" xlink:to="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersTable" xlink:label="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersTable" xlink:to="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAxis" xlink:label="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAxis" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAxis" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAxis" xlink:to="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersAxis" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersLineItems" xlink:label="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersLineItems" xlink:to="reference_DetailsOfSharesWhichRemainUnclaimedForPublicShareholdersLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_OutstandingSharesHeldInDematOrUnclaimedSuspenseAccount" xlink:label="OutstandingSharesHeldInDematOrUnclaimedSuspenseAccount" />
+    <reference xlink:type="resource" xlink:label="reference_OutstandingSharesHeldInDematOrUnclaimedSuspenseAccount" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="OutstandingSharesHeldInDematOrUnclaimedSuspenseAccount" xlink:to="reference_OutstandingSharesHeldInDematOrUnclaimedSuspenseAccount" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_VotingRightsWhichAreFrozen" xlink:label="VotingRightsWhichAreFrozen" />
+    <reference xlink:type="resource" xlink:label="reference_VotingRightsWhichAreFrozen" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="VotingRightsWhichAreFrozen" xlink:to="reference_VotingRightsWhichAreFrozen" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DisclosureOfNotesOnSharesWhichRemainUnclaimedForPublicShareholdersExplanatoryTextBlock" xlink:label="DisclosureOfNotesOnSharesWhichRemainUnclaimedForPublicShareholdersExplanatoryTextBlock" />
+    <reference xlink:type="resource" xlink:label="reference_DisclosureOfNotesOnSharesWhichRemainUnclaimedForPublicShareholdersExplanatoryTextBlock" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DisclosureOfNotesOnSharesWhichRemainUnclaimedForPublicShareholdersExplanatoryTextBlock" xlink:to="reference_DisclosureOfNotesOnSharesWhichRemainUnclaimedForPublicShareholdersExplanatoryTextBlock" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_NumberOfVotingRights" xlink:label="NumberOfVotingRights" />
+    <reference xlink:type="resource" xlink:label="reference_NumberOfVotingRights" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="NumberOfVotingRights" xlink:to="reference_NumberOfVotingRights" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_PercentageOfTotalVotingRights" xlink:label="PercentageOfTotalVotingRights" />
+    <reference xlink:type="resource" xlink:label="reference_PercentageOfTotalVotingRights" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="PercentageOfTotalVotingRights" xlink:to="reference_PercentageOfTotalVotingRights" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_StatementOfDeclarationAbstract" xlink:label="StatementOfDeclarationAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_StatementOfDeclarationAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="StatementOfDeclarationAbstract" xlink:to="reference_StatementOfDeclarationAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfShareholdingPatternTableNotAll" xlink:label="DetailsOfShareholdingPatternTableNotAll" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfShareholdingPatternTableNotAll" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfShareholdingPatternTableNotAll" xlink:to="reference_DetailsOfShareholdingPatternTableNotAll" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherACategoryOrMoreThan1PercentageOfShareHolding" xlink:label="WhetherACategoryOrMoreThan1PercentageOfShareHolding" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherACategoryOrMoreThan1PercentageOfShareHolding" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherACategoryOrMoreThan1PercentageOfShareHolding" xlink:to="reference_WhetherACategoryOrMoreThan1PercentageOfShareHolding" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfHoldingOfSpecifiedSecuritiesAbstract" xlink:label="DetailsOfHoldingOfSpecifiedSecuritiesAbstract" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfHoldingOfSpecifiedSecuritiesAbstract" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfHoldingOfSpecifiedSecuritiesAbstract" xlink:to="reference_DetailsOfHoldingOfSpecifiedSecuritiesAbstract" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfHoldingOfSpecifiedSecuritiesTable" xlink:label="DetailsOfHoldingOfSpecifiedSecuritiesTable" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfHoldingOfSpecifiedSecuritiesTable" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfHoldingOfSpecifiedSecuritiesTable" xlink:to="reference_DetailsOfHoldingOfSpecifiedSecuritiesTable" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_DetailsOfHoldingOfSpecifiedSecuritiesLineItems" xlink:label="DetailsOfHoldingOfSpecifiedSecuritiesLineItems" />
+    <reference xlink:type="resource" xlink:label="reference_DetailsOfHoldingOfSpecifiedSecuritiesLineItems" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="DetailsOfHoldingOfSpecifiedSecuritiesLineItems" xlink:to="reference_DetailsOfHoldingOfSpecifiedSecuritiesLineItems" />
+    <loc xlink:type="locator" xlink:href="in-bse-shp-2016-06-23.xsd#in-bse-shp_WhetherCompanyIsSME" xlink:label="WhetherCompanyIsSME" />
+    <reference xlink:type="resource" xlink:label="reference_WhetherCompanyIsSME" xlink:role="http://www.xbrl.org/2003/role/reference">
+      <ref:Publisher>SEBI</ref:Publisher>
+      <ref:Name>Listing Regulations</ref:Name>
+      <ref:Section>Regulation 31</ref:Section>
+      <ref:Paragraph>Annexure - 1</ref:Paragraph>
+    </reference>
+    <referenceArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference" xlink:from="WhetherCompanyIsSME" xlink:to="reference_WhetherCompanyIsSME" />
+  </referenceLink>
+</linkbase>
