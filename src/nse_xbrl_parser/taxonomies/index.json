@@ -1765,6 +1765,40 @@
     },
     {
       "entry_points": [
+        "Financial_Results_REITs_InvITs/in-capmkt-ent-2026-08-31.xsd"
+      ],
+      "family": "Financial_Results_REITs_InvITs",
+      "files": [
+        "Financial_Results_REITs_InvITs/in-capmkt-cal-2026-08-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-def-2026-08-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-ent-2026-08-31.xsd",
+        "Financial_Results_REITs_InvITs/in-capmkt-pre-2026-08-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-ref-2026-08-31.xml",
+        "Financial_Results_REITs_InvITs/in-capmkt-roles-2026-08-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "6f31067b104db9d40425e0e5d51ded7b4f7ad3e348cd2a5652ca6f61ce2a5c42",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-08-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-08-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/Financial_Results_REITs_InvITs/2026-08-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_Financial_Results_REITs_InvITs_20261005110936",
+      "release_id": "2026-08-31__6f31067b",
+      "source_path": "/tmp/tmpwv197xyr/Taxonomy_Financial_Results_REITs_InvITs_20261005110936",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-10/Taxonomy_Financial_Results_REITs_InvITs_20261005110936.zip",
+      "stored_path": "Financial_Results_REITs_InvITs/2026-08-31__6f31067b",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/Financial_Results_REITs_InvITs/2026-08-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-08-31"
+    },
+    {
+      "entry_points": [
         "Forensic_Audit/in-capmkt-ent-2026-02-28.xsd"
       ],
       "family": "Forensic_Audit",
@@ -4530,6 +4564,39 @@
         "http://www.bseindia.com/xbrl/ShareCapitalAudit/2025-01-31/in-bse-aud"
       ],
       "version": "2025-01-31"
+    },
+    {
+      "entry_points": [
+        "ShareCapitalAudit/in-bse-aud-2026-08-31.xsd"
+      ],
+      "family": "ShareCapitalAudit",
+      "files": [
+        "META-INF/catalog.xml",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "META-INF/taxonomyPackage.xml",
+        "ShareCapitalAudit/in-bse-aud-2026-08-31.xsd",
+        "ShareCapitalAudit/in-bse-aud-def-2026-08-31.xml",
+        "ShareCapitalAudit/in-bse-aud-label-2026-08-31.xml",
+        "ShareCapitalAudit/in-bse-aud-pre-2026-08-31.xml",
+        "ShareCapitalAudit/in-bse-aud-ref-2026-08-31.xml",
+        "ShareCapitalAudit/in-bse-aud-roles-2026-08-31.xsd",
+        "ShareCapitalAudit/in-bse-aud-types-2026-08-31.xsd"
+      ],
+      "fingerprint": "3183426df80b72e59794faa385db64934169cc82af75004b2a5b3226f7e63472",
+      "imported_core_namespaces": [
+        "http://www.bseindia.com/xbrl/ShareCapitalAudit/2026-08-31/in-bse-aud-roles",
+        "http://www.bseindia.com/xbrl/ShareCapitalAudit/2026-08-31/in-bse-aud-types"
+      ],
+      "provenance_name": "Taxonomy_RecoShareCapital_20261005113324",
+      "release_id": "2026-08-31__3183426d",
+      "source_path": "/tmp/tmpwv197xyr/Taxonomy_RecoShareCapital_20261005113324",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-10/Taxonomy_RecoShareCapital_20261005113324.zip",
+      "stored_path": "ShareCapitalAudit/2026-08-31__3183426d",
+      "target_namespaces": [
+        "http://www.bseindia.com/xbrl/ShareCapitalAudit/2026-08-31/in-bse-aud"
+      ],
+      "version": "2026-08-31"
     },
     {
       "entry_points": [
