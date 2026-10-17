@@ -2404,6 +2404,40 @@
     },
     {
       "entry_points": [
+        "IntegratedFinance_InsuranceCompaniesIndAS/in-capmkt-ent-2026-08-31.xsd"
+      ],
+      "family": "IntegratedFinance_InsuranceCompaniesIndAS",
+      "files": [
+        "IntegratedFinance_InsuranceCompaniesIndAS/in-capmkt-cal-2026-08-31.xml",
+        "IntegratedFinance_InsuranceCompaniesIndAS/in-capmkt-def-2026-08-31.xml",
+        "IntegratedFinance_InsuranceCompaniesIndAS/in-capmkt-ent-2026-08-31.xsd",
+        "IntegratedFinance_InsuranceCompaniesIndAS/in-capmkt-pre-2026-08-31.xml",
+        "IntegratedFinance_InsuranceCompaniesIndAS/in-capmkt-ref-2026-08-31.xml",
+        "IntegratedFinance_InsuranceCompaniesIndAS/in-capmkt-roles-2026-08-31.xsd",
+        "META-INF/catalog.xml",
+        "META-INF/taxonomyPackage.xml",
+        "core/in-capmkt-lab.xml",
+        "core/in-capmkt-types.xsd",
+        "core/in-capmkt.xsd"
+      ],
+      "fingerprint": "e0a34155e64a36d9e34e6aad92415f97b29a6aa059f9783da51bd30011225052",
+      "imported_core_namespaces": [
+        "http://www.sebi.gov.in/xbrl/2026-08-31/in-capmkt",
+        "http://www.sebi.gov.in/xbrl/2026-08-31/in-capmkt-types",
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_InsuranceCompaniesIndAS/2026-08-31/in-capmkt-roles"
+      ],
+      "provenance_name": "Taxonomy_IntegratedFinance_Insurance_Companies_IndAS_20261016151203",
+      "release_id": "2026-08-31__e0a34155",
+      "source_path": "/tmp/tmpov5nwgky/Taxonomy_IntegratedFinance_Insurance_Companies_IndAS_20261016151203",
+      "source_url": "https://nsearchives.nseindia.com//web/mediaattachment/2026-10/Taxonomy_IntegratedFinance_Insurance_Companies_IndAS_20261016151203.zip",
+      "stored_path": "IntegratedFinance_InsuranceCompaniesIndAS/2026-08-31__e0a34155",
+      "target_namespaces": [
+        "http://www.sebi.gov.in/xbrl/IntegratedFinance_InsuranceCompaniesIndAS/2026-08-31/in-capmkt/in-capmkt-ent"
+      ],
+      "version": "2026-08-31"
+    },
+    {
+      "entry_points": [
         "IntegratedFinance_LI/in-capmkt-ent-2025-01-31.xsd"
       ],
       "family": "IntegratedFinance_LI",
